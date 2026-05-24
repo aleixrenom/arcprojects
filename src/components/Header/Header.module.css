@@ -9,7 +9,7 @@
   right: 0;
   top: 0;
   backdrop-filter: blur(14px);
-  background: rgba(249, 248, 246, 0.6);
+  background: var(--header-bg);
   z-index: 40;
 }
 
@@ -46,4 +46,12 @@
   background: transparent;
   cursor: pointer;
   font-size: 18px;
+  color: var(--text-muted);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.icon:hover {
+  background: var(--icon-hover);
+  color: var(--text);
+  border-radius: 8px;
 }
