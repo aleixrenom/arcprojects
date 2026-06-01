@@ -1,6 +1,6 @@
 # Portfolio website
 
-Scaffolded Vite + React + TypeScript project and initial components based on Design prototypes.
+A portfolio + tools site built with Vite, React, and TypeScript.
 
 To run locally:
 
