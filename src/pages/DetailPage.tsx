@@ -1,12 +1,18 @@
 import React from "react";
 import { useUI, type CardInfo } from "../store/ui.js";
+import QuizApp from "../apps/light-quiz";
 
 type DetailPageProps = {
   card: CardInfo;
 };
 
+const appComponents: Record<string, React.ComponentType> = {
+  "finnish-quiz": QuizApp,
+};
+
 export default function DetailPage({ card }: DetailPageProps) {
   const closeCard = useUI((s) => s.closeCard);
+  const AppComponent = appComponents[card.id];
 
   return (
     <main className="detail-shell">
@@ -37,14 +43,20 @@ export default function DetailPage({ card }: DetailPageProps) {
         <h1 className="detail-header-title">{card.title}</h1>
       </div>
       <div className="detail-content">
-        <p className="detail-meta">
-          {card.kind === "app" ? "App" : "Project"} page
-        </p>
-        <p className="detail-meta">
-          This is a placeholder detail page for <strong>{card.title}</strong>.
-          It is intentionally blank for now so it can later host app content or
-          arbitrary project information.
-        </p>
+        {AppComponent ? (
+          <AppComponent />
+        ) : (
+          <>
+            <p className="detail-meta">
+              {card.kind === "app" ? "App" : "Project"} page
+            </p>
+            <p className="detail-meta">
+              This is a placeholder detail page for{" "}
+              <strong>{card.title}</strong>. It is intentionally blank for now
+              so it can later host app content or arbitrary project information.
+            </p>
+          </>
+        )}
       </div>
     </main>
   );

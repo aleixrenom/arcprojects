@@ -142,7 +142,6 @@ html.dark .card:hover {
 .detail-content {
   display: flex;
   flex-direction: column;
-  padding: 24px 24px 24px;
 }
 
 html.dark .detail-back {
@@ -170,4 +169,5 @@ html.dark .detail-back:hover {
   font-size: 14px;
   max-width: 720px;
   line-height: 1.6;
+  padding: 24px 24px 24px;
 }
