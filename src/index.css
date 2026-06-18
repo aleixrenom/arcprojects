@@ -56,15 +56,58 @@ body {
 
 .pages-container {
   flex: 1 1 auto;
+  min-width: 0;
   position: relative;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  touch-action: pan-y;
   padding: 88px 40px 40px;
+  box-sizing: border-box;
+}
+
+.main-body.separator-right .pages-container {
+  margin-right: 40px;
+}
+
+.main-body.separator-left .pages-container {
+  margin-left: 40px;
+}
+
+.pages-scroller {
+  display: flex;
+  width: 200%;
+  min-height: 100%;
+  /* gap: 80px; */
+  transition: transform 0.48s cubic-bezier(0.32, 0, 0.16, 1);
+  will-change: transform;
+}
+
+.pages-scroller.dragging {
+  transition: none;
+}
+
+.page-panel {
+  flex: 1;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.page-panel.active {
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pages-scroller,
+  .separator {
+    transition: none !important;
+  }
 }
 
 .card {

@@ -19,3 +19,10 @@ High-level session decision log for this project. Each entry contains only a dat
 
 - Split `src/apps/light-quiz` into modular files (`index.tsx`, `VocabularyQuiz.tsx`, `types.ts`, `quizUtils.ts`, `QuestionCard.tsx`, `ResetConfirmation.tsx`, `ResultScreen.tsx`) and added `quiz.css` to translate the previous Tailwind utilities to project styles.
 - Wired the `finnish-quiz` card to mount the quiz app inside `DetailPage` using a simple component registry, preserving existing card/close behavior.
+
+## 2026-06-18 — Separator page transition
+
+- Added side-switching separator behavior so the bar moves to the side of the active page.
+- Implemented a page carousel layout with two page panels and `translateX` slide transitions.
+- Added touch swipe detection for mobile page switching.
+- Adjusted CSS clipping and container padding to keep the inactive page hidden while the active page is shown.

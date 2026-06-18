@@ -1,4 +1,8 @@
 .separator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 40px;
   display: flex;
   flex-direction: column;
@@ -6,6 +10,16 @@
   justify-content: center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.01));
   cursor: pointer;
+  transition: left 0.48s cubic-bezier(0.32, 0, 0.16, 1);
+  z-index: 2;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: calc(100% - 40px);
 }
 
 .label {
