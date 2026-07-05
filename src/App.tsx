@@ -102,6 +102,8 @@ export default function App() {
           >
             <div
               className={`page-panel ${activePage === "apps" ? "active" : ""}`}
+              aria-hidden={activePage !== "apps"}
+              inert={activePage !== "apps" ? true : undefined}
             >
               <AppsPage />
             </div>
@@ -109,6 +111,8 @@ export default function App() {
               className={`page-panel ${
                 activePage === "projects" ? "active" : ""
               }`}
+              aria-hidden={activePage !== "projects"}
+              inert={activePage !== "projects" ? true : undefined}
             >
               <ProjectsPage />
             </div>

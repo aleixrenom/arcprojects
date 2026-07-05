@@ -61,7 +61,6 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   touch-action: pan-y;
-  padding: 88px 40px 40px;
   box-sizing: border-box;
 }
 
@@ -88,12 +87,13 @@ body {
 
 .page-panel {
   flex: 1;
-  visibility: hidden;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 88px 40px 40px;
   pointer-events: none;
 }
 
 .page-panel.active {
-  visibility: visible;
   pointer-events: auto;
 }
 
