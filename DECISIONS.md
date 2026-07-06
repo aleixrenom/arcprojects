@@ -20,6 +20,13 @@ High-level session decision log for this project. Each entry contains only a dat
 - Split `src/apps/light-quiz` into modular files (`index.tsx`, `VocabularyQuiz.tsx`, `types.ts`, `quizUtils.ts`, `QuestionCard.tsx`, `ResetConfirmation.tsx`, `ResultScreen.tsx`) and added `quiz.css` to translate the previous Tailwind utilities to project styles.
 - Wired the `finnish-quiz` card to mount the quiz app inside `DetailPage` using a simple component registry, preserving existing card/close behavior.
 
+## 2026-07-06 — Shareable URLs via TanStack Router
+
+- Adopted TanStack Router (code-based routes, no Vite plugin) to make detail pages linkable: `#/app/<id>`, `#/project/<id>`.
+- Chose hash history so deep links work on any static host with zero server config; switching to clean paths later is a one-line history swap.
+- The URL replaced `selectedCard` state: `selectedCard`/`openCard`/`closeCard` removed from the Zustand store; card metadata centralized in `src/data/cards.ts`.
+- Unknown ids redirect to `/`; detail routes set `activePage` so closing a deep-linked project lands on the Projects panel.
+
 ## 2026-06-18 — Separator page transition
 
 - Added side-switching separator behavior so the bar moves to the side of the active page.

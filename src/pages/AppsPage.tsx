@@ -1,14 +1,11 @@
 import React from "react";
-import { useUI, type CardInfo } from "../store/ui.js";
-
-const apps: CardInfo[] = [
-  { id: "finnish-quiz", title: "Finnish Quiz", kind: "app" },
-  { id: "dice-math", title: "Dice Math", kind: "app" },
-  { id: "chatbot", title: "Chatbot", kind: "app" },
-];
+import { useNavigate } from "@tanstack/react-router";
+import { apps } from "../data/cards.js";
 
 export default function AppsPage() {
-  const openCard = useUI((s) => s.openCard);
+  const navigate = useNavigate();
+  const openApp = (id: string) =>
+    navigate({ to: "/app/$appId", params: { appId: id } });
 
   return (
     <div>
@@ -18,12 +15,12 @@ export default function AppsPage() {
           <div
             key={app.id}
             className="card"
-            onClick={() => openCard(app)}
+            onClick={() => openApp(app.id)}
             role="button"
             tabIndex={0}
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === " ") {
-                openCard(app);
+                openApp(app.id);
               }
             }}
           >

@@ -1,5 +1,6 @@
 import React from "react";
-import { useUI, type CardInfo } from "../store/ui.js";
+import { useNavigate } from "@tanstack/react-router";
+import { type CardInfo } from "../store/ui.js";
 import QuizApp from "../apps/light-quiz";
 
 type DetailPageProps = {
@@ -11,7 +12,7 @@ const appComponents: Record<string, React.ComponentType> = {
 };
 
 export default function DetailPage({ card }: DetailPageProps) {
-  const closeCard = useUI((s) => s.closeCard);
+  const navigate = useNavigate();
   const AppComponent = appComponents[card.id];
 
   return (
@@ -20,7 +21,7 @@ export default function DetailPage({ card }: DetailPageProps) {
         <button
           className="detail-back"
           type="button"
-          onClick={closeCard}
+          onClick={() => navigate({ to: "/" })}
           aria-label="Back"
           title="Back"
         >

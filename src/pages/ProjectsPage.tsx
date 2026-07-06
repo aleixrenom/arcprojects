@@ -1,29 +1,11 @@
 import React from "react";
-import { useUI, type CardInfo } from "../store/ui.js";
-
-const projects: CardInfo[] = [
-  {
-    id: "project-a",
-    title: "Project A",
-    kind: "project",
-    description: "A sample project placeholder.",
-  },
-  {
-    id: "project-b",
-    title: "Project B",
-    kind: "project",
-    description: "A sample project placeholder.",
-  },
-  {
-    id: "project-c",
-    title: "Project C",
-    kind: "project",
-    description: "A sample project placeholder.",
-  },
-];
+import { useNavigate } from "@tanstack/react-router";
+import { projects } from "../data/cards.js";
 
 export default function ProjectsPage() {
-  const openCard = useUI((s) => s.openCard);
+  const navigate = useNavigate();
+  const openProject = (id: string) =>
+    navigate({ to: "/project/$projectId", params: { projectId: id } });
 
   return (
     <div>
@@ -33,12 +15,12 @@ export default function ProjectsPage() {
           <div
             key={project.id}
             className="card"
-            onClick={() => openCard(project)}
+            onClick={() => openProject(project.id)}
             role="button"
             tabIndex={0}
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === " ") {
-                openCard(project);
+                openProject(project.id);
               }
             }}
           >

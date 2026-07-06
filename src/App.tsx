@@ -1,25 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Header from "./components/Header/Header.js";
 import Separator from "./components/Separator/Separator.js";
 import AppsPage from "./pages/AppsPage.js";
-import DetailPage from "./pages/DetailPage.js";
 import ProjectsPage from "./pages/ProjectsPage.js";
 import { useUI } from "./store/ui.js";
 
 export default function App() {
   const activePage = useUI((s) => s.activePage);
   const setActivePage = useUI((s) => s.setActivePage);
-  const theme = useUI((s) => s.theme);
-  const selectedCard = useUI((s) => s.selectedCard);
 
   const [dragOffset, setDragOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const swipeStartX = useRef<number | null>(null);
   const swipeStartY = useRef<number | null>(null);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-  }, [theme]);
 
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
     if (event.pointerType !== "touch") return;
@@ -68,21 +61,13 @@ export default function App() {
     }
   };
 
-  if (selectedCard) {
-    return (
-      <div className="app-shell">
-        <DetailPage card={selectedCard} />
-      </div>
-    );
-  }
-
   const pageTranslate = activePage === "apps" ? "0%" : "-50%";
   const scrollerStyle = {
     transform: `translateX(calc(${pageTranslate} + ${dragOffset}px))`,
   };
 
   return (
-    <div className="app-shell">
+    <>
       <Header />
       <div
         className={`main-body ${
@@ -120,6 +105,6 @@ export default function App() {
         </div>
         <Separator />
       </div>
-    </div>
+    </>
   );
 }
