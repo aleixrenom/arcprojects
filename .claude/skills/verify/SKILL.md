@@ -31,5 +31,5 @@ No Playwright in this repo. Recipe that works:
 ## Gotchas
 
 - The router normalizes the empty hash to `#/` on load with a replace navigation, so the view-transition counter reads 1 before any click.
-- The light-quiz app has its own light background and does not follow dark theme — pre-existing, don't mistake it for a theming regression.
+- The light-quiz app inherits the site theme (its quiz.css uses the global tokens from src/index.css, with quiz-only success/danger tokens scoped to .quiz-root/.result-root).
 - `npm run build` is plain `vite build` (no tsc); run `npx tsc --noEmit` separately if type-checking matters. (CI territory though — verification is driving the app.)
