@@ -15,6 +15,7 @@ export default function AppsPage() {
           <div
             key={app.id}
             className="card"
+            style={{ viewTransitionName: `card-${app.kind}-${app.id}` }}
             onClick={() => openApp(app.id)}
             role="button"
             tabIndex={0}

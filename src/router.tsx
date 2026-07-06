@@ -81,6 +81,7 @@ export const router = createRouter({
   routeTree,
   history: createHashHistory(),
   defaultNotFoundComponent: () => <Navigate to="/" replace />,
+  defaultViewTransition: true,
 });
 
 declare module "@tanstack/react-router" {

@@ -16,7 +16,10 @@ export default function DetailPage({ card }: DetailPageProps) {
   const AppComponent = appComponents[card.id];
 
   return (
-    <main className="detail-shell">
+    <main
+      className="detail-shell"
+      style={{ viewTransitionName: `card-${card.kind}-${card.id}` }}
+    >
       <div className="detail-header">
         <button
           className="detail-back"

@@ -15,6 +15,7 @@ export default function ProjectsPage() {
           <div
             key={project.id}
             className="card"
+            style={{ viewTransitionName: `card-${project.kind}-${project.id}` }}
             onClick={() => openProject(project.id)}
             role="button"
             tabIndex={0}
