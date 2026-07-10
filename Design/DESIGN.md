@@ -149,7 +149,8 @@ zustand
 - **Type label** — small, uppercase, muted. "app" or "project".
 - **Title** — prominent, the main element.
 - **Description** — project cards only, one line max, muted.
-- **Geometric pattern** — each card has a unique subtle geometric pattern as background texture, drawn from an expanded set of abstract primitives (dots, crosshatch, diagonals, grid, rings, chevrons, ...). Tinted with `var(--accent)` at ~6.5% opacity base; opacity increases to ~11% on hover. Static — no pattern motion. Acts as a visual fingerprint in place of screenshots until real ones are available.
+- **Geometric pattern** — each card has a unique subtle geometric pattern as background texture, drawn from an expanded set of abstract primitives (dots, crosshatch, diagonals, grid, rings, rays, horizontal lines). Tinted with `var(--accent)` at ~9% opacity base; opacity increases to ~14% on hover. Acts as a visual fingerprint in place of screenshots until real ones are available.
+- **Glass depth treatment** — the pattern reads as sitting behind glass, with the text written on the pane: slight blur (0.75px) on the pattern layer, a mask that vignettes the card edges and fades the pattern under the top-left text zone, and a faint diagonal sheen overlay between pattern and text. On hover the pattern lags the card lift by 2px (parallax). No ambient motion — the layer only responds to hover.
 
 ### Interactions
 
@@ -188,8 +189,9 @@ zustand
 - Card screenshot backgrounds: deferred — geometric patterns used as placeholders; each card gets a distinct pattern
 - Card patterns: expanded geometric set (6+ abstract primitives — dots, crosshatch, diagonals, grid, rings, chevrons, ...), one distinct pattern per card across both pages
 - Card pattern assignment: seeded deterministically from card id (hash picks primitive + rotation/scale variation) — supersedes hand-assigned per-card mapping
-- Card pattern color: accent-tinted (`var(--accent)`) at ~6.5% base / ~11% hover opacity
-- Card pattern motion: static — opacity-only hover change, no drift or animation
+- Card pattern color: accent-tinted (`var(--accent)`) at ~9% base / ~14% hover opacity (tuned up from ~6.5%/~11% to offset the glass blur + mask)
+- Card pattern motion: no ambient motion; on hover the pattern brightens and lags the card lift by 2px (parallax) — supersedes the earlier opacity-only decision
+- Card glass depth: pattern layer blurred 0.75px behind a masked vignette (edge fade + fade under the text zone) with a faint diagonal sheen overlay — pattern behind the glass, text on it
 - Card hover: spring lift (translateY -5px), shadow deepens, pattern brightens
 - Card click: zoom-expand via clip-path animation (not slide, not fade)
 - Two-page body: apps page (default) + projects page, navigated via separator

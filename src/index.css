@@ -120,6 +120,8 @@ body {
 
 .card {
   position: relative;
+  /* Clip the pattern layer so the hover parallax shift can't peek past the card edge */
+  overflow: hidden;
   height: 184px;
   background: var(--card-bg);
   border-radius: 12px;
@@ -137,7 +139,11 @@ body {
 
 /* Geometric pattern layer — image/size seeded per card in src/lib/cardPattern.ts.
    z-index: -1 keeps it under the card text; the .card transform's stacking
-   context stops it from escaping behind the card background. */
+   context stops it from escaping behind the card background.
+   Depth treatment ("behind glass"): slight blur pushes the pattern to a
+   second focal plane; the mask intersects an edge vignette with a fade
+   under the top-left text zone; on hover the layer lags the card lift by
+   2px for parallax. Base opacity is tuned up to offset the blur + mask. */
 .card::before {
   content: "";
   position: absolute;
@@ -147,8 +153,39 @@ body {
   pointer-events: none;
   background-image: var(--card-pattern);
   background-size: var(--card-pattern-size);
-  opacity: 0.065;
-  transition: opacity 0.26s ease;
+  opacity: 0.09;
+  filter: blur(0.75px);
+  mask-image: radial-gradient(135% 135% at 50% 55%, #000 55%, transparent 99%),
+    linear-gradient(135deg, transparent 4%, rgba(0, 0, 0, 0.55) 20%, #000 48%);
+  mask-composite: intersect;
+  transform: translateY(0);
+  transition: opacity 0.26s ease,
+    transform 0.26s cubic-bezier(0.34, 1.38, 0.64, 1);
+}
+
+/* Glass sheen — sits above the pattern, below the card text. On light
+   cards it mostly washes the pattern near the text; on dark it reads as
+   a faint reflection on the pane. */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.5),
+    transparent 45%
+  );
+}
+
+html.dark .card::after {
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.05),
+    transparent 45%
+  );
 }
 
 .card:hover {
@@ -157,7 +194,8 @@ body {
 }
 
 .card:hover::before {
-  opacity: 0.11;
+  opacity: 0.14;
+  transform: translateY(2px);
 }
 
 .card:active {
