@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { apps } from "../data/cards.js";
+import Card from "../components/Card.js";
 
 export default function AppsPage() {
   const navigate = useNavigate();
@@ -12,21 +13,7 @@ export default function AppsPage() {
       <h2>Apps</h2>
       <div className="cards-grid">
         {apps.map((app) => (
-          <div
-            key={app.id}
-            className="card"
-            style={{ viewTransitionName: `card-${app.kind}-${app.id}` }}
-            onClick={() => openApp(app.id)}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" || event.key === " ") {
-                openApp(app.id);
-              }
-            }}
-          >
-            {app.title}
-          </div>
+          <Card key={app.id} card={app} onOpen={openApp} />
         ))}
       </div>
     </div>

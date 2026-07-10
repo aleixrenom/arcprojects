@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { projects } from "../data/cards.js";
+import Card from "../components/Card.js";
 
 export default function ProjectsPage() {
   const navigate = useNavigate();
@@ -12,21 +13,7 @@ export default function ProjectsPage() {
       <h2>Projects</h2>
       <div className="cards-grid">
         {projects.map((project) => (
-          <div
-            key={project.id}
-            className="card"
-            style={{ viewTransitionName: `card-${project.kind}-${project.id}` }}
-            onClick={() => openProject(project.id)}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" || event.key === " ") {
-                openProject(project.id);
-              }
-            }}
-          >
-            {project.title}
-          </div>
+          <Card key={project.id} card={project} onOpen={openProject} />
         ))}
       </div>
     </div>

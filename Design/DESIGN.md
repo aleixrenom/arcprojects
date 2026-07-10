@@ -30,8 +30,7 @@ Tone: confident but not arrogant. Junior but not apologetic.
 Base Light: #f9f8f6 (background), #0a0a0a (text)
 Base Dark: #0f0f0d (background), #f0efe9 (text)
 Muted: #888 (light) / #555 (dark)
-Accent: TBD — built as a single CSS variable so it's easy to audition options
-Candidates to try: warm (amber/coral), cool (blue/cyan), unusual (olive/mauve)
+Accent: soft blue — `--accent: #5c8fbc` (light) / `#7fa8cd` (dark). Provisional pick; still a single CSS variable so alternatives stay easy to audition.
 
 ## Typography
 
@@ -150,7 +149,7 @@ zustand
 - **Type label** — small, uppercase, muted. "app" or "project".
 - **Title** — prominent, the main element.
 - **Description** — project cards only, one line max, muted.
-- **Geometric pattern** — each card has a unique subtle SVG pattern as background texture (dots, crosshatch, diagonal lines), at ~6.5% opacity base. Opacity increases to ~11% on hover. Acts as a visual fingerprint in place of screenshots until real ones are available.
+- **Geometric pattern** — each card has a unique subtle geometric pattern as background texture, drawn from an expanded set of abstract primitives (dots, crosshatch, diagonals, grid, rings, chevrons, ...). Tinted with `var(--accent)` at ~6.5% opacity base; opacity increases to ~11% on hover. Static — no pattern motion. Acts as a visual fingerprint in place of screenshots until real ones are available.
 
 ### Interactions
 
@@ -159,11 +158,10 @@ zustand
 - **Click → zoom-expand**: card expands to fill the viewport via `clip-path: inset()` animation. Starts clipped to the card's exact position, expands to full screen. Duration: 0.52s. Content fades in after clip animation completes (~390ms delay).
 - **Back → collapse**: clip-path animates back to card's original position, then overlay hides.
 
-### Patterns (current cards)
+### Pattern Assignment
 
-- Finnish Quiz → dot grid (`radial-gradient`)
-- Dice Math → crosshatch (`linear-gradient` × 2)
-- Chatbot → diagonal lines (`repeating-linear-gradient`)
+- Patterns are **seeded deterministically from the card id**: a hash of the id picks the primitive plus small rotation/scale variation. New cards get a distinct-feeling pattern automatically, and a card's pattern never changes.
+- Supersedes the earlier hand-assigned mapping (Finnish Quiz → dots, Dice Math → crosshatch, Chatbot → diagonals) from the `cards.html` prototype.
 
 ---
 
@@ -184,10 +182,14 @@ zustand
 - Header: backdrop-filter blur(14px) frosted glass, no bottom border
 - Background: #f9f8f6 (light) / #0f0f0d (dark) — warm, not pure white/black
 - Cards: soft box-shadow instead of borders in light mode; dark mode uses inset border (1px rgba white at low opacity)
-- Accent color: TBD — CSS variable --accent, not yet assigned
+- Accent color: soft blue — `--accent: #5c8fbc` (light) / `#7fa8cd` (dark); provisional, kept as a single CSS variable for easy auditioning
 - Typography: TBD
 - Card content: type label + title always; description on project (tall) cards only. No tech stack tags on cards.
-- Card screenshot backgrounds: deferred — geometric SVG patterns used as placeholders; each card gets a distinct pattern
+- Card screenshot backgrounds: deferred — geometric patterns used as placeholders; each card gets a distinct pattern
+- Card patterns: expanded geometric set (6+ abstract primitives — dots, crosshatch, diagonals, grid, rings, chevrons, ...), one distinct pattern per card across both pages
+- Card pattern assignment: seeded deterministically from card id (hash picks primitive + rotation/scale variation) — supersedes hand-assigned per-card mapping
+- Card pattern color: accent-tinted (`var(--accent)`) at ~6.5% base / ~11% hover opacity
+- Card pattern motion: static — opacity-only hover change, no drift or animation
 - Card hover: spring lift (translateY -5px), shadow deepens, pattern brightens
 - Card click: zoom-expand via clip-path animation (not slide, not fade)
 - Two-page body: apps page (default) + projects page, navigated via separator
