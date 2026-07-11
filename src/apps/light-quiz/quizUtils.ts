@@ -1,4 +1,4 @@
-import vocabData from "./wordSets/1000words.json";
+import vocabData from "./wordSets/finnish-1000.json";
 import type { Question } from "./types";
 
 const STORAGE_KEY = "quizProgress";

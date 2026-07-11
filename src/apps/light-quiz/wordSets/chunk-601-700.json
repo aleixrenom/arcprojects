@@ -1,0 +1,502 @@
+[
+  {
+    "word": "opposite",
+    "correct": "contrari",
+    "options": ["contrari", "gran", "sec", "ràpid"]
+  },
+  {
+    "word": "or",
+    "correct": "o",
+    "options": ["o", "però", "perquè", "doncs"]
+  },
+  {
+    "word": "orange",
+    "correct": "taronja",
+    "options": ["taronja", "cadira", "muntanya", "sabata"]
+  },
+  {
+    "word": "order",
+    "correct": "ordre",
+    "options": ["ordre", "peix", "ocell", "sabata"]
+  },
+  {
+    "word": "other",
+    "correct": "altre",
+    "options": ["altre", "calent", "buit", "fosc"]
+  },
+  {
+    "word": "out",
+    "correct": "fora",
+    "options": ["fora", "sempre", "aviat", "també"]
+  },
+  {
+    "word": "outside",
+    "correct": "exterior",
+    "options": ["exterior", "cotxe", "llibre", "ou"]
+  },
+  {
+    "word": "over",
+    "correct": "sobre",
+    "options": ["sobre", "sota", "dins", "entre"]
+  },
+  {
+    "word": "own",
+    "correct": "propi",
+    "options": ["propi", "calent", "buit", "dur"]
+  },
+  {
+    "word": "page",
+    "correct": "pàgina",
+    "options": ["pàgina", "muntanya", "gos", "sabata"]
+  },
+  {
+    "word": "pain",
+    "correct": "dolor",
+    "options": ["dolor", "taula", "sol", "cadira"]
+  },
+  {
+    "word": "paint",
+    "correct": "pintura",
+    "options": ["pintura", "riu", "cavall", "taula"]
+  },
+  {
+    "word": "pair",
+    "correct": "parell",
+    "options": ["parell", "muntanya", "gos", "foc"]
+  },
+  {
+    "word": "paper",
+    "correct": "paper",
+    "options": ["paper", "aigua", "cel", "gat"]
+  },
+  {
+    "word": "parcel",
+    "correct": "paquet",
+    "options": ["paquet", "riu", "cavall", "flor"]
+  },
+  {
+    "word": "parent",
+    "correct": "pare",
+    "options": ["pare", "cotxe", "riu", "muntanya"]
+  },
+  {
+    "word": "park",
+    "correct": "parc",
+    "options": ["parc", "sabata", "ull", "pa"]
+  },
+  {
+    "word": "part",
+    "correct": "part",
+    "options": ["part", "gos", "sol", "taula"]
+  },
+  {
+    "word": "party",
+    "correct": "festa",
+    "options": ["festa", "muntanya", "cadira", "ou"]
+  },
+  {
+    "word": "pass",
+    "correct": "passar",
+    "options": ["passar", "menjar", "dormir", "cantar"]
+  },
+  {
+    "word": "passenger",
+    "correct": "passatger",
+    "options": ["passatger", "muntanya", "flor", "taula"]
+  },
+  {
+    "word": "past",
+    "correct": "passat",
+    "options": ["passat", "calent", "buit", "sec"]
+  },
+  {
+    "word": "path",
+    "correct": "camí",
+    "options": ["camí", "sabata", "cadira", "ou"]
+  },
+  {
+    "word": "patient",
+    "correct": "pacient",
+    "options": ["pacient", "ràpid", "fosc", "buit"]
+  },
+  {
+    "word": "pay",
+    "correct": "pagar",
+    "options": ["pagar", "dormir", "córrer", "cantar"]
+  },
+  {
+    "word": "peace",
+    "correct": "pau",
+    "options": ["pau", "taula", "gos", "riu"]
+  },
+  {
+    "word": "peaceful",
+    "correct": "pacífic",
+    "options": ["pacífic", "fosc", "dur", "buit"]
+  },
+  {
+    "word": "pen",
+    "correct": "bolígraf",
+    "options": ["bolígraf", "muntanya", "gos", "flor"]
+  },
+  {
+    "word": "pencil",
+    "correct": "llapis",
+    "options": ["llapis", "riu", "cavall", "sabata"]
+  },
+  {
+    "word": "people",
+    "correct": "gent",
+    "options": ["gent", "taula", "sol", "foc"]
+  },
+  {
+    "word": "perfect",
+    "correct": "perfecte",
+    "options": ["perfecte", "buit", "fosc", "sec"]
+  },
+  {
+    "word": "perform",
+    "correct": "actuar",
+    "options": ["actuar", "dormir", "menjar", "saltar"]
+  },
+  {
+    "word": "perhaps",
+    "correct": "potser",
+    "options": ["potser", "encara", "ja", "molt"]
+  },
+  {
+    "word": "person",
+    "correct": "persona",
+    "options": ["persona", "taula", "riu", "ou"]
+  },
+  {
+    "word": "personal",
+    "correct": "personal",
+    "options": ["personal", "dur", "sec", "fosc"]
+  },
+  {
+    "word": "petrol",
+    "correct": "gasolina",
+    "options": ["gasolina", "muntanya", "flor", "ou"]
+  },
+  {
+    "word": "phone",
+    "correct": "telèfon",
+    "options": ["telèfon", "riu", "cavall", "flor"]
+  },
+  {
+    "word": "picture",
+    "correct": "imatge",
+    "options": ["imatge", "gos", "sol", "cadira"]
+  },
+  {
+    "word": "piece",
+    "correct": "tros",
+    "options": ["tros", "muntanya", "riu", "ou"]
+  },
+  {
+    "word": "pile",
+    "correct": "pila",
+    "options": ["pila", "flor", "gos", "taula"]
+  },
+  {
+    "word": "pink",
+    "correct": "rosa",
+    "options": ["rosa", "calent", "ràpid", "dur"]
+  },
+  {
+    "word": "pity",
+    "correct": "llàstima",
+    "options": ["llàstima", "taula", "riu", "gos"]
+  },
+  {
+    "word": "place",
+    "correct": "lloc",
+    "options": ["lloc", "gat", "sol", "cadira"]
+  },
+  {
+    "word": "plain",
+    "correct": "senzill",
+    "options": ["senzill", "calent", "ràpid", "fosc"]
+  },
+  {
+    "word": "plan",
+    "correct": "pla",
+    "options": ["pla", "riu", "gos", "flor"]
+  },
+  {
+    "word": "plane",
+    "correct": "avió",
+    "options": ["avió", "taula", "gat", "ou"]
+  },
+  {
+    "word": "plant",
+    "correct": "planta",
+    "options": ["planta", "cadira", "riu", "sol"]
+  },
+  {
+    "word": "plate",
+    "correct": "plat",
+    "options": ["plat", "muntanya", "gos", "flor"]
+  },
+  {
+    "word": "play",
+    "correct": "jugar",
+    "options": ["jugar", "dormir", "menjar", "escriure"]
+  },
+  {
+    "word": "player",
+    "correct": "jugador",
+    "options": ["jugador", "riu", "taula", "flor"]
+  },
+  {
+    "word": "pleasant",
+    "correct": "agradable",
+    "options": ["agradable", "dur", "fosc", "sec"]
+  },
+  {
+    "word": "please",
+    "correct": "agradar",
+    "options": ["agradar", "menjar", "córrer", "escriure"]
+  },
+  {
+    "word": "pleasure",
+    "correct": "plaer",
+    "options": ["plaer", "taula", "gos", "riu"]
+  },
+  {
+    "word": "plenty",
+    "correct": "abundància",
+    "options": ["abundància", "flor", "gat", "sol"]
+  },
+  {
+    "word": "point",
+    "correct": "punt",
+    "options": ["punt", "gos", "riu", "taula"]
+  },
+  {
+    "word": "police",
+    "correct": "policia",
+    "options": ["policia", "muntanya", "flor", "ou"]
+  },
+  {
+    "word": "politics",
+    "correct": "política",
+    "options": ["política", "riu", "gat", "flor"]
+  },
+  {
+    "word": "poor",
+    "correct": "pobre",
+    "options": ["pobre", "ràpid", "dur", "fosc"]
+  },
+  {
+    "word": "popular",
+    "correct": "popular",
+    "options": ["popular", "sec", "buit", "calent"]
+  },
+  {
+    "word": "position",
+    "correct": "posició",
+    "options": ["posició", "gos", "riu", "flor"]
+  },
+  {
+    "word": "possible",
+    "correct": "possible",
+    "options": ["possible", "fosc", "dur", "buit"]
+  },
+  {
+    "word": "post",
+    "correct": "correu",
+    "options": ["correu", "gat", "sol", "taula"]
+  },
+  {
+    "word": "pound",
+    "correct": "lliura",
+    "options": ["lliura", "riu", "flor", "gos"]
+  },
+  {
+    "word": "pour",
+    "correct": "vessar",
+    "options": ["vessar", "dormir", "cantar", "escriure"]
+  },
+  {
+    "word": "power",
+    "correct": "poder",
+    "options": ["poder", "flor", "gat", "riu"]
+  },
+  {
+    "word": "practise",
+    "correct": "practicar",
+    "options": ["practicar", "dormir", "menjar", "ballar"]
+  },
+  {
+    "word": "prefer",
+    "correct": "preferir",
+    "options": ["preferir", "córrer", "cantar", "escriure"]
+  },
+  {
+    "word": "prepare",
+    "correct": "preparar",
+    "options": ["preparar", "dormir", "saltar", "riure"]
+  },
+  {
+    "word": "present",
+    "correct": "regal",
+    "options": ["regal", "riu", "gat", "sol"]
+  },
+  {
+    "word": "president",
+    "correct": "president",
+    "options": ["president", "flor", "gos", "taula"]
+  },
+  {
+    "word": "press",
+    "correct": "premsa",
+    "options": ["premsa", "riu", "gat", "flor"]
+  },
+  {
+    "word": "pretty",
+    "correct": "bonic",
+    "options": ["bonic", "dur", "fosc", "sec"]
+  },
+  {
+    "word": "price",
+    "correct": "preu",
+    "options": ["preu", "gos", "flor", "riu"]
+  },
+  {
+    "word": "prison",
+    "correct": "presó",
+    "options": ["presó", "muntanya", "gat", "ou"]
+  },
+  {
+    "word": "private",
+    "correct": "privat",
+    "options": ["privat", "ràpid", "calent", "buit"]
+  },
+  {
+    "word": "prize",
+    "correct": "premi",
+    "options": ["premi", "riu", "gos", "flor"]
+  },
+  {
+    "word": "probably",
+    "correct": "probablement",
+    "options": ["probablement", "mai", "poc", "abans"]
+  },
+  {
+    "word": "problem",
+    "correct": "problema",
+    "options": ["problema", "gat", "sol", "flor"]
+  },
+  {
+    "word": "produce",
+    "correct": "produir",
+    "options": ["produir", "dormir", "cantar", "riure"]
+  },
+  {
+    "word": "product",
+    "correct": "producte",
+    "options": ["producte", "riu", "gos", "flor"]
+  },
+  {
+    "word": "profit",
+    "correct": "benefici",
+    "options": ["benefici", "gat", "sol", "taula"]
+  },
+  {
+    "word": "promise",
+    "correct": "promesa",
+    "options": ["promesa", "riu", "flor", "gos"]
+  },
+  {
+    "word": "protect",
+    "correct": "protegir",
+    "options": ["protegir", "dormir", "menjar", "ballar"]
+  },
+  {
+    "word": "proud",
+    "correct": "orgullós",
+    "options": ["orgullós", "fosc", "sec", "buit"]
+  },
+  {
+    "word": "prove",
+    "correct": "demostrar",
+    "options": ["demostrar", "córrer", "cantar", "escriure"]
+  },
+  {
+    "word": "provide",
+    "correct": "proporcionar",
+    "options": ["proporcionar", "dormir", "saltar", "riure"]
+  },
+  {
+    "word": "public",
+    "correct": "públic",
+    "options": ["públic", "dur", "fosc", "calent"]
+  },
+  {
+    "word": "pull",
+    "correct": "estirar",
+    "options": ["estirar", "dormir", "cantar", "menjar"]
+  },
+  {
+    "word": "purpose",
+    "correct": "propòsit",
+    "options": ["propòsit", "gat", "riu", "flor"]
+  },
+  {
+    "word": "put",
+    "correct": "posar",
+    "options": ["posar", "córrer", "cantar", "riure"]
+  },
+  {
+    "word": "question",
+    "correct": "pregunta",
+    "options": ["pregunta", "gos", "sol", "flor"]
+  },
+  {
+    "word": "quick",
+    "correct": "ràpid",
+    "options": ["ràpid", "fosc", "buit", "sec"]
+  },
+  {
+    "word": "quiet",
+    "correct": "tranquil",
+    "options": ["tranquil", "calent", "dur", "gran"]
+  },
+  {
+    "word": "quite",
+    "correct": "bastant",
+    "options": ["bastant", "després", "aquí", "allà"]
+  },
+  {
+    "word": "race",
+    "correct": "cursa",
+    "options": ["cursa", "gat", "flor", "riu"]
+  },
+  {
+    "word": "radio",
+    "correct": "ràdio",
+    "options": ["ràdio", "gos", "sol", "taula"]
+  },
+  {
+    "word": "rain",
+    "correct": "pluja",
+    "options": ["pluja", "gat", "flor", "cadira"]
+  },
+  {
+    "word": "raise",
+    "correct": "aixecar",
+    "options": ["aixecar", "dormir", "cantar", "menjar"]
+  },
+  {
+    "word": "rather",
+    "correct": "força",
+    "options": ["força", "encara", "ja", "mai"]
+  },
+  {
+    "word": "read",
+    "correct": "llegir",
+    "options": ["llegir", "dormir", "córrer", "cantar"]
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "word": "half",
+    "correct": "meitat",
+    "options": ["meitat", "taula", "sabata", "plat"]
+  },
+  {
+    "word": "hand",
+    "correct": "mà",
+    "options": ["mà", "cotxe", "llibre", "arbre"]
+  },
+  {
+    "word": "happen",
+    "correct": "passar",
+    "options": ["passar", "menjar", "dormir", "escriure"]
+  },
+  {
+    "word": "happy",
+    "correct": "feliç",
+    "options": ["feliç", "ràpid", "fosc", "buit"]
+  },
+  {
+    "word": "hard",
+    "correct": "dur",
+    "options": ["dur", "ample", "prim", "net"]
+  },
+  {
+    "word": "hat",
+    "correct": "barret",
+    "options": ["barret", "taronja", "riu", "llum"]
+  },
+  {
+    "word": "hate",
+    "correct": "odiar",
+    "options": ["odiar", "cantar", "nedar", "cuinar"]
+  },
+  {
+    "word": "have",
+    "correct": "tenir",
+    "options": ["tenir", "córrer", "ballar", "plorar"]
+  },
+  {
+    "word": "he",
+    "correct": "ell",
+    "options": ["ell", "nosaltres", "vosaltres", "elles"]
+  },
+  {
+    "word": "head",
+    "correct": "cap",
+    "options": ["cap", "taula", "riu", "sol"]
+  },
+  {
+    "word": "health",
+    "correct": "salut",
+    "options": ["salut", "guerra", "música", "roba"]
+  },
+  {
+    "word": "hear",
+    "correct": "sentir",
+    "options": ["sentir", "escriure", "comprar", "ballar"]
+  },
+  {
+    "word": "heart",
+    "correct": "cor",
+    "options": ["cor", "núvol", "porta", "fulla"]
+  },
+  {
+    "word": "heavy",
+    "correct": "pesat",
+    "options": ["pesat", "ràpid", "clar", "dolç"]
+  },
+  {
+    "word": "help",
+    "correct": "ajudar",
+    "options": ["ajudar", "perdre", "guanyar", "dibuixar"]
+  },
+  {
+    "word": "her",
+    "correct": "seva",
+    "options": ["seva", "meu", "teu", "nostre"]
+  },
+  {
+    "word": "here",
+    "correct": "aquí",
+    "options": ["aquí", "ahir", "demà", "sempre"]
+  },
+  {
+    "word": "hide",
+    "correct": "amagar",
+    "options": ["amagar", "trobar", "tallar", "netejar"]
+  },
+  {
+    "word": "high",
+    "correct": "alt",
+    "options": ["alt", "estret", "calent", "sec"]
+  },
+  {
+    "word": "his",
+    "correct": "seu",
+    "options": ["seu", "meu", "teu", "nostre"]
+  },
+  {
+    "word": "history",
+    "correct": "història",
+    "options": ["història", "pintura", "matemàtiques", "cuina"]
+  },
+  {
+    "word": "hold",
+    "correct": "agafar",
+    "options": ["agafar", "vendre", "comprar", "trencar"]
+  },
+  {
+    "word": "hole",
+    "correct": "forat",
+    "options": ["forat", "muntanya", "riu", "camp"]
+  },
+  {
+    "word": "holiday",
+    "correct": "vacances",
+    "options": ["vacances", "feina", "escola", "hospital"]
+  },
+  {
+    "word": "home",
+    "correct": "llar",
+    "options": ["llar", "muntanya", "mar", "cel"]
+  },
+  {
+    "word": "hope",
+    "correct": "esperança",
+    "options": ["esperança", "por", "ràbia", "tristesa"]
+  },
+  {
+    "word": "horse",
+    "correct": "cavall",
+    "options": ["cavall", "ocell", "peix", "gat"]
+  },
+  {
+    "word": "hospital",
+    "correct": "hospital",
+    "options": ["hospital", "escola", "banc", "mercat"]
+  },
+  {
+    "word": "hot",
+    "correct": "calent",
+    "options": ["calent", "humit", "sec", "dur"]
+  },
+  {
+    "word": "hotel",
+    "correct": "hotel",
+    "options": ["hotel", "restaurant", "biblioteca", "fàbrica"]
+  },
+  {
+    "word": "hour",
+    "correct": "hora",
+    "options": ["hora", "taula", "porta", "llibre"]
+  },
+  {
+    "word": "house",
+    "correct": "casa",
+    "options": ["casa", "cotxe", "taula", "llibre"]
+  },
+  {
+    "word": "how",
+    "correct": "com",
+    "options": ["com", "quan", "on", "què"]
+  },
+  {
+    "word": "hungry",
+    "correct": "afamat",
+    "options": ["afamat", "cansat", "content", "trist"]
+  },
+  {
+    "word": "husband",
+    "correct": "marit",
+    "options": ["marit", "germà", "fill", "avi"]
+  },
+  {
+    "word": "ice",
+    "correct": "gel",
+    "options": ["gel", "foc", "sorra", "fusta"]
+  },
+  {
+    "word": "idea",
+    "correct": "idea",
+    "options": ["idea", "cadira", "taula", "finestra"]
+  },
+  {
+    "word": "if",
+    "correct": "si",
+    "options": ["si", "però", "perquè", "encara"]
+  },
+  {
+    "word": "ill",
+    "correct": "malalt",
+    "options": ["malalt", "content", "cansat", "jove"]
+  },
+  {
+    "word": "illegal",
+    "correct": "il·legal",
+    "options": ["il·legal", "ràpid", "car", "nou"]
+  },
+  {
+    "word": "illness",
+    "correct": "malaltia",
+    "options": ["malaltia", "alegria", "victòria", "amistat"]
+  },
+  {
+    "word": "image",
+    "correct": "imatge",
+    "options": ["imatge", "so", "olor", "gust"]
+  },
+  {
+    "word": "imagine",
+    "correct": "imaginar",
+    "options": ["imaginar", "construir", "vendre", "netejar"]
+  },
+  {
+    "word": "immediately",
+    "correct": "immediatament",
+    "options": ["immediatament", "lentament", "rarament", "sovint"]
+  },
+  {
+    "word": "import",
+    "correct": "importar",
+    "options": ["importar", "vendre", "cuinar", "cantar"]
+  },
+  {
+    "word": "important",
+    "correct": "important",
+    "options": ["important", "petit", "ràpid", "dolç"]
+  },
+  {
+    "word": "impossible",
+    "correct": "impossible",
+    "options": ["impossible", "fàcil", "car", "net"]
+  },
+  {
+    "word": "improve",
+    "correct": "millorar",
+    "options": ["millorar", "trencar", "perdre", "oblidar"]
+  },
+  {
+    "word": "in",
+    "correct": "en",
+    "options": ["en", "per", "amb", "sense"]
+  },
+  {
+    "word": "include",
+    "correct": "incloure",
+    "options": ["incloure", "trencar", "vendre", "perdre"]
+  },
+  {
+    "word": "increase",
+    "correct": "augmentar",
+    "options": ["augmentar", "caure", "dormir", "cantar"]
+  },
+  {
+    "word": "indeed",
+    "correct": "realment",
+    "options": ["realment", "potser", "mai", "aviat"]
+  },
+  {
+    "word": "independent",
+    "correct": "independent",
+    "options": ["independent", "ric", "pobre", "feliç"]
+  },
+  {
+    "word": "individual",
+    "correct": "individual",
+    "options": ["individual", "gran", "petit", "fosc"]
+  },
+  {
+    "word": "industry",
+    "correct": "indústria",
+    "options": ["indústria", "agricultura", "educació", "medicina"]
+  },
+  {
+    "word": "influence",
+    "correct": "influència",
+    "options": ["influència", "poder", "diners", "temps"]
+  },
+  {
+    "word": "inform",
+    "correct": "informar",
+    "options": ["informar", "amagar", "oblidar", "perdre"]
+  },
+  {
+    "word": "information",
+    "correct": "informació",
+    "options": ["informació", "silenci", "soroll", "foscor"]
+  },
+  {
+    "word": "injure",
+    "correct": "ferir",
+    "options": ["ferir", "ajudar", "cantar", "ballar"]
+  },
+  {
+    "word": "insect",
+    "correct": "insecte",
+    "options": ["insecte", "ocell", "peix", "mamífer"]
+  },
+  {
+    "word": "inside",
+    "correct": "dins",
+    "options": ["dins", "fora", "sobre", "sota"]
+  },
+  {
+    "word": "instead",
+    "correct": "altrament",
+    "options": ["altrament", "sempre", "mai", "aviat"]
+  },
+  {
+    "word": "instrument",
+    "correct": "instrument",
+    "options": ["instrument", "eina", "joguina", "moble"]
+  },
+  {
+    "word": "intelligent",
+    "correct": "intel·ligent",
+    "options": ["intel·ligent", "alt", "prim", "ràpid"]
+  },
+  {
+    "word": "interest",
+    "correct": "interès",
+    "options": ["interès", "avorriment", "por", "alegria"]
+  },
+  {
+    "word": "interesting",
+    "correct": "interessant",
+    "options": ["interessant", "car", "fosc", "dolç"]
+  },
+  {
+    "word": "international",
+    "correct": "internacional",
+    "options": ["internacional", "dolç", "ràpid", "fosc"]
+  },
+  {
+    "word": "interview",
+    "correct": "entrevista",
+    "options": ["entrevista", "cadira", "riu", "pa"]
+  },
+  {
+    "word": "into",
+    "correct": "dins",
+    "options": ["dins", "fora", "sobre", "sota"]
+  },
+  {
+    "word": "introduce",
+    "correct": "presentar",
+    "options": ["presentar", "amagar", "vendre", "cantar"]
+  },
+  {
+    "word": "invite",
+    "correct": "convidar",
+    "options": ["convidar", "netejar", "cuinar", "dibuixar"]
+  },
+  {
+    "word": "iron",
+    "correct": "ferro",
+    "options": ["ferro", "fusta", "plàstic", "vidre"]
+  },
+  {
+    "word": "island",
+    "correct": "illa",
+    "options": ["illa", "muntanya", "riu", "bosc"]
+  },
+  {
+    "word": "it",
+    "correct": "ho",
+    "options": ["ho", "jo", "tu", "nosaltres"]
+  },
+  {
+    "word": "jacket",
+    "correct": "jaqueta",
+    "options": ["jaqueta", "sabata", "barret", "guant"]
+  },
+  {
+    "word": "job",
+    "correct": "feina",
+    "options": ["feina", "escola", "joc", "festa"]
+  },
+  {
+    "word": "join",
+    "correct": "unir",
+    "options": ["unir", "trencar", "vendre", "perdre"]
+  },
+  {
+    "word": "joke",
+    "correct": "broma",
+    "options": ["broma", "cançó", "pel·lícula", "història"]
+  },
+  {
+    "word": "journey",
+    "correct": "viatge",
+    "options": ["viatge", "festa", "reunió", "classe"]
+  },
+  {
+    "word": "juice",
+    "correct": "suc",
+    "options": ["suc", "pa", "formatge", "arròs"]
+  },
+  {
+    "word": "jump",
+    "correct": "saltar",
+    "options": ["saltar", "caminar", "córrer", "nedar"]
+  },
+  {
+    "word": "just",
+    "correct": "només",
+    "options": ["només", "sempre", "mai", "sovint"]
+  },
+  {
+    "word": "keep",
+    "correct": "guardar",
+    "options": ["guardar", "llençar", "trencar", "perdre"]
+  },
+  {
+    "word": "key",
+    "correct": "clau",
+    "options": ["clau", "porta", "finestra", "paret"]
+  },
+  {
+    "word": "kill",
+    "correct": "matar",
+    "options": ["matar", "cantar", "ballar", "cuinar"]
+  },
+  {
+    "word": "kind",
+    "correct": "amable",
+    "options": ["amable", "ràpid", "alt", "fosc"]
+  },
+  {
+    "word": "kitchen",
+    "correct": "cuina",
+    "options": ["cuina", "dormitori", "saló", "bany"]
+  },
+  {
+    "word": "knife",
+    "correct": "ganivet",
+    "options": ["ganivet", "forquilla", "cullera", "plat"]
+  },
+  {
+    "word": "know",
+    "correct": "saber",
+    "options": ["saber", "oblidar", "perdre", "trencar"]
+  },
+  {
+    "word": "lake",
+    "correct": "llac",
+    "options": ["llac", "cadira", "llibre", "sabata"]
+  },
+  {
+    "word": "land",
+    "correct": "terra",
+    "options": ["terra", "cel", "mar", "foc"]
+  },
+  {
+    "word": "language",
+    "correct": "idioma",
+    "options": ["idioma", "música", "art", "esport"]
+  },
+  {
+    "word": "large",
+    "correct": "gran",
+    "options": ["gran", "ràpid", "fosc", "dolç"]
+  },
+  {
+    "word": "last",
+    "correct": "últim",
+    "options": ["últim", "ràpid", "fàcil", "car"]
+  },
+  {
+    "word": "late",
+    "correct": "tard",
+    "options": ["tard", "ràpid", "lent", "fosc"]
+  },
+  {
+    "word": "laugh",
+    "correct": "riure",
+    "options": ["riure", "cantar", "ballar", "cuinar"]
+  },
+  {
+    "word": "law",
+    "correct": "llei",
+    "options": ["llei", "art", "ciència", "religió"]
+  },
+  {
+    "word": "leader",
+    "correct": "líder",
+    "options": ["líder", "professor", "metge", "cuiner"]
+  },
+  {
+    "word": "learn",
+    "correct": "aprendre",
+    "options": ["aprendre", "oblidar", "perdre", "trencar"]
+  },
+  {
+    "word": "leave",
+    "correct": "marxar",
+    "options": ["marxar", "cantar", "ballar", "cuinar"]
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "word": "sit",
+    "correct": "seure",
+    "options": ["seure", "menjar", "córrer", "escriure"]
+  },
+  {
+    "word": "situation",
+    "correct": "situació",
+    "options": ["situació", "pregunta", "resposta", "problema"]
+  },
+  {
+    "word": "size",
+    "correct": "mida",
+    "options": ["mida", "color", "pes", "preu"]
+  },
+  {
+    "word": "skirt",
+    "correct": "faldilla",
+    "options": ["faldilla", "camisa", "sabata", "barret"]
+  },
+  {
+    "word": "sky",
+    "correct": "cel",
+    "options": ["cel", "mar", "terra", "riu"]
+  },
+  {
+    "word": "sleep",
+    "correct": "dormir",
+    "options": ["dormir", "menjar", "cantar", "ballar"]
+  },
+  {
+    "word": "slow",
+    "correct": "lent",
+    "options": ["lent", "ràpid", "alt", "fosc"]
+  },
+  {
+    "word": "small",
+    "correct": "petit",
+    "options": ["petit", "gran", "car", "fàcil"]
+  },
+  {
+    "word": "smart",
+    "correct": "llest",
+    "options": ["llest", "car", "vell", "trist"]
+  },
+  {
+    "word": "smell",
+    "correct": "olor",
+    "options": ["olor", "so", "gust", "color"]
+  },
+  {
+    "word": "smile",
+    "correct": "somriure",
+    "options": ["somriure", "plorar", "cridar", "córrer"]
+  },
+  {
+    "word": "smoke",
+    "correct": "fum",
+    "options": ["fum", "aigua", "foc", "vent"]
+  },
+  {
+    "word": "smooth",
+    "correct": "llis",
+    "options": ["llis", "dur", "brut", "calent"]
+  },
+  {
+    "word": "snow",
+    "correct": "neu",
+    "options": ["neu", "pluja", "sol", "vent"]
+  },
+  {
+    "word": "so",
+    "correct": "tan",
+    "options": ["tan", "aquí", "allà", "ara"]
+  },
+  {
+    "word": "society",
+    "correct": "societat",
+    "options": ["societat", "govern", "empresa", "família"]
+  },
+  {
+    "word": "soft",
+    "correct": "tou",
+    "options": ["tou", "dur", "calent", "sec"]
+  },
+  {
+    "word": "soldier",
+    "correct": "soldat",
+    "options": ["soldat", "metge", "professor", "cuiner"]
+  },
+  {
+    "word": "some",
+    "correct": "alguns",
+    "options": ["alguns", "tots", "cap", "molts"]
+  },
+  {
+    "word": "something",
+    "correct": "quelcom",
+    "options": ["quelcom", "ningú", "tothom", "cadascú"]
+  },
+  {
+    "word": "sometimes",
+    "correct": "vegades",
+    "options": ["vegades", "sempre", "mai", "aviat"]
+  },
+  {
+    "word": "somewhere",
+    "correct": "enlloc",
+    "options": ["enlloc", "aquí", "allà", "arreu"]
+  },
+  {
+    "word": "son",
+    "correct": "fill",
+    "options": ["fill", "filla", "germà", "pare"]
+  },
+  {
+    "word": "song",
+    "correct": "cançó",
+    "options": ["cançó", "llibre", "pel·lícula", "quadre"]
+  },
+  {
+    "word": "soon",
+    "correct": "aviat",
+    "options": ["aviat", "tard", "mai", "sempre"]
+  },
+  {
+    "word": "sorry",
+    "correct": "perdó",
+    "options": ["perdó", "gràcies", "adéu", "sisplau"]
+  },
+  {
+    "word": "sound",
+    "correct": "so",
+    "options": ["so", "llum", "olor", "calor"]
+  },
+  {
+    "word": "south",
+    "correct": "sud",
+    "options": ["sud", "nord", "est", "oest"]
+  },
+  {
+    "word": "space",
+    "correct": "espai",
+    "options": ["espai", "llibre", "cotxe", "riu"]
+  },
+  {
+    "word": "speak",
+    "correct": "parlar",
+    "options": ["parlar", "escriure", "escoltar", "llegir"]
+  },
+  {
+    "word": "special",
+    "correct": "especial",
+    "options": ["especial", "normal", "fàcil", "car"]
+  },
+  {
+    "word": "speed",
+    "correct": "velocitat",
+    "options": ["velocitat", "pes", "alçada", "mida"]
+  },
+  {
+    "word": "speech",
+    "correct": "discurs",
+    "options": ["discurs", "cançó", "llibre", "carta"]
+  },
+  {
+    "word": "spend",
+    "correct": "gastar",
+    "options": ["gastar", "guanyar", "estalviar", "perdre"]
+  },
+  {
+    "word": "spoil",
+    "correct": "espatllar",
+    "options": ["espatllar", "arreglar", "netejar", "construir"]
+  },
+  {
+    "word": "sport",
+    "correct": "esport",
+    "options": ["esport", "art", "música", "ciència"]
+  },
+  {
+    "word": "spot",
+    "correct": "lloc",
+    "options": ["lloc", "color", "so", "temps"]
+  },
+  {
+    "word": "spread",
+    "correct": "estendre",
+    "options": ["estendre", "doblegar", "tallar", "netejar"]
+  },
+  {
+    "word": "spring",
+    "correct": "primavera",
+    "options": ["primavera", "estiu", "tardor", "hivern"]
+  },
+  {
+    "word": "square",
+    "correct": "quadrat",
+    "options": ["quadrat", "cercle", "triangle", "rectangle"]
+  },
+  {
+    "word": "stand",
+    "correct": "aixecar-se",
+    "options": ["aixecar-se", "seure", "caminar", "saltar"]
+  },
+  {
+    "word": "star",
+    "correct": "estrella",
+    "options": ["estrella", "lluna", "sol", "núvol"]
+  },
+  {
+    "word": "start",
+    "correct": "començar",
+    "options": ["començar", "acabar", "parar", "continuar"]
+  },
+  {
+    "word": "state",
+    "correct": "estat",
+    "options": ["estat", "ciutat", "poble", "riu"]
+  },
+  {
+    "word": "station",
+    "correct": "estació",
+    "options": ["estació", "llibreria", "hospital", "escola"]
+  },
+  {
+    "word": "stay",
+    "correct": "quedar-se",
+    "options": ["quedar-se", "marxar", "arribar", "sortir"]
+  },
+  {
+    "word": "steal",
+    "correct": "robar",
+    "options": ["robar", "comprar", "vendre", "donar"]
+  },
+  {
+    "word": "step",
+    "correct": "pas",
+    "options": ["pas", "cotxe", "llibre", "taula"]
+  },
+  {
+    "word": "still",
+    "correct": "encara",
+    "options": ["encara", "mai", "sempre", "aviat"]
+  },
+  {
+    "word": "stone",
+    "correct": "pedra",
+    "options": ["pedra", "fusta", "ferro", "vidre"]
+  },
+  {
+    "word": "stop",
+    "correct": "parar",
+    "options": ["parar", "començar", "continuar", "córrer"]
+  },
+  {
+    "word": "store",
+    "correct": "botiga",
+    "options": ["botiga", "escola", "hospital", "banc"]
+  },
+  {
+    "word": "story",
+    "correct": "història",
+    "options": ["història", "cançó", "poema", "carta"]
+  },
+  {
+    "word": "straight",
+    "correct": "recte",
+    "options": ["recte", "corb", "tort", "ample"]
+  },
+  {
+    "word": "strange",
+    "correct": "estrany",
+    "options": ["estrany", "normal", "fàcil", "car"]
+  },
+  {
+    "word": "street",
+    "correct": "carrer",
+    "options": ["carrer", "riu", "muntanya", "platja"]
+  },
+  {
+    "word": "strong",
+    "correct": "fort",
+    "options": ["fort", "feble", "petit", "lent"]
+  },
+  {
+    "word": "student",
+    "correct": "estudiant",
+    "options": ["estudiant", "professor", "metge", "cuiner"]
+  },
+  {
+    "word": "study",
+    "correct": "estudiar",
+    "options": ["estudiar", "treballar", "jugar", "dormir"]
+  },
+  {
+    "word": "subject",
+    "correct": "tema",
+    "options": ["tema", "llibre", "pregunta", "resposta"]
+  },
+  {
+    "word": "success",
+    "correct": "èxit",
+    "options": ["èxit", "fracàs", "problema", "error"]
+  },
+  {
+    "word": "successful",
+    "correct": "reeixit",
+    "options": ["reeixit", "fracassat", "difícil", "fàcil"]
+  },
+  {
+    "word": "suddenly",
+    "correct": "sobtadament",
+    "options": ["sobtadament", "lentament", "aviat", "sempre"]
+  },
+  {
+    "word": "sugar",
+    "correct": "sucre",
+    "options": ["sucre", "sal", "oli", "aigua"]
+  },
+  {
+    "word": "suggest",
+    "correct": "suggerir",
+    "options": ["suggerir", "preguntar", "respondre", "decidir"]
+  },
+  {
+    "word": "such",
+    "correct": "tal",
+    "options": ["tal", "cada", "algun", "cap"]
+  },
+  {
+    "word": "suit",
+    "correct": "vestit",
+    "options": ["vestit", "camisa", "sabata", "barret"]
+  },
+  {
+    "word": "summer",
+    "correct": "estiu",
+    "options": ["estiu", "hivern", "tardor", "primavera"]
+  },
+  {
+    "word": "sun",
+    "correct": "sol",
+    "options": ["sol", "lluna", "estrella", "núvol"]
+  },
+  {
+    "word": "supply",
+    "correct": "subministrament",
+    "options": ["subministrament", "demanda", "producte", "servei"]
+  },
+  {
+    "word": "support",
+    "correct": "suport",
+    "options": ["suport", "problema", "resposta", "pregunta"]
+  },
+  {
+    "word": "sure",
+    "correct": "segur",
+    "options": ["segur", "content", "trist", "cansat"]
+  },
+  {
+    "word": "surface",
+    "correct": "superfície",
+    "options": ["superfície", "fons", "centre", "costat"]
+  },
+  {
+    "word": "sweet",
+    "correct": "dolç",
+    "options": ["dolç", "amarg", "salat", "àcid"]
+  },
+  {
+    "word": "swim",
+    "correct": "nedar",
+    "options": ["nedar", "córrer", "volar", "caminar"]
+  },
+  {
+    "word": "system",
+    "correct": "sistema",
+    "options": ["sistema", "problema", "pregunta", "resposta"]
+  },
+  {
+    "word": "table",
+    "correct": "taula",
+    "options": ["taula", "cadira", "porta", "finestra"]
+  },
+  {
+    "word": "take",
+    "correct": "agafar",
+    "options": ["agafar", "donar", "deixar", "portar"]
+  },
+  {
+    "word": "talk",
+    "correct": "parlar",
+    "options": ["parlar", "escoltar", "escriure", "llegir"]
+  },
+  {
+    "word": "tall",
+    "correct": "alt",
+    "options": ["alt", "baix", "gros", "prim"]
+  },
+  {
+    "word": "taste",
+    "correct": "gust",
+    "options": ["gust", "olor", "so", "color"]
+  },
+  {
+    "word": "tea",
+    "correct": "te",
+    "options": ["te", "cafè", "aigua", "llet"]
+  },
+  {
+    "word": "teach",
+    "correct": "ensenyar",
+    "options": ["ensenyar", "aprendre", "estudiar", "jugar"]
+  },
+  {
+    "word": "teacher",
+    "correct": "professor",
+    "options": ["professor", "estudiant", "metge", "advocat"]
+  },
+  {
+    "word": "television",
+    "correct": "televisió",
+    "options": ["televisió", "ràdio", "telèfon", "ordinador"]
+  },
+  {
+    "word": "tell",
+    "correct": "dir",
+    "options": ["dir", "preguntar", "escoltar", "escriure"]
+  },
+  {
+    "word": "temperature",
+    "correct": "temperatura",
+    "options": ["temperatura", "pes", "alçada", "velocitat"]
+  },
+  {
+    "word": "test",
+    "correct": "prova",
+    "options": ["prova", "pregunta", "resposta", "llibre"]
+  },
+  {
+    "word": "than",
+    "correct": "que",
+    "options": ["que", "però", "i", "o"]
+  },
+  {
+    "word": "thank",
+    "correct": "agrair",
+    "options": ["agrair", "perdonar", "ajudar", "saludar"]
+  },
+  {
+    "word": "that",
+    "correct": "això",
+    "options": ["això", "aquest", "algun", "cap"]
+  },
+  {
+    "word": "the",
+    "correct": "el",
+    "options": ["el", "un", "uns", "unes"]
+  },
+  {
+    "word": "their",
+    "correct": "seu",
+    "options": ["seu", "meu", "teu", "nostre"]
+  },
+  {
+    "word": "then",
+    "correct": "llavors",
+    "options": ["llavors", "ara", "abans", "mai"]
+  },
+  {
+    "word": "there",
+    "correct": "allà",
+    "options": ["allà", "aquí", "amunt", "avall"]
+  },
+  {
+    "word": "these",
+    "correct": "aquests",
+    "options": ["aquests", "aquells", "aquell", "algun"]
+  },
+  {
+    "word": "they",
+    "correct": "ells",
+    "options": ["ells", "nosaltres", "vosaltres", "jo"]
+  },
+  {
+    "word": "thick",
+    "correct": "gruixut",
+    "options": ["gruixut", "prim", "lleuger", "pesat"]
+  },
+  {
+    "word": "thin",
+    "correct": "prim",
+    "options": ["prim", "gruixut", "alt", "baix"]
+  },
+  {
+    "word": "thing",
+    "correct": "cosa",
+    "options": ["cosa", "persona", "lloc", "moment"]
+  }
+]

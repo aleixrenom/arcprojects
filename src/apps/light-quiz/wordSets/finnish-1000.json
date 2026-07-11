@@ -2752,7 +2752,7 @@
   {
     "word": "osa",
     "correct": "fraction",
-    "options": ["fraction", "whole", "part", "half"]
+    "options": ["fraction", "whole", "planet", "half"]
   },
   {
     "word": "metsä",
@@ -4516,8 +4516,8 @@
   },
   {
     "word": "aika",
-    "correct": "pretty",
-    "options": ["pretty", "hardly", "very", "barely"]
+    "correct": "fairly",
+    "options": ["fairly", "hardly", "very", "barely"]
   },
   {
     "word": "taito",
@@ -4956,8 +4956,8 @@
   },
   {
     "word": "vaatia",
-    "correct": "require",
-    "options": ["require", "ask", "want", "hope"]
+    "correct": "demand",
+    "options": ["demand", "chase", "argue", "hope"]
   },
   {
     "word": "laaja",
