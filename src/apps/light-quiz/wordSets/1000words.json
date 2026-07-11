@@ -172,7 +172,7 @@
   {
     "word": "muita",
     "correct": "other",
-    "options": ["other", "another", "different", "same"]
+    "options": ["other", "same", "next", "last"]
   },
   {
     "word": "olivat",
@@ -182,12 +182,12 @@
   {
     "word": "joka",
     "correct": "which",
-    "options": ["which", "that", "who", "whom"]
+    "options": ["which", "who", "where", "when"]
   },
   {
     "word": "tehdä",
     "correct": "do",
-    "options": ["do", "make", "take", "get"]
+    "options": ["do", "take", "get", "try"]
   },
   {
     "word": "niiden",
@@ -217,27 +217,27 @@
   {
     "word": "sanoi",
     "correct": "said",
-    "options": ["said", "told", "spoke", "wrote"]
+    "options": ["said", "heard", "asked", "wrote"]
   },
   {
-    "word": "an",
-    "correct": "an",
-    "options": ["an", "a", "the", "some"]
+    "word": "porukka",
+    "correct": "crowd",
+    "options": ["crowd", "carrot", "pillow", "giant"]
   },
   {
     "word": "kukin",
     "correct": "each",
-    "options": ["each", "every", "all", "both"]
+    "options": ["each", "all", "both", "none"]
   },
   {
     "word": "kertoa",
     "correct": "tell",
-    "options": ["tell", "say", "speak", "ask"]
+    "options": ["tell", "ask", "show", "warn"]
   },
   {
-    "word": "ei",
-    "correct": "does",
-    "options": ["does", "do", "did", "done"]
+    "word": "tarvikkeet",
+    "correct": "supplies",
+    "options": ["supplies", "ideas", "consequences", "toys"]
   },
   {
     "word": "tarkenee",
@@ -252,7 +252,7 @@
   {
     "word": "haluta",
     "correct": "want",
-    "options": ["want", "need", "wish", "hope"]
+    "options": ["want", "need", "hope", "fear"]
   },
   {
     "word": "ilma",
@@ -262,7 +262,7 @@
   {
     "word": "hyvin",
     "correct": "well",
-    "options": ["well", "good", "fine", "better"]
+    "options": ["well", "badly", "slowly", "quickly"]
   },
   {
     "word": "myös",
@@ -272,7 +272,7 @@
   {
     "word": "pelata",
     "correct": "play",
-    "options": ["play", "game", "sport", "match"]
+    "options": ["play", "game", "sport", "rest"]
   },
   {
     "word": "pieni",
@@ -306,8 +306,8 @@
   },
   {
     "word": "portti",
-    "correct": "port",
-    "options": ["port", "gate", "door", "harbor"]
+    "correct": "gate",
+    "options": ["gate", "wall", "bridge", "harbor"]
   },
   {
     "word": "suuri",
@@ -317,7 +317,7 @@
   {
     "word": "loitsu",
     "correct": "spell",
-    "options": ["spell", "magic", "charm", "curse"]
+    "options": ["spell", "magic", "curse", "potion"]
   },
   {
     "word": "lisätä",
@@ -327,7 +327,7 @@
   {
     "word": "jopa",
     "correct": "even",
-    "options": ["even", "still", "yet", "already"]
+    "options": ["even", "only", "also", "almost"]
   },
   {
     "word": "maa",
@@ -362,12 +362,12 @@
   {
     "word": "seurata",
     "correct": "follow",
-    "options": ["follow", "lead", "watch", "chase"]
+    "options": ["follow", "lead", "watch", "avoid"]
   },
   {
     "word": "teko",
     "correct": "act",
-    "options": ["act", "deed", "show", "play"]
+    "options": ["act", "word", "idea", "plan"]
   },
   {
     "word": "miksi",
@@ -377,7 +377,7 @@
   {
     "word": "kysyä",
     "correct": "ask",
-    "options": ["ask", "answer", "tell", "say"]
+    "options": ["ask", "answer", "tell", "shout"]
   },
   {
     "word": "miehet",
@@ -387,7 +387,7 @@
   {
     "word": "muutos",
     "correct": "change",
-    "options": ["change", "shift", "turn", "move"]
+    "options": ["change", "turn", "move", "stay"]
   },
   {
     "word": "meni",
@@ -397,12 +397,12 @@
   {
     "word": "valoa",
     "correct": "light",
-    "options": ["light", "dark", "glow", "shade"]
+    "options": ["light", "dark", "shade", "color"]
   },
   {
     "word": "tyyppi",
     "correct": "kind",
-    "options": ["kind", "type", "sort", "class"]
+    "options": ["kind", "color", "shape", "size"]
   },
   {
     "word": "pois",
@@ -412,7 +412,7 @@
   {
     "word": "tarve",
     "correct": "need",
-    "options": ["need", "want", "wish", "hope"]
+    "options": ["need", "want", "hope", "fear"]
   },
   {
     "word": "talo",
@@ -422,12 +422,12 @@
   {
     "word": "kuva",
     "correct": "picture",
-    "options": ["picture", "photo", "drawing", "painting"]
+    "options": ["picture", "song", "story", "game"]
   },
   {
     "word": "kokeilla",
     "correct": "try",
-    "options": ["try", "avoid", "test", "check"]
+    "options": ["try", "avoid", "forget", "watch"]
   },
   {
     "word": "meitä",
@@ -447,7 +447,7 @@
   {
     "word": "kohta",
     "correct": "point",
-    "options": ["point", "dot", "spot", "place"]
+    "options": ["point", "idea", "line", "area"]
   },
   {
     "word": "äiti",
@@ -457,17 +457,17 @@
   {
     "word": "maailma",
     "correct": "world",
-    "options": ["world", "earth", "universe", "planet"]
+    "options": ["world", "country", "universe", "city"]
   },
   {
     "word": "lähellä",
     "correct": "near",
-    "options": ["near", "far", "close", "next"]
+    "options": ["near", "far", "next", "around"]
   },
   {
     "word": "rakentaa",
     "correct": "build",
-    "options": ["build", "destroy", "repair", "create"]
+    "options": ["build", "destroy", "repair", "sell"]
   },
   {
     "word": "itse",
@@ -492,17 +492,17 @@
   {
     "word": "uusi",
     "correct": "new",
-    "options": ["new", "old", "young", "fresh"]
+    "options": ["new", "old", "young", "clean"]
   },
   {
     "word": "työ",
     "correct": "work",
-    "options": ["work", "hobby", "obligation", "duty"]
+    "options": ["work", "hobby", "obligation", "rest"]
   },
   {
     "word": "kaikki",
-    "correct": "any",
-    "options": ["any", "all", "some", "none"]
+    "correct": "all",
+    "options": ["all", "some", "none", "many"]
   },
   {
     "word": "uusia",
@@ -512,12 +512,12 @@
   {
     "word": "saippua",
     "correct": "soap",
-    "options": ["soap", "shampoo", "detergent", "lotion"]
+    "options": ["soap", "shampoo", "lotion", "towel"]
   },
   {
     "word": "osa",
     "correct": "part",
-    "options": ["part", "whole", "piece", "section"]
+    "options": ["part", "whole", "level", "shape"]
   },
   {
     "word": "ottaa",
@@ -537,12 +537,12 @@
   {
     "word": "tehty",
     "correct": "made",
-    "options": ["made", "built", "done", "fixed"]
+    "options": ["made", "broken", "lost", "found"]
   },
   {
     "word": "asua",
     "correct": "live",
-    "options": ["live", "stay", "visit", "move"]
+    "options": ["live", "visit", "move", "leave"]
   },
   {
     "word": "missä",
@@ -562,12 +562,12 @@
   {
     "word": "vähän",
     "correct": "little",
-    "options": ["little", "much", "many", "small"]
+    "options": ["little", "much", "many", "loud"]
   },
   {
     "word": "vain",
     "correct": "only",
-    "options": ["only", "also", "even", "just"]
+    "options": ["only", "also", "even", "never"]
   },
   {
     "word": "pyöreä",
@@ -627,12 +627,12 @@
   {
     "word": "nimi",
     "correct": "name",
-    "options": ["name", "title", "label", "word"]
+    "options": ["name", "word", "number", "letter"]
   },
   {
     "word": "hyvin",
     "correct": "very",
-    "options": ["very", "quite", "really", "almost"]
+    "options": ["very", "almost", "never", "always"]
   },
   {
     "word": "läpi",
@@ -642,7 +642,7 @@
   {
     "word": "vain",
     "correct": "just",
-    "options": ["just", "now", "only", "still"]
+    "options": ["just", "now", "still", "again"]
   },
   {
     "word": "lomake",
@@ -652,12 +652,12 @@
   {
     "word": "lause",
     "correct": "sentence",
-    "options": ["sentence", "word", "phrase", "letter"]
+    "options": ["sentence", "word", "letter", "book"]
   },
   {
     "word": "suuri",
     "correct": "great",
-    "options": ["great", "small", "good", "fine"]
+    "options": ["great", "small", "narrow", "short"]
   },
   {
     "word": "ajattelen",
@@ -687,7 +687,7 @@
   {
     "word": "eroavat",
     "correct": "differ",
-    "options": ["differ", "agree", "match", "equal"]
+    "options": ["differ", "agree", "match", "change"]
   },
   {
     "word": "vuoro",
@@ -697,7 +697,7 @@
   {
     "word": "syy",
     "correct": "cause",
-    "options": ["cause", "effect", "result", "reason"]
+    "options": ["cause", "effect", "plan", "chance"]
   },
   {
     "word": "paljon",
@@ -727,12 +727,12 @@
   {
     "word": "poika",
     "correct": "boy",
-    "options": ["boy", "girl", "man", "son"]
+    "options": ["boy", "girl", "man", "kid"]
   },
   {
     "word": "vanha",
     "correct": "old",
-    "options": ["old", "new", "young", "ancient"]
+    "options": ["old", "new", "young", "tall"]
   },
   {
     "word": "liian",
@@ -742,7 +742,7 @@
   {
     "word": "sama",
     "correct": "same",
-    "options": ["same", "different", "other", "another"]
+    "options": ["same", "different", "big", "new"]
   },
   {
     "word": "hän",
@@ -782,12 +782,12 @@
   {
     "word": "tapa",
     "correct": "way",
-    "options": ["way", "road", "path", "goal"]
+    "options": ["way", "goal", "idea", "rule"]
   },
   {
     "word": "noin",
     "correct": "about",
-    "options": ["about", "around", "near", "almost"]
+    "options": ["about", "near", "almost", "exactly"]
   },
   {
     "word": "monet",
@@ -817,12 +817,12 @@
   {
     "word": "kuten",
     "correct": "like",
-    "options": ["like", "than", "as", "such"]
+    "options": ["like", "than", "such", "also"]
   },
   {
     "word": "niin",
     "correct": "so",
-    "options": ["so", "too", "very", "thus"]
+    "options": ["so", "too", "very", "still"]
   },
   {
     "word": "nämä",
@@ -832,22 +832,22 @@
   {
     "word": "hänen",
     "correct": "hers",
-    "options": ["hers", "her", "their", "them"]
+    "options": ["hers", "their", "them", "him"]
   },
   {
     "word": "pitkä",
     "correct": "long",
-    "options": ["long", "short", "wide", "tall"]
+    "options": ["long", "short", "wide", "thin"]
   },
   {
     "word": "tehdä",
     "correct": "make",
-    "options": ["make", "do", "break", "fix"]
+    "options": ["make", "break", "fix", "turn"]
   },
   {
     "word": "asia",
     "correct": "thing",
-    "options": ["thing", "person", "place", "object"]
+    "options": ["thing", "person", "place", "idea"]
   },
   {
     "word": "katso",
@@ -857,7 +857,7 @@
   {
     "word": "häntä",
     "correct": "him/her",
-    "options": ["him/her", "he/she", "them", "us"]
+    "options": ["him/her", "them", "us", "you"]
   },
   {
     "word": "kaksi",
@@ -877,7 +877,7 @@
   {
     "word": "lisää",
     "correct": "more",
-    "options": ["more", "less", "most", "extra"]
+    "options": ["more", "less", "most", "next"]
   },
   {
     "word": "päivä",
@@ -892,12 +892,12 @@
   {
     "word": "mennä",
     "correct": "go",
-    "options": ["go", "come", "stay", "leave"]
+    "options": ["go", "come", "stay", "wait"]
   },
   {
     "word": "tulla",
     "correct": "come",
-    "options": ["come", "go", "arrive", "depart"]
+    "options": ["come", "go", "depart", "stay"]
   },
   {
     "word": "teki",
@@ -907,12 +907,12 @@
   {
     "word": "määrä",
     "correct": "number",
-    "options": ["number", "count", "amount", "digit"]
+    "options": ["number", "digit", "size", "list"]
   },
   {
     "word": "ääni",
     "correct": "sound",
-    "options": ["sound", "color", "silence", "voice"]
+    "options": ["sound", "color", "silence", "light"]
   },
   {
     "word": "ei",
@@ -977,7 +977,7 @@
   {
     "word": "alas",
     "correct": "down",
-    "options": ["down", "up", "low", "below"]
+    "options": ["down", "up", "low", "away"]
   },
   {
     "word": "puoli",
@@ -1092,7 +1092,7 @@
   {
     "word": "välillä",
     "correct": "between",
-    "options": ["between", "among", "inside", "outside"]
+    "options": ["between", "inside", "outside", "beside"]
   },
   {
     "word": "valtio",
@@ -1117,7 +1117,7 @@
   {
     "word": "viimeinen",
     "correct": "last",
-    "options": ["last", "first", "next", "final"]
+    "options": ["last", "first", "next", "early"]
   },
   {
     "word": "päästää",
@@ -1132,7 +1132,7 @@
   {
     "word": "kaupunki",
     "correct": "city",
-    "options": ["city", "country", "town", "road"]
+    "options": ["city", "country", "road", "farm"]
   },
   {
     "word": "puu",
@@ -1302,7 +1302,7 @@
   {
     "word": "vuori",
     "correct": "mountain",
-    "options": ["mountain", "hill", "valley", "plain"]
+    "options": ["mountain", "valley", "plain", "river"]
   },
   {
     "word": "pysäkki",
@@ -1452,7 +1452,7 @@
   {
     "word": "merkki",
     "correct": "mark",
-    "options": ["mark", "stain", "hole", "spot"]
+    "options": ["mark", "stain", "hole", "line"]
   },
   {
     "word": "usein",
@@ -1462,7 +1462,7 @@
   {
     "word": "kirje",
     "correct": "letter",
-    "options": ["letter", "note", "card", "mail"]
+    "options": ["letter", "card", "book", "gift"]
   },
   {
     "word": "asti",
@@ -1477,7 +1477,7 @@
   {
     "word": "joki",
     "correct": "river",
-    "options": ["river", "lake", "stream", "ocean"]
+    "options": ["river", "lake", "ocean", "pond"]
   },
   {
     "word": "auto",
@@ -1507,7 +1507,7 @@
   {
     "word": "tavallinen",
     "correct": "plain",
-    "options": ["plain", "simple", "fancy", "clear"]
+    "options": ["plain", "fancy", "dark", "loud"]
   },
   {
     "word": "tyttö",
@@ -1517,27 +1517,27 @@
   {
     "word": "tavallinen",
     "correct": "usual",
-    "options": ["usual", "common", "rare", "strange"]
+    "options": ["usual", "rare", "strange", "modern"]
   },
   {
     "word": "nuori",
     "correct": "young",
-    "options": ["young", "old", "new", "recent"]
+    "options": ["young", "old", "new", "tall"]
   },
   {
     "word": "valmis",
     "correct": "ready",
-    "options": ["ready", "prepared", "busy", "late"]
+    "options": ["ready", "busy", "late", "eager"]
   },
   {
     "word": "edellä",
     "correct": "above",
-    "options": ["above", "below", "under", "beside"]
+    "options": ["above", "below", "beside", "behind"]
   },
   {
     "word": "koskaan",
     "correct": "ever",
-    "options": ["ever", "never", "always", "sometimes"]
+    "options": ["ever", "always", "sometimes", "often"]
   },
   {
     "word": "punainen",
@@ -1552,7 +1552,7 @@
   {
     "word": "vaikka",
     "correct": "though",
-    "options": ["though", "instead", "unless", "despite"]
+    "options": ["though", "instead", "unless", "because"]
   },
   {
     "word": "tuntea",
@@ -1592,12 +1592,12 @@
   {
     "word": "suora",
     "correct": "direct",
-    "options": ["direct", "straight", "curved", "broken"]
+    "options": ["direct", "curved", "broken", "quick"]
   },
   {
     "word": "aiheuttaa",
-    "correct": "pose",
-    "options": ["pose", "sit", "stand", "lie"]
+    "correct": "cause",
+    "options": ["cause", "stop", "allow", "copy"]
   },
   {
     "word": "jätä",
@@ -1622,7 +1622,7 @@
   {
     "word": "tuote",
     "correct": "product",
-    "options": ["product", "price", "brand", "item"]
+    "options": ["product", "price", "brand", "cost"]
   },
   {
     "word": "musta",
@@ -1642,7 +1642,7 @@
   {
     "word": "luokka",
     "correct": "class",
-    "options": ["class", "group", "team", "section"]
+    "options": ["class", "team", "section", "color"]
   },
   {
     "word": "tuuli",
@@ -1667,12 +1667,12 @@
   {
     "word": "laiva",
     "correct": "ship",
-    "options": ["ship", "boat", "plane", "car"]
+    "options": ["ship", "plane", "car", "train"]
   },
   {
     "word": "alue",
     "correct": "area",
-    "options": ["area", "zone", "spot", "part"]
+    "options": ["area", "spot", "part", "shape"]
   },
   {
     "word": "puoli",
@@ -1682,7 +1682,7 @@
   {
     "word": "kallio",
     "correct": "rock",
-    "options": ["rock", "stone", "sand", "mud"]
+    "options": ["rock", "sand", "mud", "wood"]
   },
   {
     "word": "järjestys",
@@ -1707,12 +1707,12 @@
   {
     "word": "pala",
     "correct": "piece",
-    "options": ["piece", "set", "whole", "slice"]
+    "options": ["piece", "set", "whole", "group"]
   },
   {
     "word": "kertoi",
     "correct": "told",
-    "options": ["told", "said", "asked", "heard"]
+    "options": ["told", "asked", "heard", "wrote"]
   },
   {
     "word": "tiesi",
@@ -1726,13 +1726,13 @@
   },
   {
     "word": "koska",
-    "correct": "since",
-    "options": ["since", "because", "during", "until"]
+    "correct": "because",
+    "options": ["because", "during", "until", "instead"]
   },
   {
     "word": "alkuun",
-    "correct": "top",
-    "options": ["top", "bottom", "side", "front"]
+    "correct": "beginning",
+    "options": ["beginning", "end", "middle", "delay"]
   },
   {
     "word": "koko",
@@ -1747,7 +1747,7 @@
   {
     "word": "katu",
     "correct": "street",
-    "options": ["street", "road", "path", "lane"]
+    "options": ["street", "house", "yard", "park"]
   },
   {
     "word": "tuuma",
@@ -1767,7 +1767,7 @@
   {
     "word": "kurssi",
     "correct": "course",
-    "options": ["course", "class", "lesson", "track"]
+    "options": ["course", "track", "plan", "price"]
   },
   {
     "word": "pysyä",
@@ -1787,7 +1787,7 @@
   {
     "word": "voima",
     "correct": "force",
-    "options": ["force", "power", "weight", "mass"]
+    "options": ["force", "weight", "mass", "speed"]
   },
   {
     "word": "sininen",
@@ -1797,7 +1797,7 @@
   {
     "word": "esine",
     "correct": "object",
-    "options": ["object", "person", "place", "thing"]
+    "options": ["object", "person", "place", "idea"]
   },
   {
     "word": "päättää",
@@ -1842,7 +1842,7 @@
   {
     "word": "testi",
     "correct": "test",
-    "options": ["test", "lesson", "exam", "task"]
+    "options": ["test", "lesson", "task", "game"]
   },
   {
     "word": "ennätys",
@@ -1852,12 +1852,12 @@
   {
     "word": "veneen",
     "correct": "boat",
-    "options": ["boat", "ship", "raft", "canoe"]
+    "options": ["boat", "raft", "canoe", "car"]
   },
   {
     "word": "yhteinen",
     "correct": "common",
-    "options": ["common", "rare", "simple", "usual"]
+    "options": ["common", "rare", "simple", "quiet"]
   },
   {
     "word": "kulta",
@@ -1867,32 +1867,32 @@
   {
     "word": "mahdollinen",
     "correct": "possible",
-    "options": ["possible", "likely", "certain", "impossible"]
+    "options": ["possible", "certain", "impossible", "easy"]
   },
   {
     "word": "kone",
-    "correct": "plane",
-    "options": ["plane", "car", "bus", "train"]
+    "correct": "machine",
+    "options": ["machine", "tool", "building", "vehicle"]
   },
   {
     "word": "sijaansa",
     "correct": "stead",
-    "options": ["stead", "place", "room", "part"]
+    "options": ["stead", "room", "part", "time"]
   },
   {
     "word": "kuiva",
     "correct": "dry",
-    "options": ["dry", "wet", "damp", "moist"]
+    "options": ["dry", "wet", "damp", "hot"]
   },
   {
     "word": "ihme",
     "correct": "wonder",
-    "options": ["wonder", "miracle", "doubt", "surprise"]
+    "options": ["wonder", "doubt", "surprise", "fear"]
   },
   {
     "word": "nauraa",
     "correct": "laugh",
-    "options": ["laugh", "cry", "smile", "shout"]
+    "options": ["laugh", "cry", "shout", "sing"]
   },
   {
     "word": "tuhatta",
@@ -1902,7 +1902,7 @@
   {
     "word": "sitten",
     "correct": "ago",
-    "options": ["ago", "later", "before", "since"]
+    "options": ["ago", "later", "since", "recently"]
   },
   {
     "word": "juoksi",
@@ -1917,17 +1917,17 @@
   {
     "word": "peli",
     "correct": "game",
-    "options": ["game", "play", "sport", "match"]
+    "options": ["game", "play", "sport", "toy"]
   },
   {
     "word": "muoto",
     "correct": "shape",
-    "options": ["shape", "size", "color", "form"]
+    "options": ["shape", "size", "color", "weight"]
   },
   {
     "word": "rinnastaa",
     "correct": "equate",
-    "options": ["equate", "match", "compare", "divide"]
+    "options": ["equate", "divide", "separate", "combine"]
   },
   {
     "word": "kuuma",
@@ -1967,7 +1967,7 @@
   {
     "word": "kyllä",
     "correct": "yes",
-    "options": ["yes", "no", "maybe", "sure"]
+    "options": ["yes", "no", "maybe", "never"]
   },
   {
     "word": "kaukainen",
@@ -1992,27 +1992,27 @@
   {
     "word": "kieli",
     "correct": "language",
-    "options": ["language", "speech", "word", "voice"]
+    "options": ["language", "word", "voice", "book"]
   },
   {
     "word": "keskuudessa",
     "correct": "among",
-    "options": ["among", "between", "beside", "inside"]
+    "options": ["among", "beside", "inside", "outside"]
   },
   {
     "word": "yksikkö",
     "correct": "unit",
-    "options": ["unit", "group", "item", "part"]
+    "options": ["unit", "group", "part", "line"]
   },
   {
     "word": "voima",
     "correct": "power",
-    "options": ["power", "force", "energy", "weight"]
+    "options": ["power", "weight", "speed", "mass"]
   },
   {
     "word": "kaupunki",
     "correct": "town",
-    "options": ["town", "village", "city", "street"]
+    "options": ["town", "street", "road", "farm"]
   },
   {
     "word": "hieno",
@@ -2022,7 +2022,7 @@
   {
     "word": "tietty",
     "correct": "certain",
-    "options": ["certain", "random", "sure", "clear"]
+    "options": ["certain", "random", "clear", "known"]
   },
   {
     "word": "lentää",
@@ -2037,7 +2037,7 @@
   {
     "word": "johtaa",
     "correct": "lead",
-    "options": ["lead", "follow", "guide", "stop"]
+    "options": ["lead", "follow", "stop", "push"]
   },
   {
     "word": "itkeä",
@@ -2047,7 +2047,7 @@
   {
     "word": "pimeä",
     "correct": "dark",
-    "options": ["dark", "light", "bright", "clear"]
+    "options": ["dark", "light", "clear", "warm"]
   },
   {
     "word": "kone",
@@ -2057,7 +2057,7 @@
   {
     "word": "huomautus",
     "correct": "note",
-    "options": ["note", "letter", "page", "book"]
+    "options": ["note", "page", "book", "song"]
   },
   {
     "word": "odottaa",
@@ -2072,7 +2072,7 @@
   {
     "word": "kuva",
     "correct": "figure",
-    "options": ["figure", "draw", "sign", "mark"]
+    "options": ["figure", "draw", "sign", "number"]
   },
   {
     "word": "tähti",
@@ -2082,7 +2082,7 @@
   {
     "word": "laatikko",
     "correct": "box",
-    "options": ["box", "bag", "bin", "tray"]
+    "options": ["box", "bag", "tray", "shelf"]
   },
   {
     "word": "substantiivi",
@@ -2102,7 +2102,7 @@
   {
     "word": "oikea",
     "correct": "correct",
-    "options": ["correct", "wrong", "true", "exact"]
+    "options": ["correct", "wrong", "loud", "early"]
   },
   {
     "word": "pystyy",
@@ -2117,7 +2117,7 @@
   {
     "word": "tehty",
     "correct": "done",
-    "options": ["done", "made", "built", "fixed"]
+    "options": ["done", "built", "fixed", "gone"]
   },
   {
     "word": "kauneus",
@@ -2127,7 +2127,7 @@
   {
     "word": "ajaa",
     "correct": "drive",
-    "options": ["drive", "ride", "walk", "fly"]
+    "options": ["drive", "walk", "fly", "swim"]
   },
   {
     "word": "seisoi",
@@ -2157,7 +2157,7 @@
   {
     "word": "lopullinen",
     "correct": "final",
-    "options": ["final", "first", "last", "main"]
+    "options": ["final", "first", "main", "sole"]
   },
   {
     "word": "antoi",
@@ -2177,7 +2177,7 @@
   {
     "word": "nopea",
     "correct": "quick",
-    "options": ["quick", "slow", "heavy", "swift"]
+    "options": ["quick", "slow", "heavy", "old"]
   },
   {
     "word": "kehittää",
@@ -2187,7 +2187,7 @@
   {
     "word": "valtameri",
     "correct": "ocean",
-    "options": ["ocean", "sea", "lake", "river"]
+    "options": ["ocean", "lake", "river", "pond"]
   },
   {
     "word": "lämmin",
@@ -2207,12 +2207,12 @@
   {
     "word": "vahva",
     "correct": "strong",
-    "options": ["strong", "weak", "tough", "fast"]
+    "options": ["strong", "weak", "fast", "big"]
   },
   {
     "word": "erityistä",
     "correct": "special",
-    "options": ["special", "common", "unique", "rare"]
+    "options": ["special", "common", "rare", "plain"]
   },
   {
     "word": "mieli",
@@ -2237,7 +2237,7 @@
   {
     "word": "tuottaa",
     "correct": "produce",
-    "options": ["produce", "make", "buy", "sell"]
+    "options": ["produce", "buy", "sell", "grow"]
   },
   {
     "word": "tosiasia",
@@ -2272,12 +2272,12 @@
   {
     "word": "totta",
     "correct": "true",
-    "options": ["true", "false", "real", "fake"]
+    "options": ["true", "false", "fake", "known"]
   },
   {
     "word": "aikana",
     "correct": "during",
-    "options": ["during", "after", "before", "while"]
+    "options": ["during", "after", "before", "until"]
   },
   {
     "word": "sata",
@@ -2307,7 +2307,7 @@
   {
     "word": "pidä",
     "correct": "hold",
-    "options": ["hold", "drop", "keep", "take"]
+    "options": ["hold", "drop", "take", "push"]
   },
   {
     "word": "länsi",
@@ -2317,12 +2317,12 @@
   {
     "word": "maa",
     "correct": "ground",
-    "options": ["ground", "sky", "floor", "wall"]
+    "options": ["ground", "sky", "wall", "hill"]
   },
   {
     "word": "etua",
     "correct": "interest",
-    "options": ["interest", "benefit", "profit", "loss"]
+    "options": ["interest", "loss", "risk", "cost"]
   },
   {
     "word": "tavoittaa",
@@ -2332,7 +2332,7 @@
   {
     "word": "nopeasti",
     "correct": "fast",
-    "options": ["fast", "slow", "far", "swift"]
+    "options": ["fast", "slow", "far", "hard"]
   },
   {
     "word": "verbi",
@@ -2357,12 +2357,12 @@
   {
     "word": "taulukko",
     "correct": "table",
-    "options": ["table", "chair", "desk", "map"]
+    "options": ["table", "chair", "map", "book"]
   },
   {
     "word": "matkailu",
     "correct": "travel",
-    "options": ["travel", "stay", "move", "trip"]
+    "options": ["travel", "stay", "move", "rest"]
   },
   {
     "word": "vähemmän",
@@ -2382,7 +2382,7 @@
   {
     "word": "yksinkertainen",
     "correct": "simple",
-    "options": ["simple", "complex", "hard", "easy"]
+    "options": ["simple", "complex", "hard", "large"]
   },
   {
     "word": "useat",
@@ -2402,7 +2402,7 @@
   {
     "word": "sota",
     "correct": "war",
-    "options": ["war", "peace", "fight", "army"]
+    "options": ["war", "peace", "army", "flag"]
   },
   {
     "word": "asettaa",
@@ -2417,17 +2417,17 @@
   {
     "word": "kuvio",
     "correct": "pattern",
-    "options": ["pattern", "shape", "color", "form"]
+    "options": ["pattern", "shape", "color", "size"]
   },
   {
     "word": "hidas",
     "correct": "slow",
-    "options": ["slow", "fast", "quick", "lazy"]
+    "options": ["slow", "fast", "lazy", "heavy"]
   },
   {
     "word": "keskus",
     "correct": "center",
-    "options": ["center", "edge", "middle", "side"]
+    "options": ["center", "edge", "side", "top"]
   },
   {
     "word": "rakkaus",
@@ -2442,7 +2442,7 @@
   {
     "word": "raha",
     "correct": "money",
-    "options": ["money", "price", "cash", "gold"]
+    "options": ["money", "price", "gold", "time"]
   },
   {
     "word": "palvella",
@@ -2452,17 +2452,17 @@
   {
     "word": "ilmestyä",
     "correct": "appear",
-    "options": ["appear", "hide", "show", "seem"]
+    "options": ["appear", "hide", "show", "grow"]
   },
   {
     "word": "tie",
     "correct": "road",
-    "options": ["road", "path", "street", "way"]
+    "options": ["road", "house", "field", "river"]
   },
   {
     "word": "kartta",
     "correct": "map",
-    "options": ["map", "book", "chart", "file"]
+    "options": ["map", "book", "file", "note"]
   },
   {
     "word": "sade",
@@ -2472,22 +2472,22 @@
   {
     "word": "sääntö",
     "correct": "rule",
-    "options": ["rule", "law", "plan", "guide"]
+    "options": ["rule", "plan", "guide", "goal"]
   },
   {
     "word": "säätelevät",
     "correct": "govern",
-    "options": ["govern", "rule", "lead", "control"]
+    "options": ["govern", "lead", "teach", "serve"]
   },
   {
     "word": "vetää",
     "correct": "pull",
-    "options": ["pull", "push", "drag", "lift"]
+    "options": ["pull", "push", "lift", "throw"]
   },
   {
     "word": "kylmä",
     "correct": "cold",
-    "options": ["cold", "hot", "warm", "cool"]
+    "options": ["cold", "hot", "warm", "wet"]
   },
   {
     "word": "huomautus",
@@ -2497,27 +2497,27 @@
   {
     "word": "ääni",
     "correct": "voice",
-    "options": ["voice", "sound", "noise", "shout"]
+    "options": ["voice", "noise", "shout", "song"]
   },
   {
     "word": "energia",
     "correct": "energy",
-    "options": ["energy", "power", "light", "force"]
+    "options": ["energy", "light", "size", "speed"]
   },
   {
     "word": "metsästää",
     "correct": "hunt",
-    "options": ["hunt", "fish", "hide", "seek"]
+    "options": ["hunt", "fish", "hide", "sleep"]
   },
   {
     "word": "todennäköinen",
     "correct": "probable",
-    "options": ["probable", "certain", "possible", "random"]
+    "options": ["probable", "certain", "random", "known"]
   },
   {
     "word": "sängyssä",
-    "correct": "in bed",
-    "options": ["in bed", "on the sofa", "on the table", "on the floor"]
+    "correct": "bed",
+    "options": ["bed", "sofa", "table", "floor"]
   },
   {
     "word": "veli",
@@ -2561,8 +2561,8 @@
   },
   {
     "word": "luottaa",
-    "correct": "count",
-    "options": ["count", "read", "write", "list"]
+    "correct": "trust",
+    "options": ["trust", "doubt", "fear", "hope"]
   },
   {
     "word": "neliö",
@@ -2572,7 +2572,7 @@
   {
     "word": "syy",
     "correct": "reason",
-    "options": ["reason", "cause", "fact", "idea"]
+    "options": ["reason", "fact", "idea", "doubt"]
   },
   {
     "word": "pituus",
@@ -2597,7 +2597,7 @@
   {
     "word": "alue",
     "correct": "region",
-    "options": ["region", "city", "town", "place"]
+    "options": ["region", "city", "place", "size"]
   },
   {
     "word": "koko",
@@ -2607,7 +2607,7 @@
   {
     "word": "vaihdella",
     "correct": "vary",
-    "options": ["vary", "stay", "change", "keep"]
+    "options": ["vary", "stay", "keep", "grow"]
   },
   {
     "word": "asettua",
@@ -2617,12 +2617,12 @@
   {
     "word": "puhua",
     "correct": "speak",
-    "options": ["speak", "hear", "listen", "read"]
+    "options": ["speak", "hear", "read", "write"]
   },
   {
     "word": "paino",
     "correct": "weight",
-    "options": ["weight", "mass", "size", "scale"]
+    "options": ["weight", "size", "scale", "shape"]
   },
   {
     "word": "yleinen",
@@ -2637,7 +2637,7 @@
   {
     "word": "asia",
     "correct": "matter",
-    "options": ["matter", "thing", "fact", "word"]
+    "options": ["matter", "fact", "word", "doubt"]
   },
   {
     "word": "ympyrä",
@@ -2657,7 +2657,7 @@
   {
     "word": "kahtiajaon",
     "correct": "divide",
-    "options": ["divide", "join", "count", "cut"]
+    "options": ["divide", "join", "count", "add"]
   },
   {
     "word": "tavu",
@@ -2667,7 +2667,7 @@
   {
     "word": "huopa",
     "correct": "felt",
-    "options": ["felt", "cloth", "wood", "paper"]
+    "options": ["felt", "wood", "paper", "metal"]
   },
   {
     "word": "suuri",
@@ -2767,7 +2767,7 @@
   {
     "word": "kilpailu",
     "correct": "race",
-    "options": ["race", "game", "match", "play"]
+    "options": ["race", "game", "play", "walk"]
   },
   {
     "word": "ikkuna",
@@ -2777,7 +2777,7 @@
   {
     "word": "myymälä",
     "correct": "store",
-    "options": ["store", "park", "market", "office"]
+    "options": ["store", "park", "office", "house"]
   },
   {
     "word": "kesä",
@@ -2807,7 +2807,7 @@
   {
     "word": "jalka",
     "correct": "leg",
-    "options": ["leg", "arm", "hand", "foot"]
+    "options": ["leg", "arm", "hand", "body"]
   },
   {
     "word": "liikunta",
@@ -2822,17 +2822,17 @@
   {
     "word": "saalis",
     "correct": "catch",
-    "options": ["catch", "trap", "hunt", "find"]
+    "options": ["catch", "hunt", "find", "lose"]
   },
   {
     "word": "vuori",
     "correct": "mount",
-    "options": ["mount", "hill", "peak", "land"]
+    "options": ["mount", "peak", "land", "field"]
   },
   {
     "word": "toivottaa",
     "correct": "wish",
-    "options": ["wish", "hope", "want", "like"]
+    "options": ["wish", "like", "fear", "doubt"]
   },
   {
     "word": "taivas",
@@ -2856,8 +2856,8 @@
   },
   {
     "word": "kyll",
-    "correct": "sat",
-    "options": ["sat", "yes", "did", "stood"]
+    "correct": "yes",
+    "options": ["yes", "no", "sure", "true"]
   },
   {
     "word": "kirjallinen",
@@ -2872,12 +2872,12 @@
   {
     "word": "väline",
     "correct": "instrument",
-    "options": ["instrument", "tool", "gear", "key"]
+    "options": ["instrument", "gear", "key", "song"]
   },
   {
     "word": "säilytettävä",
     "correct": "kept",
-    "options": ["kept", "lost", "held", "gave"]
+    "options": ["kept", "lost", "gave", "sent"]
   },
   {
     "word": "lasi",
@@ -2907,12 +2907,12 @@
   {
     "word": "merkki",
     "correct": "sign",
-    "options": ["sign", "mark", "word", "note"]
+    "options": ["sign", "word", "note", "flag"]
   },
   {
     "word": "Vierailun",
     "correct": "visit",
-    "options": ["visit", "stay", "guest", "trip"]
+    "options": ["visit", "stay", "guest", "call"]
   },
   {
     "word": "ohi",
@@ -2932,17 +2932,17 @@
   {
     "word": "kirkas",
     "correct": "bright",
-    "options": ["bright", "dark", "clear", "dim"]
+    "options": ["bright", "dark", "dim", "warm"]
   },
   {
     "word": "kaasu",
     "correct": "gas",
-    "options": ["gas", "oil", "fuel", "air"]
+    "options": ["gas", "oil", "air", "smoke"]
   },
   {
     "word": "sää",
     "correct": "weather",
-    "options": ["weather", "climate", "storm", "wind"]
+    "options": ["weather", "storm", "wind", "rain"]
   },
   {
     "word": "kuukausi",
@@ -2962,7 +2962,7 @@
   {
     "word": "viimeistely",
     "correct": "finish",
-    "options": ["finish", "start", "stop", "rest"]
+    "options": ["finish", "start", "rest", "wait"]
   },
   {
     "word": "onnellinen",
@@ -2972,7 +2972,7 @@
   {
     "word": "Toivottavasti",
     "correct": "hope",
-    "options": ["hope", "wish", "want", "think"]
+    "options": ["hope", "want", "think", "fear"]
   },
   {
     "word": "kukka",
@@ -2982,22 +2982,22 @@
   {
     "word": "vaatettaa",
     "correct": "clothe",
-    "options": ["clothe", "wear", "dress", "buy"]
+    "options": ["clothe", "wear", "buy", "wash"]
   },
   {
     "word": "outo",
     "correct": "strange",
-    "options": ["strange", "normal", "usual", "common"]
+    "options": ["strange", "normal", "known", "plain"]
   },
   {
     "word": "poissa",
     "correct": "gone",
-    "options": ["gone", "here", "lost", "left"]
+    "options": ["gone", "here", "lost", "found"]
   },
   {
     "word": "kauppa",
     "correct": "trade",
-    "options": ["trade", "business", "buy", "sell"]
+    "options": ["trade", "buy", "sell", "price"]
   },
   {
     "word": "melodia",
@@ -3022,7 +3022,7 @@
   {
     "word": "rivi",
     "correct": "line",
-    "options": ["line", "road", "column", "group"]
+    "options": ["line", "road", "group", "page"]
   },
   {
     "word": "suu",
@@ -3037,7 +3037,7 @@
   {
     "word": "symboli",
     "correct": "symbol",
-    "options": ["symbol", "sign", "mark", "word"]
+    "options": ["symbol", "mark", "word", "number"]
   },
   {
     "word": "kuolla",
@@ -3107,7 +3107,7 @@
   {
     "word": "piha",
     "correct": "yard",
-    "options": ["yard", "garden", "field", "street"]
+    "options": ["yard", "field", "street", "house"]
   },
   {
     "word": "nousta",
@@ -3117,7 +3117,7 @@
   {
     "word": "huono",
     "correct": "bad",
-    "options": ["bad", "good", "fine", "best"]
+    "options": ["bad", "good", "best", "loud"]
   },
   {
     "word": "puhallus",
@@ -3127,7 +3127,7 @@
   {
     "word": "öljy",
     "correct": "oil",
-    "options": ["oil", "gas", "water", "fuel"]
+    "options": ["oil", "gas", "water", "sand"]
   },
   {
     "word": "veri",
@@ -3137,7 +3137,7 @@
   {
     "word": "koskettaa",
     "correct": "touch",
-    "options": ["touch", "feel", "see", "hear"]
+    "options": ["touch", "see", "hear", "smell"]
   },
   {
     "word": "kasvoi",
@@ -3157,17 +3157,17 @@
   {
     "word": "joukkue",
     "correct": "team",
-    "options": ["team", "group", "pair", "unit"]
+    "options": ["team", "pair", "unit", "match"]
   },
   {
     "word": "lanka",
     "correct": "wire",
-    "options": ["wire", "string", "rope", "cable"]
+    "options": ["wire", "string", "rope", "chain"]
   },
   {
     "word": "kustannukset",
     "correct": "cost",
-    "options": ["cost", "price", "fee", "pay"]
+    "options": ["cost", "pay", "loss", "gain"]
   },
   {
     "word": "menetetty",
@@ -3182,7 +3182,7 @@
   {
     "word": "kuluminen",
     "correct": "wear",
-    "options": ["wear", "tear", "break", "fix"]
+    "options": ["wear", "break", "fix", "rust"]
   },
   {
     "word": "puutarha",
@@ -3192,7 +3192,7 @@
   {
     "word": "yhtäläinen",
     "correct": "equal",
-    "options": ["equal", "same", "even", "odd"]
+    "options": ["equal", "even", "odd", "fair"]
   },
   {
     "word": "lähetetty",
@@ -3227,7 +3227,7 @@
   {
     "word": "pankki",
     "correct": "bank",
-    "options": ["bank", "shop", "office", "store"]
+    "options": ["bank", "shop", "office", "school"]
   },
   {
     "word": "kerätä",
@@ -3237,12 +3237,12 @@
   {
     "word": "tallentaa",
     "correct": "save",
-    "options": ["save", "spend", "waste", "keep"]
+    "options": ["save", "spend", "waste", "lose"]
   },
   {
     "word": "ohjaus",
     "correct": "control",
-    "options": ["control", "guide", "rule", "power"]
+    "options": ["control", "power", "speed", "size"]
   },
   {
     "word": "desimaalin",
@@ -3257,12 +3257,12 @@
   {
     "word": "muu",
     "correct": "else",
-    "options": ["else", "also", "other", "some"]
+    "options": ["else", "also", "some", "still"]
   },
   {
     "word": "melko",
     "correct": "quite",
-    "options": ["quite", "very", "fairly", "not"]
+    "options": ["quite", "not", "almost", "never"]
   },
   {
     "word": "rikkoi",
@@ -3287,12 +3287,12 @@
   {
     "word": "poika",
     "correct": "son",
-    "options": ["son", "boy", "man", "father"]
+    "options": ["son", "man", "father", "sister"]
   },
   {
     "word": "järvi",
     "correct": "lake",
-    "options": ["lake", "sea", "river", "pond"]
+    "options": ["lake", "sea", "river", "field"]
   },
   {
     "word": "hetki",
@@ -3302,12 +3302,12 @@
   {
     "word": "asteikko",
     "correct": "scale",
-    "options": ["scale", "size", "weight", "mass"]
+    "options": ["scale", "size", "weight", "length"]
   },
   {
     "word": "äänekäs",
     "correct": "loud",
-    "options": ["loud", "quiet", "soft", "calm"]
+    "options": ["loud", "quiet", "sharp", "fast"]
   },
   {
     "word": "kevät",
@@ -3327,7 +3327,7 @@
   {
     "word": "suora",
     "correct": "straight",
-    "options": ["straight", "curved", "bent", "long"]
+    "options": ["straight", "curved", "long", "short"]
   },
   {
     "word": "konsonantti",
@@ -3337,7 +3337,7 @@
   {
     "word": "kansakunta",
     "correct": "nation",
-    "options": ["nation", "state", "city", "world"]
+    "options": ["nation", "city", "world", "land"]
   },
   {
     "word": "sanakirja",
@@ -3352,12 +3352,12 @@
   {
     "word": "nopeus",
     "correct": "speed",
-    "options": ["speed", "time", "distance", "pace"]
+    "options": ["speed", "time", "distance", "power"]
   },
   {
     "word": "menetelmä",
     "correct": "method",
-    "options": ["method", "way", "rule", "plan"]
+    "options": ["method", "rule", "plan", "tool"]
   },
   {
     "word": "urut",
@@ -3377,7 +3377,7 @@
   {
     "word": "jakso",
     "correct": "section",
-    "options": ["section", "part", "unit", "area"]
+    "options": ["section", "unit", "area", "time"]
   },
   {
     "word": "mekko",
@@ -3392,22 +3392,22 @@
   {
     "word": "yllätys",
     "correct": "surprise",
-    "options": ["surprise", "gift", "shock", "event"]
+    "options": ["surprise", "gift", "event", "party"]
   },
   {
     "word": "hiljainen",
     "correct": "quiet",
-    "options": ["quiet", "loud", "silent", "calm"]
+    "options": ["quiet", "loud", "calm", "warm"]
   },
   {
     "word": "kivi",
     "correct": "stone",
-    "options": ["stone", "rock", "brick", "sand"]
+    "options": ["stone", "brick", "sand", "wood"]
   },
   {
     "word": "pikkuruinen",
     "correct": "tiny",
-    "options": ["tiny", "small", "huge", "big"]
+    "options": ["tiny", "huge", "big", "old"]
   },
   {
     "word": "kiivetä",
@@ -3422,27 +3422,27 @@
   {
     "word": "suunnittelu",
     "correct": "design",
-    "options": ["design", "plan", "draw", "make"]
+    "options": ["design", "draw", "make", "test"]
   },
   {
     "word": "kehno",
     "correct": "poor",
-    "options": ["poor", "rich", "bad", "cheap"]
+    "options": ["poor", "rich", "cheap", "kind"]
   },
   {
     "word": "paljon",
     "correct": "lot",
-    "options": ["lot", "few", "many", "some"]
+    "options": ["lot", "few", "some", "none"]
   },
   {
     "word": "kokeilu",
     "correct": "experiment",
-    "options": ["experiment", "test", "trial", "study"]
+    "options": ["experiment", "study", "idea", "result"]
   },
   {
     "word": "pohja",
     "correct": "bottom",
-    "options": ["bottom", "top", "side", "base"]
+    "options": ["bottom", "top", "side", "front"]
   },
   {
     "word": "avain",
@@ -3452,22 +3452,22 @@
   {
     "word": "rauta",
     "correct": "iron",
-    "options": ["iron", "steel", "gold", "metal"]
+    "options": ["iron", "gold", "metal", "wood"]
   },
   {
     "word": "yksittäinen",
     "correct": "single",
-    "options": ["single", "double", "one", "only"]
+    "options": ["single", "double", "many", "several"]
   },
   {
     "word": "tikku",
     "correct": "stick",
-    "options": ["stick", "branch", "wood", "tool"]
+    "options": ["stick", "wood", "tool", "rope"]
   },
   {
     "word": "tasainen",
     "correct": "flat",
-    "options": ["flat", "smooth", "steep", "round"]
+    "options": ["flat", "steep", "round", "rough"]
   },
   {
     "word": "kaksikymmentä",
@@ -3482,22 +3482,22 @@
   {
     "word": "hymy",
     "correct": "smile",
-    "options": ["smile", "laugh", "cry", "face"]
+    "options": ["smile", "cry", "face", "frown"]
   },
   {
     "word": "prässi",
     "correct": "crease",
-    "options": ["crease", "fold", "line", "mark"]
+    "options": ["crease", "line", "mark", "stain"]
   },
   {
     "word": "reikä",
     "correct": "hole",
-    "options": ["hole", "gap", "spot", "mark"]
+    "options": ["hole", "spot", "mark", "dent"]
   },
   {
     "word": "hyppy",
     "correct": "jump",
-    "options": ["jump", "run", "hop", "fly"]
+    "options": ["jump", "run", "fly", "swim"]
   },
   {
     "word": "vauva",
@@ -3512,12 +3512,12 @@
   {
     "word": "kylä",
     "correct": "village",
-    "options": ["village", "city", "town", "farm"]
+    "options": ["village", "city", "farm", "road"]
   },
   {
     "word": "tavata",
     "correct": "meet",
-    "options": ["meet", "greet", "find", "see"]
+    "options": ["meet", "find", "see", "leave"]
   },
   {
     "word": "juuri",
@@ -3547,7 +3547,7 @@
   {
     "word": "onko",
     "correct": "whether",
-    "options": ["whether", "if", "when", "how"]
+    "options": ["whether", "when", "how", "why"]
   },
   {
     "word": "työntää",
@@ -3592,7 +3592,7 @@
   {
     "word": "kokki",
     "correct": "cook",
-    "options": ["cook", "chef", "bake", "eat"]
+    "options": ["cook", "bake", "eat", "meal"]
   },
   {
     "word": "lattia",
@@ -3612,12 +3612,12 @@
   {
     "word": "polttaa",
     "correct": "burn",
-    "options": ["to burn", "to fire", "to chill", "to freeze"]
+    "options": ["burn", "fire", "chill", "freeze"]
   },
   {
     "word": "mäki",
     "correct": "hill",
-    "options": ["hill", "mountain", "valley", "plain"]
+    "options": ["hill", "valley", "plain", "forest"]
   },
   {
     "word": "turvallinen",
@@ -3632,7 +3632,7 @@
   {
     "word": "luvulla",
     "correct": "century",
-    "options": ["century", "year", "time", "period"]
+    "options": ["century", "year", "period", "decade"]
   },
   {
     "word": "harkita",
@@ -3642,12 +3642,12 @@
   {
     "word": "tyyppi",
     "correct": "type",
-    "options": ["type", "kind", "sort", "unit"]
+    "options": ["type", "unit", "size", "piece"]
   },
   {
     "word": "laki",
     "correct": "law",
-    "options": ["law", "rule", "right", "fact"]
+    "options": ["law", "right", "fact", "case"]
   },
   {
     "word": "bitti",
@@ -3657,7 +3657,7 @@
   {
     "word": "rannikolla",
     "correct": "coast",
-    "options": ["coast", "sea", "beach", "land"]
+    "options": ["coast", "sea", "land", "port"]
   },
   {
     "word": "kopio",
@@ -3672,27 +3672,27 @@
   {
     "word": "hiljainen",
     "correct": "silent",
-    "options": ["silent", "quiet", "loud", "soft"]
+    "options": ["silent", "loud", "soft", "bright"]
   },
   {
     "word": "pitkä",
     "correct": "tall",
-    "options": ["tall", "high", "long", "short"]
+    "options": ["tall", "short", "big", "narrow"]
   },
   {
     "word": "hiekka",
     "correct": "sand",
-    "options": ["sand", "rock", "stone", "dust"]
+    "options": ["sand", "rock", "dust", "mud"]
   },
   {
     "word": "maaperä",
     "correct": "soil",
-    "options": ["soil", "dirt", "land", "earth"]
+    "options": ["soil", "land", "sand", "clay"]
   },
   {
     "word": "rulla",
     "correct": "roll",
-    "options": ["roll", "turn", "spin", "move"]
+    "options": ["roll", "turn", "move", "slide"]
   },
   {
     "word": "lämpötila",
@@ -3712,7 +3712,7 @@
   {
     "word": "arvo",
     "correct": "value",
-    "options": ["value", "price", "cost", "worth"]
+    "options": ["value", "size", "risk", "gain"]
   },
   {
     "word": "taistelu",
@@ -3737,17 +3737,17 @@
   {
     "word": "luonnollinen",
     "correct": "natural",
-    "options": ["natural", "real", "fake", "wild"]
+    "options": ["natural", "fake", "wild", "plain"]
   },
   {
     "word": "näkymä",
     "correct": "view",
-    "options": ["view", "sight", "scene", "look"]
+    "options": ["view", "sound", "smell", "idea"]
   },
   {
     "word": "merkityksessä",
     "correct": "sense",
-    "options": ["sense", "meaning", "feeling", "idea"]
+    "options": ["sense", "feeling", "idea", "doubt"]
   },
   {
     "word": "pääoma",
@@ -3762,7 +3762,7 @@
   {
     "word": "tuoli",
     "correct": "chair",
-    "options": ["chair", "table", "floor", "stool"]
+    "options": ["chair", "table", "floor", "lamp"]
   },
   {
     "word": "vaara",
@@ -3777,7 +3777,7 @@
   {
     "word": "rikas",
     "correct": "rich",
-    "options": ["rich", "poor", "wealthy", "great"]
+    "options": ["rich", "poor", "great", "kind"]
   },
   {
     "word": "paksu",
@@ -3792,27 +3792,27 @@
   {
     "word": "prosessi",
     "correct": "process",
-    "options": ["process", "task", "step", "way"]
+    "options": ["process", "task", "step", "goal"]
   },
   {
     "word": "toimivat",
     "correct": "operate",
-    "options": ["operate", "work", "run", "act"]
+    "options": ["operate", "act", "build", "break"]
   },
   {
     "word": "käytäntö",
     "correct": "practice",
-    "options": ["practice", "habit", "rule", "test"]
+    "options": ["practice", "rule", "test", "goal"]
   },
   {
     "word": "erillinen",
     "correct": "separate",
-    "options": ["separate", "join", "part", "split"]
+    "options": ["separate", "join", "part", "mix"]
   },
   {
     "word": "vaikea",
     "correct": "difficult",
-    "options": ["difficult", "hard", "easy", "complex"]
+    "options": ["difficult", "easy", "fast", "kind"]
   },
   {
     "word": "lääkäri",
@@ -3827,7 +3827,7 @@
   {
     "word": "suojella",
     "correct": "protect",
-    "options": ["protect", "save", "guard", "keep"]
+    "options": ["protect", "keep", "harm", "chase"]
   },
   {
     "word": "keskipäivällä",
@@ -3842,12 +3842,12 @@
   {
     "word": "nykyaikainen",
     "correct": "modern",
-    "options": ["modern", "old", "new", "fresh"]
+    "options": ["modern", "old", "classic", "ancient"]
   },
   {
     "word": "elementti",
     "correct": "element",
-    "options": ["element", "part", "unit", "piece"]
+    "options": ["element", "metal", "idea", "force"]
   },
   {
     "word": "osuma",
@@ -3857,17 +3857,17 @@
   {
     "word": "opiskelija",
     "correct": "student",
-    "options": ["student", "teacher", "school", "learner"]
+    "options": ["student", "teacher", "school", "class"]
   },
   {
     "word": "kulma",
     "correct": "corner",
-    "options": ["corner", "edge", "side", "turn"]
+    "options": ["corner", "edge", "side", "top"]
   },
   {
     "word": "puolue",
     "correct": "party",
-    "options": ["party", "group", "event", "club"]
+    "options": ["party", "event", "team", "law"]
   },
   {
     "word": "tarjonta",
@@ -3877,42 +3877,42 @@
   {
     "word": "joiden",
     "correct": "whose",
-    "options": ["whose", "which", "whom", "who"]
+    "options": ["whose", "which", "who", "where"]
   },
   {
     "word": "paikantaa",
     "correct": "locate",
-    "options": ["locate", "lose", "spot", "place"]
+    "options": ["locate", "lose", "place", "avoid"]
   },
   {
     "word": "rengas",
     "correct": "ring",
-    "options": ["ring", "circle", "wheel", "loop"]
+    "options": ["ring", "wheel", "bell", "box"]
   },
   {
     "word": "merkki",
     "correct": "character",
-    "options": ["character", "sign", "mark", "type"]
+    "options": ["character", "letter", "number", "word"]
   },
   {
     "word": "hyönteinen",
     "correct": "insect",
-    "options": ["insect", "bug", "fly", "ant"]
+    "options": ["insect", "fly", "ant", "spider"]
   },
   {
     "word": "kiinni",
     "correct": "caught",
-    "options": ["caught", "loose", "stuck", "held"]
+    "options": ["caught", "loose", "free", "open"]
   },
   {
     "word": "aika",
     "correct": "period",
-    "options": ["period", "place", "era", "age"]
+    "options": ["period", "place", "age", "size"]
   },
   {
     "word": "osoittaa",
     "correct": "indicate",
-    "options": ["indicate", "show", "mark", "point"]
+    "options": ["indicate", "mark", "hide", "copy"]
   },
   {
     "word": "radio",
@@ -3922,7 +3922,7 @@
   {
     "word": "puhui",
     "correct": "spoke",
-    "options": ["spoke", "said", "told", "discussed"]
+    "options": ["spoke", "listened", "wrote", "sang"]
   },
   {
     "word": "atomi",
@@ -3932,17 +3932,17 @@
   {
     "word": "ihmisen",
     "correct": "human",
-    "options": ["human", "person", "man", "body"]
+    "options": ["human", "man", "body", "animal"]
   },
   {
     "word": "historia",
     "correct": "history",
-    "options": ["history", "past", "story", "fact"]
+    "options": ["history", "story", "fact", "myth"]
   },
   {
     "word": "vaikutus",
     "correct": "effect",
-    "options": ["effect", "cause", "result", "change"]
+    "options": ["effect", "cause", "change", "chance"]
   },
   {
     "word": "sähköinen",
@@ -3962,7 +3962,7 @@
   {
     "word": "kisko",
     "correct": "rail",
-    "options": ["rail", "track", "train", "road"]
+    "options": ["rail", "train", "road", "station"]
   },
   {
     "word": "kuvitella",
@@ -3977,27 +3977,27 @@
   {
     "word": "suostua",
     "correct": "agree",
-    "options": ["agree", "deny", "accept", "stay"]
+    "options": ["agree", "deny", "stay", "wait"]
   },
   {
     "word": "näin",
     "correct": "thus",
-    "options": ["thus", "so", "then", "this"]
+    "options": ["thus", "then", "this", "now"]
   },
   {
     "word": "lempeä",
     "correct": "gentle",
-    "options": ["gentle", "soft", "kind", "mild"]
+    "options": ["gentle", "harsh", "loud", "fast"]
   },
   {
     "word": "nainen",
     "correct": "woman",
-    "options": ["woman", "lady", "girl", "man"]
+    "options": ["woman", "girl", "man", "child"]
   },
   {
     "word": "kapteeni",
     "correct": "captain",
-    "options": ["captain", "leader", "chief", "pilot"]
+    "options": ["captain", "pilot", "sailor", "guard"]
   },
   {
     "word": "arvata",
@@ -4032,7 +4032,7 @@
   {
     "word": "pesu",
     "correct": "wash",
-    "options": ["wash", "dry", "iron", "clean"]
+    "options": ["wash", "dry", "iron", "fold"]
   },
   {
     "word": "lepakko",
@@ -4047,7 +4047,7 @@
   {
     "word": "väkijoukko",
     "correct": "crowd",
-    "options": ["crowd", "person", "group", "pair"]
+    "options": ["crowd", "person", "pair", "line"]
   },
   {
     "word": "maissi",
@@ -4067,7 +4067,7 @@
   {
     "word": "nauha",
     "correct": "string",
-    "options": ["string", "wire", "rope", "thread"]
+    "options": ["string", "wire", "rope", "ribbon"]
   },
   {
     "word": "soittokello",
@@ -4097,7 +4097,7 @@
   {
     "word": "kuuluisa",
     "correct": "famous",
-    "options": ["famous", "known", "lost", "rich"]
+    "options": ["famous", "lost", "rich", "young"]
   },
   {
     "word": "dollari",
@@ -4142,7 +4142,7 @@
   {
     "word": "päällikkö",
     "correct": "chief",
-    "options": ["chief", "boss", "worker", "clerk"]
+    "options": ["chief", "worker", "clerk", "guard"]
   },
   {
     "word": "siirtomaa",
@@ -4152,7 +4152,7 @@
   {
     "word": "kello",
     "correct": "clock",
-    "options": ["clock", "watch", "time", "bell"]
+    "options": ["clock", "time", "bell", "phone"]
   },
   {
     "word": "minun",
@@ -4257,7 +4257,7 @@
   {
     "word": "raita",
     "correct": "track",
-    "options": ["track", "road", "path", "line"]
+    "options": ["track", "line", "field", "yard"]
   },
   {
     "word": "vanhemmat",
@@ -4267,17 +4267,17 @@
   {
     "word": "rannikko",
     "correct": "shore",
-    "options": ["shore", "sea", "lake", "bank"]
+    "options": ["shore", "sea", "lake", "cliff"]
   },
   {
     "word": "jako",
     "correct": "division",
-    "options": ["division", "part", "unit", "group"]
+    "options": ["division", "group", "line", "level"]
   },
   {
     "word": "arkki",
     "correct": "sheet",
-    "options": ["sheet", "page", "book", "card"]
+    "options": ["sheet", "book", "card", "cloth"]
   },
   {
     "word": "aine",
@@ -4287,7 +4287,7 @@
   {
     "word": "suosia",
     "correct": "favor",
-    "options": ["favor", "like", "hate", "trust"]
+    "options": ["favor", "hate", "trust", "avoid"]
   },
   {
     "word": "kytkeä",
@@ -4297,7 +4297,7 @@
   {
     "word": "virka",
     "correct": "post",
-    "options": ["post", "job", "office", "mail"]
+    "options": ["post", "office", "mail", "desk"]
   },
   {
     "word": "viettää",
@@ -4327,12 +4327,12 @@
   {
     "word": "osake",
     "correct": "share",
-    "options": ["share", "part", "unit", "bit"]
+    "options": ["share", "stock", "price", "risk"]
   },
   {
     "word": "asema",
     "correct": "station",
-    "options": ["station", "stop sign", "place", "post"]
+    "options": ["station", "stop", "place", "port"]
   },
   {
     "word": "isä",
@@ -4352,12 +4352,12 @@
   {
     "word": "oikea",
     "correct": "proper",
-    "options": ["proper", "wrong", "right", "good"]
+    "options": ["proper", "wrong", "kind", "late"]
   },
   {
     "word": "baari",
     "correct": "bar",
-    "options": ["bar", "pub", "shop", "club"]
+    "options": ["bar", "shop", "club", "cafe"]
   },
   {
     "word": "tarjous",
@@ -4367,7 +4367,7 @@
   {
     "word": "segmentti",
     "correct": "segment",
-    "options": ["segment", "part", "unit", "area"]
+    "options": ["segment", "area", "shape", "level"]
   },
   {
     "word": "orja",
@@ -4387,7 +4387,7 @@
   {
     "word": "markkinat",
     "correct": "market",
-    "options": ["market", "shop", "store", "trade"]
+    "options": ["market", "shop", "trade", "goods"]
   },
   {
     "word": "aste",
@@ -4407,7 +4407,7 @@
   {
     "word": "rakas",
     "correct": "dear",
-    "options": ["dear", "cheap", "good", "fine"]
+    "options": ["dear", "cruel", "cold", "distant"]
   },
   {
     "word": "vihollinen",
@@ -4417,7 +4417,7 @@
   {
     "word": "vastata",
     "correct": "reply",
-    "options": ["reply", "ask", "say", "tell"]
+    "options": ["reply", "ask", "say", "listen"]
   },
   {
     "word": "juoma",
@@ -4432,12 +4432,12 @@
   {
     "word": "tuki",
     "correct": "support",
-    "options": ["support", "help", "base", "prop"]
+    "options": ["support", "base", "block", "weight"]
   },
   {
     "word": "puhe",
     "correct": "speech",
-    "options": ["speech", "talk", "word", "voice"]
+    "options": ["speech", "word", "voice", "sound"]
   },
   {
     "word": "luonto",
@@ -4447,22 +4447,22 @@
   {
     "word": "alue",
     "correct": "range",
-    "options": ["range", "area", "field", "zone"]
+    "options": ["range", "field", "zone", "level"]
   },
   {
     "word": "höyry",
     "correct": "steam",
-    "options": ["steam", "gas", "air", "mist"]
+    "options": ["steam", "gas", "air", "smoke"]
   },
   {
     "word": "liike",
     "correct": "motion",
-    "options": ["motion", "move", "rest", "stop"]
+    "options": ["motion", "rest", "stop", "speed"]
   },
   {
     "word": "polku",
     "correct": "path",
-    "options": ["path", "road", "track", "way"]
+    "options": ["path", "field", "house", "river"]
   },
   {
     "word": "neste",
@@ -4492,7 +4492,7 @@
   {
     "word": "kuori",
     "correct": "shell",
-    "options": ["shell", "case", "skin", "bone"]
+    "options": ["shell", "skin", "bone", "wood"]
   },
   {
     "word": "niska",
@@ -4517,7 +4517,7 @@
   {
     "word": "aika",
     "correct": "pretty",
-    "options": ["pretty", "ugly", "fast", "slow"]
+    "options": ["pretty", "hardly", "very", "barely"]
   },
   {
     "word": "taito",
@@ -4557,12 +4557,12 @@
   {
     "word": "sivuliike",
     "correct": "branch",
-    "options": ["branch", "main", "store", "shop"]
+    "options": ["branch", "main", "store", "office"]
   },
   {
     "word": "ottelu",
     "correct": "match",
-    "options": ["match", "game", "race", "fight"]
+    "options": ["match", "race", "fight", "trip"]
   },
   {
     "word": "pääte",
@@ -4587,7 +4587,7 @@
   {
     "word": "valtava",
     "correct": "huge",
-    "options": ["huge", "tiny", "small", "thin"]
+    "options": ["huge", "tiny", "thin", "old"]
   },
   {
     "word": "sisko",
@@ -4597,7 +4597,7 @@
   {
     "word": "teräs",
     "correct": "steel",
-    "options": ["steel", "iron", "wood", "glass"]
+    "options": ["steel", "wood", "glass", "stone"]
   },
   {
     "word": "keskustella",
@@ -4612,7 +4612,7 @@
   {
     "word": "samankaltainen",
     "correct": "similar",
-    "options": ["similar", "different", "equal", "same"]
+    "options": ["similar", "different", "equal", "near"]
   },
   {
     "word": "opas",
@@ -4647,7 +4647,7 @@
   {
     "word": "piki",
     "correct": "pitch",
-    "options": ["pitch", "field", "ball", "game"]
+    "options": ["pitch", "tar", "oil", "wax"]
   },
   {
     "word": "takki",
@@ -4657,27 +4657,27 @@
   {
     "word": "massa",
     "correct": "mass",
-    "options": ["mass", "weight", "size", "bulk"]
+    "options": ["mass", "size", "color", "speed"]
   },
   {
     "word": "kortti",
     "correct": "card",
-    "options": ["card", "paper", "note", "letter"]
+    "options": ["card", "paper", "note", "gift"]
   },
   {
     "word": "bändi",
     "correct": "band",
-    "options": ["band", "group", "music", "song"]
+    "options": ["band", "music", "song", "show"]
   },
   {
     "word": "köysi",
     "correct": "rope",
-    "options": ["rope", "wire", "string", "thread"]
+    "options": ["rope", "chain", "belt", "strap"]
   },
   {
     "word": "lipsahdus",
     "correct": "slip",
-    "options": ["slip", "fall", "slide", "trip"]
+    "options": ["slip", "fall", "jump", "spin"]
   },
   {
     "word": "voittaa",
@@ -4702,7 +4702,7 @@
   {
     "word": "rehu",
     "correct": "feed",
-    "options": ["feed", "food", "eat", "grass"]
+    "options": ["feed", "eat", "grass", "water"]
   },
   {
     "word": "työkalu",
@@ -4717,7 +4717,7 @@
   {
     "word": "perus",
     "correct": "basic",
-    "options": ["basic", "complex", "hard", "main"]
+    "options": ["basic", "complex", "hard", "rare"]
   },
   {
     "word": "haju",
@@ -4742,27 +4742,27 @@
   {
     "word": "istuin",
     "correct": "seat",
-    "options": ["seat", "wall", "bench", "stool"]
+    "options": ["seat", "wall", "table", "door"]
   },
   {
     "word": "jatkaa",
     "correct": "continue",
-    "options": ["continue", "stop", "pause", "end"]
+    "options": ["continue", "stop", "begin", "rest"]
   },
   {
     "word": "lohko",
     "correct": "block",
-    "options": ["block", "line", "point", "unit"]
+    "options": ["block", "line", "point", "zone"]
   },
   {
     "word": "kaavio",
     "correct": "chart",
-    "options": ["chart", "map", "table", "book"]
+    "options": ["chart", "book", "list", "page"]
   },
   {
     "word": "hattu",
     "correct": "hat",
-    "options": ["hat", "cap", "coat", "shoe"]
+    "options": ["hat", "coat", "shoe", "scarf"]
   },
   {
     "word": "myydä",
@@ -4807,12 +4807,12 @@
   {
     "word": "termi",
     "correct": "term",
-    "options": ["term", "word", "phrase", "name"]
+    "options": ["term", "word", "number", "sound"]
   },
   {
     "word": "päinvastainen",
     "correct": "opposite",
-    "options": ["opposite", "same", "equal", "near"]
+    "options": ["opposite", "same", "kind", "large"]
   },
   {
     "word": "vaimo",
@@ -4822,7 +4822,7 @@
   {
     "word": "kenkä",
     "correct": "shoe",
-    "options": ["shoe", "boot", "sock", "foot"]
+    "options": ["shoe", "sock", "foot", "glove"]
   },
   {
     "word": "olkapää",
@@ -4877,12 +4877,12 @@
   {
     "word": "rekka",
     "correct": "truck",
-    "options": ["truck", "car", "bus", "van"]
+    "options": ["truck", "car", "bus", "bike"]
   },
   {
     "word": "melu",
     "correct": "noise",
-    "options": ["noise", "sound", "music", "quiet"]
+    "options": ["noise", "music", "quiet", "light"]
   },
   {
     "word": "taso",
@@ -4892,7 +4892,7 @@
   {
     "word": "mahdollisuus",
     "correct": "chance",
-    "options": ["chance", "luck", "hope", "fact"]
+    "options": ["chance", "hope", "fact", "fear"]
   },
   {
     "word": "kerätä",
@@ -4902,7 +4902,7 @@
   {
     "word": "kauppa",
     "correct": "shop",
-    "options": ["shop", "park", "bank", "mall"]
+    "options": ["shop", "park", "bank", "office"]
   },
   {
     "word": "venyttää",
@@ -4917,7 +4917,7 @@
   {
     "word": "paistaa",
     "correct": "shine",
-    "options": ["shine", "burn", "dark", "glow"]
+    "options": ["shine", "burn", "dark", "fade"]
   },
   {
     "word": "omaisuus",
@@ -4942,7 +4942,7 @@
   {
     "word": "väärä",
     "correct": "wrong",
-    "options": ["wrong", "right", "true", "good"]
+    "options": ["wrong", "right", "kind", "late"]
   },
   {
     "word": "harmaa",
@@ -4957,7 +4957,7 @@
   {
     "word": "vaatia",
     "correct": "require",
-    "options": ["require", "need", "ask", "want"]
+    "options": ["require", "ask", "want", "hope"]
   },
   {
     "word": "laaja",
@@ -4967,7 +4967,7 @@
   {
     "word": "valmistella",
     "correct": "prepare",
-    "options": ["prepare", "fix", "ready", "start"]
+    "options": ["prepare", "fix", "start", "plan"]
   },
   {
     "word": "suola",
@@ -4997,6 +4997,6 @@
   {
     "word": "maanosa",
     "correct": "continent",
-    "options": ["continent", "country", "state", "world"]
+    "options": ["continent", "country", "world", "island"]
   }
 ]
