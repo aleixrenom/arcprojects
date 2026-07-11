@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .letter { stroke: #0a0a0a; }
+    .bar { stroke: #5c8fbc; }
+    @media (prefers-color-scheme: dark) {
+      .letter { stroke: #f0efe9; }
+      .bar { stroke: #7fa8cd; }
+    }
+  </style>
+  <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path class="letter" d="M6 27 L16 5 L26 27" />
+    <path class="bar" d="M10.5 20 H21.5" />
+  </g>
+</svg>

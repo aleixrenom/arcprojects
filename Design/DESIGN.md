@@ -1,9 +1,9 @@
-The following are the instructions and progress of design discussions with Claude AI about this project.
+The following are the instructions and progress of design discussions with Claude AI about this project. Session-by-session implementation decisions live in the root-level `DECISIONS.md`; this file is the design spec and context.
 
 **Files**
 
-- `header.html`: prototype to visualise the header
-- `navigation.html`: prototype to visualise the separator and the action of clicking on cards
+- `header.html`: prototype to visualise the header — superseded by the React implementation (`src/components/Header/`)
+- `navigation.html`: prototype to visualise the separator and card-opening — navigation is now implemented in React, but this file remains the only visual reference for the card anatomy not yet built (type label, description, tall project cards)
 
 ## Site Overview
 
@@ -34,7 +34,7 @@ Accent: soft blue — `--accent: #5c8fbc` (light) / `#7fa8cd` (dark). Provisiona
 
 ## Typography
 
-TBD — to be decided during design. Likely a clean sans-serif.
+Inter, with the system sans-serif stack as fallback (see `src/index.css`). Adopted de facto during implementation; revisit only if a stronger opinion emerges.
 
 ## Tech Stack
 
@@ -52,7 +52,8 @@ TBD — to be decided during design. Likely a clean sans-serif.
 
 **Animation**
 
-- Motion (formerly Framer Motion) v11+ — handles the JS-driven parts of the design: clip-path zoom-expand (needs card position at runtime), page slide transitions, spring card lifts. Tree-shaken, so only what's used is bundled.
+- Site-level animation ended up needing no JS library: the card → detail-page morph uses the browser View Transitions API, and page slides / spring card lifts are pure CSS transitions.
+- Framer Motion v11 is still a dependency, but only for in-app UI (the quiz app's buttons and screen transitions).
 
 **State**
 
@@ -97,8 +98,8 @@ zustand
 
 ## Pages
 
-- [ ] Home (main page — two-page body: apps + projects)
-- [ ] Individual project/tool pages (TBD)
+- [x] Home (main page — two-page body: apps + projects)
+- [ ] Individual project/tool pages — detail route + shell exist (`src/pages/DetailPage.tsx`, quiz app mounts); project content pages still placeholder
 
 ---
 
@@ -131,7 +132,7 @@ zustand
 
 ### Focused State (App or Project Open)
 
-- When a card is opened (zoom-expand), the body and separator are hidden. The user is in a focused, full-screen view.
+- When a card is opened (morph-expand), the body and separator are hidden. The user is in a focused, full-screen view.
 - A **back button** (top-left, chevron + label) returns the user to the body, restoring it exactly as it was.
 
 ---
@@ -156,8 +157,8 @@ zustand
 
 - **Hover**: `translateY(-5px)` + shadow deepens. Spring easing: `cubic-bezier(.34,1.38,.64,1)`. Pattern opacity increases.
 - **Active**: slight scale-down, fast transition.
-- **Click → zoom-expand**: card expands to fill the viewport via `clip-path: inset()` animation. Starts clipped to the card's exact position, expands to full screen. Duration: 0.52s. Content fades in after clip animation completes (~390ms delay).
-- **Back → collapse**: clip-path animates back to card's original position, then overlay hides.
+- **Click → morph-expand**: card morphs into the full-screen detail page via a View Transitions API shared-element transition (`view-transition-name` per card). Duration: 0.48s, same cubic-bezier(.32,0,.16,1) as the page slide. Supersedes the earlier clip-path zoom-expand plan.
+- **Back → collapse**: the same shared-element transition runs in reverse, morphing the page back into the card.
 
 ### Pattern Assignment
 
@@ -168,9 +169,11 @@ zustand
 
 ## Component Library
 
-- `header.html` — sticky header, Variant A (compact strip). Photo + name + tagline inline, icon buttons (LinkedIn, mail, GitHub, theme toggle) on the right.
-- `cards.html` — card component prototype. Three cards (Finnish Quiz, Dice Math, Chatbot), geometric patterns, zoom-expand transition. Pre-navigation version.
-- `navigation.html` — full navigation prototype. Two-page body (apps/projects), separator with slide transition, swipe support, zoom-expand, dark/light toggle. **Current reference prototype.**
+The React app (`src/`) is now the reference implementation. The HTML prototypes are historical:
+
+- `header.html` — sticky header, Variant A (compact strip). Fully superseded by `src/components/Header/`.
+- `cards.html` — early card prototype; removed from the repo.
+- `navigation.html` — full navigation prototype. Navigation, separator, swipe, and theming are all in React now; still useful as the visual reference for the unbuilt card anatomy (type label, description, tall project cards).
 
 ---
 
@@ -184,7 +187,7 @@ zustand
 - Background: #f9f8f6 (light) / #0f0f0d (dark) — warm, not pure white/black
 - Cards: soft box-shadow instead of borders in light mode; dark mode uses inset border (1px rgba white at low opacity)
 - Accent color: soft blue — `--accent: #5c8fbc` (light) / `#7fa8cd` (dark); provisional, kept as a single CSS variable for easy auditioning
-- Typography: TBD
+- Typography: Inter + system sans fallback (adopted de facto during implementation)
 - Card content: type label + title always; description on project (tall) cards only. No tech stack tags on cards.
 - Card screenshot backgrounds: deferred — geometric patterns used as placeholders; each card gets a distinct pattern
 - Card patterns: expanded geometric set (6+ abstract primitives — dots, crosshatch, diagonals, grid, rings, chevrons, ...), one distinct pattern per card across both pages
@@ -193,7 +196,7 @@ zustand
 - Card pattern motion: no ambient motion; on hover the pattern brightens and lags the card lift by 2px (parallax) — supersedes the earlier opacity-only decision
 - Card glass depth: pattern layer blurred 0.75px behind a masked vignette (edge fade + fade under the text zone) with a faint diagonal sheen overlay — pattern behind the glass, text on it
 - Card hover: spring lift (translateY -5px), shadow deepens, pattern brightens
-- Card click: zoom-expand via clip-path animation (not slide, not fade)
+- Card click: expand-to-fullscreen (not slide, not fade) — implemented as a View Transitions API shared-element morph, superseding the original clip-path plan
 - Two-page body: apps page (default) + projects page, navigated via separator
 - Separator: 40px wide, vertical text label (destination only), chevron icon, hairline border on content side
 - Separator mirrors: right side on apps page, left side on projects page
@@ -204,3 +207,16 @@ zustand
 - Double-wide cards: scrapped — two-page layout makes width distinction unnecessary
 - Project cards: tall variant (260px) for description space
 - Current page name placement: TBD
+
+---
+
+## Implementation Status (2026-07-11)
+
+Everything above is implemented in the React app except:
+
+- Card anatomy: cards render only the title — type label ("app"/"project") and project-card description are not built yet
+- Project card tall variant (260px): all cards are currently 184px
+- Current page name placement: still undecided
+- Accent color: still the provisional soft blue
+- Real screenshots on cards: deferred, geometric patterns remain the placeholder
+- Project detail pages: shell exists but content is placeholder (only the Finnish quiz app mounts)

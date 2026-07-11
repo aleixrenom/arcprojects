@@ -16,7 +16,7 @@ export default function Header() {
         />
         <div>
           <div className={styles.name}>Aleix Renom Cisa</div>
-          <div className={styles.tagline}>Having fun making stuff</div>
+          <div className={styles.tagline}>Frontend • Web • Helsinki</div>
         </div>
       </div>
       <div className={styles.right}>
