@@ -62,6 +62,12 @@ html.dark .quiz-card {
   color: var(--text);
 }
 
+.quiz-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .reset-button {
   display: inline-flex;
   height: 2.25rem;
@@ -126,6 +132,44 @@ html.dark .quiz-card {
 }
 .btn.outline:hover {
   background: var(--surface);
+}
+
+.word-set-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.word-set-modal {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+html.dark .word-set-modal {
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.word-set-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.btn.block {
+  width: 100%;
 }
 
 .options {
