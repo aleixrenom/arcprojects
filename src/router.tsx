@@ -40,6 +40,9 @@ const indexRoute = createRoute({
 const appDetailRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/app/$appId",
+  validateSearch: (search: Record<string, unknown>): { set?: string } => ({
+    set: typeof search.set === "string" ? search.set : undefined,
+  }),
   beforeLoad: ({ params }) => {
     const card = findCard("app", params.appId);
     if (!card) throw redirect({ to: "/" });

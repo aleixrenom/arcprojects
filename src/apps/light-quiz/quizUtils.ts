@@ -18,6 +18,9 @@ const LEGACY_PROGRESS_KEY = "quizProgress";
 
 const progressKey = (setId: string) => `quizProgress:${setId}`;
 
+export const isValidWordSetId = (setId: string): boolean =>
+  wordSets.some((set) => set.id === setId);
+
 export const getWordSet = (setId: string): WordSet =>
   wordSets.find((set) => set.id === setId) ?? wordSets[0];
 
@@ -29,9 +32,7 @@ export const loadActiveWordSetId = (): string => {
   localStorage.removeItem(LEGACY_PROGRESS_KEY);
 
   const stored = localStorage.getItem(ACTIVE_SET_KEY);
-  return stored && wordSets.some((set) => set.id === stored)
-    ? stored
-    : wordSets[0].id;
+  return stored && isValidWordSetId(stored) ? stored : wordSets[0].id;
 };
 
 export const persistActiveWordSetId = (setId: string) => {

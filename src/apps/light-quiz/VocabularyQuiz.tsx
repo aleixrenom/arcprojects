@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Howl } from "howler";
+import { useNavigate, useSearch } from "@tanstack/react-router";
 import { Question } from "./types";
 import {
   createNewQuestionQueue,
   getTotalQuestions,
+  isValidWordSetId,
   loadActiveWordSetId,
   loadQuestionsForSet,
   persistActiveWordSetId,
@@ -17,7 +19,19 @@ import WordSetPicker from "./WordSetPicker";
 import "./quiz.css";
 
 const VocabularyQuiz: React.FC = () => {
-  const [activeSetId, setActiveSetId] = useState<string>(loadActiveWordSetId);
+  const navigate = useNavigate();
+  const { set: searchSet } = useSearch({ strict: false }) as { set?: string };
+
+  // The URL is the source of truth for the active set; localStorage only
+  // fills in when the URL has no (valid) set param.
+  const activeSetId = useMemo(
+    () =>
+      searchSet && isValidWordSetId(searchSet)
+        ? searchSet
+        : loadActiveWordSetId(),
+    [searchSet],
+  );
+
   const [questions, setQuestions] = useState<Question[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -33,8 +47,27 @@ const VocabularyQuiz: React.FC = () => {
   const correctSound = new Howl({ src: ["/sounds/correct.mp3"] });
   const incorrectSound = new Howl({ src: ["/sounds/incorrect.mp3"] });
 
+  // Canonicalize the URL so it always points at the active set and stays
+  // shareable (covers bare links and invalid set params).
   useEffect(() => {
+    if (searchSet !== activeSetId) {
+      navigate({
+        to: ".",
+        search: { set: activeSetId },
+        replace: true,
+        viewTransition: false,
+      });
+    }
+  }, [searchSet, activeSetId, navigate]);
+
+  useEffect(() => {
+    persistActiveWordSetId(activeSetId);
     setQuestions(loadQuestionsForSet(activeSetId));
+    setSelectedAnswer(null);
+    setIsAnswered(false);
+    setShowResults(false);
+    setShowResetConfirm(false);
+    setQuestionKey((prev) => prev + 1);
   }, [activeSetId]);
 
   const handleQuestionAdvance = (
@@ -112,13 +145,12 @@ const VocabularyQuiz: React.FC = () => {
     setShowWordSetPicker(false);
     if (setId === activeSetId) return;
 
-    persistActiveWordSetId(setId);
-    setActiveSetId(setId);
-    setSelectedAnswer(null);
-    setIsAnswered(false);
-    setShowResults(false);
-    setShowResetConfirm(false);
-    setQuestionKey((prev) => prev + 1);
+    navigate({
+      to: ".",
+      search: { set: setId },
+      replace: true,
+      viewTransition: false,
+    });
   };
 
   if (questions.length === 0 && !showResults) return <div>Loading...</div>;
