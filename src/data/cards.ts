@@ -2,6 +2,7 @@ import type { CardInfo } from "../store/ui.js";
 
 export const apps: CardInfo[] = [
   { id: "finnish-quiz", title: "Language Quiz", kind: "app" },
+  { id: "character-sheet", title: "Character Sheet", kind: "app" },
 ];
 
 export const projects: CardInfo[] = [

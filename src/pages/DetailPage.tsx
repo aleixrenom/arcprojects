@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { type CardInfo } from "../store/ui.js";
 import QuizApp from "../apps/light-quiz";
+import CharacterSheetApp from "../apps/character-sheet";
 
 type DetailPageProps = {
   card: CardInfo;
@@ -9,6 +10,7 @@ type DetailPageProps = {
 
 const appComponents: Record<string, React.ComponentType> = {
   "finnish-quiz": QuizApp,
+  "character-sheet": CharacterSheetApp,
 };
 
 export default function DetailPage({ card }: DetailPageProps) {

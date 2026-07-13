@@ -1,0 +1,885 @@
+/* Character sheet tokens, scoped so they don't leak into the portfolio theme.
+   Light values are the locked-in "Minimal" theme from the design handoff;
+   the dark block is a derived variant so the sheet follows the portfolio's
+   dark-mode toggle (per user decision — the handoff itself only ships light). */
+.cs-root {
+  --cs-bg: oklch(0.97 0.004 250);
+  --cs-surface: oklch(0.995 0.002 250);
+  --cs-surface-alt: oklch(0.945 0.006 250);
+  --cs-border: oklch(0.88 0.008 250);
+  --cs-text: oklch(0.24 0.01 250);
+  --cs-muted: oklch(0.5 0.012 250);
+  --cs-accent: oklch(0.56 0.13 255);
+  --cs-body: oklch(0.56 0.13 255);
+  --cs-mind: oklch(0.56 0.12 300);
+  --cs-soul: oklch(0.56 0.12 195);
+  --cs-danger: oklch(0.55 0.15 25);
+  --cs-on-accent: #fff;
+  --cs-shadow: 0 1px 2px rgba(20, 20, 30, 0.05),
+    0 1px 1px rgba(20, 20, 30, 0.04);
+  --cs-modal-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  --cs-backdrop: rgba(15, 18, 25, 0.5);
+}
+
+html.dark .cs-root {
+  --cs-bg: oklch(0.2 0.008 250);
+  --cs-surface: oklch(0.245 0.01 250);
+  --cs-surface-alt: oklch(0.31 0.012 250);
+  --cs-border: oklch(0.36 0.012 250);
+  --cs-text: oklch(0.93 0.006 250);
+  --cs-muted: oklch(0.68 0.012 250);
+  --cs-accent: oklch(0.68 0.12 255);
+  --cs-body: oklch(0.68 0.12 255);
+  --cs-mind: oklch(0.68 0.11 300);
+  --cs-soul: oklch(0.68 0.11 195);
+  --cs-danger: oklch(0.66 0.14 25);
+  --cs-on-accent: oklch(0.18 0.01 250);
+  --cs-shadow: none;
+  --cs-modal-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  --cs-backdrop: rgba(0, 0, 0, 0.6);
+}
+
+.cs-root {
+  min-height: 100vh;
+  background: var(--cs-bg);
+  color: var(--cs-text);
+  font-family: "Manrope", sans-serif;
+  padding-bottom: 60px;
+  transition: background 0.2s ease;
+  position: relative;
+}
+
+.cs-root *,
+.cs-root *::before,
+.cs-root *::after {
+  box-sizing: border-box;
+}
+
+.cs-root button,
+.cs-root input,
+.cs-root select,
+.cs-root textarea {
+  font-family: inherit;
+}
+
+.cs-root input:focus,
+.cs-root textarea:focus {
+  outline: none;
+}
+
+.cs-root ::placeholder {
+  color: inherit;
+  opacity: 0.55;
+}
+
+.cs-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px 0;
+}
+
+/* ---- character tabs ---- */
+
+.cs-tabs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.cs-tab {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid var(--cs-border);
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+.cs-tab.active {
+  background: var(--cs-surface);
+  border-color: var(--cs-accent);
+}
+
+.cs-tab.has-delete {
+  padding-right: 4px;
+}
+
+.cs-tab-btn {
+  padding: 9px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--cs-muted);
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+.cs-tab.active .cs-tab-btn {
+  font-weight: 700;
+  color: var(--cs-text);
+}
+
+.cs-tab-delete {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: var(--cs-surface-alt);
+  color: var(--cs-muted);
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.cs-new-char {
+  padding: 9px 16px;
+  border-radius: 14px;
+  border: 1.5px dashed var(--cs-border);
+  background: transparent;
+  color: var(--cs-muted);
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ---- header ---- */
+
+.cs-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cs-name-col {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.cs-name-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-weight: 800;
+  font-size: clamp(28px, 5vw, 40px);
+  color: var(--cs-text);
+  padding: 4px 0;
+  letter-spacing: -0.01em;
+}
+
+.cs-subtitle {
+  font-size: 12.5px;
+  color: var(--cs-muted);
+  margin-top: 2px;
+}
+
+.cs-sp-badge {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 6px;
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-border);
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--cs-text);
+  box-shadow: var(--cs-shadow);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.cs-sp-badge.over {
+  border-color: var(--cs-danger);
+  color: var(--cs-danger);
+}
+
+/* ---- layout ---- */
+
+.cs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.cs-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cs-card {
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--cs-shadow);
+}
+
+.cs-card-title {
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: var(--cs-text);
+  letter-spacing: -0.01em;
+}
+
+.cs-card-title-tight {
+  margin-bottom: 0;
+}
+
+/* ---- steppers ---- */
+
+.cs-stepper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cs-stepper-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--cs-border);
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 0;
+}
+
+.cs-stepper-val {
+  min-width: 28px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.cs-mini-stepper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.cs-mini-stepper-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: none;
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.cs-mini-stepper-val {
+  min-width: 14px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ---- stats card ---- */
+
+.cs-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--cs-border);
+  flex-wrap: wrap;
+}
+
+.cs-stat-row:last-child {
+  border-bottom: none;
+  padding-bottom: 2px;
+}
+
+.cs-stat-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.cs-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cs-dot.body {
+  background: var(--cs-body);
+}
+
+.cs-dot.mind {
+  background: var(--cs-mind);
+}
+
+.cs-dot.soul {
+  background: var(--cs-soul);
+}
+
+.cs-stat-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cs-stat-sub {
+  font-size: 11.5px;
+  color: var(--cs-muted);
+}
+
+.cs-pool-pill {
+  font-size: 11.5px;
+  color: var(--cs-muted);
+  background: var(--cs-surface-alt);
+  padding: 5px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* ---- health & resolve card ---- */
+
+.cs-pool-block {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--cs-border);
+  margin-bottom: 16px;
+}
+
+.cs-pool-block-last {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cs-pool-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.cs-pool-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cs-pool-max {
+  font-size: 12.5px;
+  color: var(--cs-muted);
+}
+
+.cs-pool-stepper-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cs-pool-val {
+  min-width: 40px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.cs-reset-btn {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: var(--cs-muted);
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cs-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--cs-surface-alt);
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.cs-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.cs-bar-fill.health {
+  background: var(--cs-body);
+}
+
+.cs-bar-fill.resolve {
+  background: var(--cs-soul);
+}
+
+.cs-recovery {
+  font-size: 12px;
+  color: var(--cs-muted);
+  margin-top: 8px;
+}
+
+/* ---- counters card ---- */
+
+.cs-counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.cs-counter-row-last {
+  border-bottom: none;
+  padding-bottom: 2px;
+}
+
+.cs-counter-label {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.cs-counter-hint {
+  font-size: 11.5px;
+  color: var(--cs-muted);
+  margin-top: 2px;
+  max-width: 220px;
+}
+
+.cs-counter-val {
+  min-width: 32px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--cs-accent);
+}
+
+/* ---- abilities card ---- */
+
+.cs-abilities-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cs-add-btn {
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--cs-accent);
+  color: var(--cs-on-accent);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cs-ability-group-header {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cs-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 4px 0 2px;
+}
+
+.cs-ability-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.cs-ability-left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cs-ability-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.cs-ability-nameline {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cs-ability-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--cs-text);
+}
+
+.cs-ability-tag {
+  font-size: 10.5px;
+  color: var(--cs-muted);
+}
+
+.cs-ability-effect {
+  font-size: 12px;
+  color: var(--cs-muted);
+  line-height: 1.4;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+.cs-ability-topics {
+  font-size: 11.5px;
+  color: var(--cs-text);
+  font-style: italic;
+}
+
+.cs-ability-pool {
+  font-size: 10.5px;
+  color: var(--cs-muted);
+  white-space: nowrap;
+}
+
+.cs-ability-delete {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--cs-muted);
+  cursor: pointer;
+  font-size: 14px;
+  flex-shrink: 0;
+  line-height: 1;
+  padding: 0;
+}
+
+.cs-empty {
+  padding: 10px 0 16px;
+  color: var(--cs-muted);
+  font-size: 12.5px;
+}
+
+/* ---- notes card ---- */
+
+.cs-notes-textarea {
+  width: 100%;
+  min-height: 140px;
+  border: 1px solid var(--cs-border);
+  border-radius: 8px;
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13.5px;
+  padding: 12px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* ---- footer ---- */
+
+.cs-footer {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--cs-muted);
+  margin-top: 32px;
+  padding-bottom: 8px;
+}
+
+/* ---- add-ability modal ---- */
+
+.cs-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--cs-backdrop);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.cs-modal-panel {
+  background: var(--cs-surface);
+  border-radius: 14px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--cs-modal-shadow);
+  overflow: hidden;
+}
+
+.cs-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 12px;
+  flex-shrink: 0;
+}
+
+.cs-modal-title {
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--cs-text);
+  letter-spacing: -0.01em;
+}
+
+.cs-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--cs-surface-alt);
+  color: var(--cs-muted);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cs-custom-cta {
+  flex-shrink: 0;
+  margin: 0 20px 14px;
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: 1.5px dashed var(--cs-border);
+  background: transparent;
+  color: var(--cs-accent);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Same effective width as the ability cards below: side margins + flex
+   stretch, never `width: 100%` on top of the margins (past overflow bug). */
+.cs-pack-select {
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 10px;
+  margin: 0 20px 14px;
+  flex-shrink: 0;
+}
+
+.cs-modal-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0 20px 20px;
+}
+
+.cs-catalog-group-header {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--cs-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 14px 0 8px;
+}
+
+.cs-catalog-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--cs-border);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: var(--cs-surface);
+  cursor: pointer;
+}
+
+.cs-catalog-card.added {
+  background: var(--cs-surface-alt);
+  cursor: default;
+  opacity: 0.55;
+}
+
+.cs-catalog-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.cs-catalog-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cs-text);
+}
+
+.cs-catalog-tag {
+  font-size: 10.5px;
+  color: var(--cs-muted);
+  white-space: nowrap;
+}
+
+.cs-catalog-effect {
+  font-size: 12px;
+  color: var(--cs-muted);
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+.cs-added-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--cs-accent);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---- pick-stat mode ---- */
+
+.cs-pickstat-body {
+  padding: 4px 20px 20px;
+}
+
+.cs-pickstat-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cs-pickstat-hint {
+  font-size: 13px;
+  color: var(--cs-muted);
+  margin-bottom: 14px;
+}
+
+.cs-pickstat-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.cs-stat-option-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--cs-border);
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cs-back-btn {
+  border: none;
+  background: transparent;
+  color: var(--cs-muted);
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+/* ---- custom ability form ---- */
+
+.cs-custom-form {
+  padding: 4px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cs-custom-input {
+  width: 100%;
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+.cs-custom-row {
+  display: flex;
+  gap: 8px;
+}
+
+.cs-custom-select {
+  flex: 1;
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13px;
+  padding: 9px 8px;
+}
+
+.cs-custom-textarea {
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13px;
+  padding: 10px 12px;
+  resize: vertical;
+  line-height: 1.4;
+}
+
+.cs-custom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.cs-save-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: var(--cs-accent);
+  color: var(--cs-on-accent);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}

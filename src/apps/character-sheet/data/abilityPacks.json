@@ -1,0 +1,351 @@
+{
+  "packs": [
+    {
+      "id": "Basic",
+      "label": "Basic abilities",
+      "abilities": [
+        {
+          "key": "martial-adept",
+          "name": "Martial adept",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Body",
+          "effect": "Empower Strike (health).",
+          "description": "You are proficient in direct combat."
+        },
+        {
+          "key": "demoralise",
+          "name": "Demoralise",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Empower Strike (resolve).",
+          "description": "Your words cut deeper than any blade."
+        },
+        {
+          "key": "sense-weakness",
+          "name": "Sense weakness",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Soul",
+          "effect": "Strike (health OR resolve).",
+          "description": "You know how to read your opponent to know where and how to strike true."
+        },
+        {
+          "key": "talent",
+          "name": "Talent",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "any",
+          "effect": "Whenever you gain a level in this ability, gain Expertise in one new topic related to the linked stat. See the section on \"topics\" on the rules for more information. You may take this ability more than once, selecting a different stat every time.",
+          "repeatable": true,
+          "description": "You're an expert in one or more topics."
+        },
+        {
+          "key": "support",
+          "name": "Support",
+          "kind": "Action",
+          "group": "Actions — Support",
+          "statMode": "any",
+          "effect": "While actively participating in a roll (check, Strike, etc.) with someone else, roll ability and add all successes to the amount of successes they get. If this triggers a close call that rewards an insight token, only the one who made the check obtains it. A roll can only be affected by one instance of Support at any given time.",
+          "description": "You know how to reinforce someone else's actions effectively."
+        },
+        {
+          "key": "lucky",
+          "name": "Lucky",
+          "kind": "Action",
+          "group": "Actions — Support",
+          "statMode": "any",
+          "effect": "Spend 1 to turn the result of a die rolled by anyone into a 1 or a 6.",
+          "description": "You seem to be able to get what you want when it really counts."
+        },
+        {
+          "key": "healing",
+          "name": "Healing",
+          "kind": "Action",
+          "group": "Actions — Support",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "Spend any number of dice to allow someone to recover that much Health or Resolve.",
+          "description": "You are proficient on treating wounds and soothing minds."
+        },
+        {
+          "key": "defensive",
+          "name": "Defensive",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "fixed",
+          "stat": "Body",
+          "effect": "Soak (health) equal to half this ability's level rounded up. You may Spend 1 to Soak equal to full level instead.",
+          "description": "You have some kind physical protection or are able to deflect part or all of incoming attacks."
+        },
+        {
+          "key": "iron-will",
+          "name": "Iron will",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "Soak (resolve) equal to half this ability's level rounded up. You may Spend 1 to Soak equal to full level instead.",
+          "description": "Through introspection or technique, you have learned to steel your mind against attacks."
+        },
+        {
+          "key": "dodge",
+          "name": "Dodge",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "fixed",
+          "stat": "Body",
+          "effect": "Evade (health).",
+          "description": "You know how to get out of harm's way at a moment's notice."
+        },
+        {
+          "key": "shrug-off",
+          "name": "Shrug off",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "Evade (resolve).",
+          "description": "Through rationale or acceptance, you're able to dismiss incoming psychological damage."
+        },
+        {
+          "key": "counterattack",
+          "name": "Counterattack",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "fixed",
+          "stat": "Body",
+          "effect": "Mitigate (health) and note the number of successes rolled. You may add that number to the damage of the retaliate action that you take right after this reaction, as long as it's against the target that triggered this reaction.",
+          "description": "You can return some of the hits taken."
+        },
+        {
+          "key": "slip-away",
+          "name": "Slip away",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Mitigate (health AND resolve), and then you are removed from the conflict.",
+          "description": "You can see the gaps in someone's aggression and can take advantage of them to get out of trouble."
+        },
+        {
+          "key": "stoic-endurance",
+          "name": "Stoic endurance",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "fixed",
+          "stat": "Soul",
+          "effect": "Mitigate (health AND resolve), and then you can take the remaining damage in either your Health or Resolve pools distributed as you choose.",
+          "description": "You shrug off damage through sheer force of will."
+        },
+        {
+          "key": "protect",
+          "name": "Protect",
+          "kind": "Reaction",
+          "group": "Reactions",
+          "statMode": "or",
+          "statOptions": [
+            "Body",
+            "Soul"
+          ],
+          "effect": "If an ally near you is going to take a reaction to avoid damage, you can use this reaction instead, and the attack will be directed at you. Mitigate (health AND resolve).",
+          "description": "You know how to protect others from harm."
+        }
+      ]
+    },
+    {
+      "id": "Intrigue",
+      "label": "Ability pack — Intrigue",
+      "abilities": [
+        {
+          "key": "intrigue-public-shame",
+          "name": "Public shame",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Strike (resolve). While in a public setting with many witnesses, this ability gains Empower. In that public setting, as long as you have the public's attention and a powerful topic of shame, after your Empower Strike, you may Spend any amount of dice, roll them, and deal all successes as additional damage."
+        },
+        {
+          "key": "intrigue-passive-aggressiveness-old",
+          "name": "Passive-aggressiveness (old)",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Strike (resolve). If used outside of a conflict, the target rolls a Mind check with difficulty equal to your failures rolled (all dice which are not successes). If they fail, you do not start a conflict due to this damage. If they succeed, conflict may start with this action being considered the first aggressive action."
+        },
+        {
+          "key": "intrigue-passive-aggressiveness-new",
+          "name": "Passive-aggressiveness (new)",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Strike (resolve). If used outside of a conflict, the target rolls a Mind check with difficulty equal to your failures rolled (all dice which are not successes). If they fail, you do not start a conflict due to this damage. If they succeed, conflict may start with this action being considered the first aggressive action."
+        },
+        {
+          "key": "intrigue-spread-rumours",
+          "name": "Spread rumours",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Spend any amount of dice to spread a nasty rumour against someone. That person will take damage to their Resolve equal to the dice spent after their next Rest."
+        },
+        {
+          "key": "intrigue-imposing-presence",
+          "name": "Imposing presence",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "or",
+          "statOptions": [
+            "Body",
+            "Soul"
+          ],
+          "effect": "Anyone of your choice in the same Scene as you rolls one less die for any Strike aimed at you or your allies. You may Spend any amount of dice to make someone in your Scene roll that many less dice on a roll they're making. During a conflict, if you Spend dice to reduce a roll, the number will be reduced from the next roll they make. A single person can only be affected by one instance of this ability at a time.\nLevel 5: You passively reduce rolls by two instead of one.",
+          "description": "The mere existence of you nearby provokes shivers and worry to your would-be enemies."
+        },
+        {
+          "key": "intrigue-insider",
+          "name": "Insider",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "When you gain this ability, choose a large group of people with similar characteristics, like a social class, a tribe, or a small society. You have Expertise when recalling information about this group, difficulty numbers when dealing with them are generally lower for you, and you know how to dress and act like them. You can take this ability multiple times, choosing a different group each time.",
+          "repeatable": true
+        },
+        {
+          "key": "intrigue-persona",
+          "name": "Persona",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "When you choose this ability, create a different personality, a different character for your character to play. You have Expertise when trying to convince someone that you are really that character. You may have an amount of these characters equal to half this ability's level rounded up.",
+          "description": "You know how to act very differently depending on who you talk to, to the point of being unrecognisable. Or maybe you are an actor actually playing a role."
+        },
+        {
+          "key": "intrigue-wealth",
+          "name": "Wealth",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "any",
+          "effect": "Spend any amount of dice to obtain goods, services, or access that money could plausibly buy. The GM sets the cost: 1 die for something a person of means could easily arrange, more for the rare, the urgent, or the discreet. You do not recover spent dice on a Rest. You recover all spent dice during Downtime.",
+          "description": "You have coin, assets, or credit, and know how to make them talk."
+        },
+        {
+          "key": "intrigue-connections",
+          "name": "Connections",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "Spend any amount of dice to call in a favour: someone you plausibly know acts on your behalf. The GM sets the cost by how much the favour asks of them: 1 die for a small kindness, more for risk, secrecy, or real sacrifice. You do not recover spent dice on a Rest. You recover all spent dice during Downtime.",
+          "description": "People owe you, and you know exactly who and how much."
+        }
+      ]
+    },
+    {
+      "id": "Investigation",
+      "label": "Ability pack — Investigation",
+      "abilities": []
+    },
+    {
+      "id": "Weapons",
+      "label": "Ability pack — Weapons",
+      "abilities": []
+    },
+    {
+      "id": "Wonders",
+      "label": "Ability pack — Wonders",
+      "abilities": [
+        {
+          "key": "wonders-arcanist",
+          "name": "Arcanist",
+          "kind": "Action",
+          "group": "Actions — Versatile",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "You have Expertise when interacting with magical effects or objects. You can also create instantaneous, harmless sensory effects out of thin air, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.",
+          "description": "You are adept in the ways of magic and can bend it to create many surprising effects."
+        },
+        {
+          "key": "wonders-theriomancy",
+          "name": "Theriomancy",
+          "kind": "Action",
+          "group": "Actions — Versatile",
+          "statMode": "fixed",
+          "stat": "Soul",
+          "effect": "You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health).\nLevel 3: The beast you transform into can be half or double your size.\nLevel 5: The beast can be a quarter or triple your size.\nLevel 7: The beast can be minuscule or four times your size.",
+          "description": "You can bond with beasts and transform into them."
+        },
+        {
+          "key": "wonders-elementalism",
+          "name": "Elementalism",
+          "kind": "Action",
+          "group": "Actions — Versatile",
+          "statMode": "any",
+          "effect": "You can manipulate earth, fire, water, and air at will. You can move and reshape the element with precision as long as it's near you, it exists, and is in its natural state (except for fire, which you can generate first before manipulating). At this level you can only manipulate 10cm³ of material, but this amount will increase with the ability's level as seen below, together with gaining new capabilities. You also gain Expertise in elemental magic.\nLevel 2: You can manipulate 30cm³.\nLevel 3: You can manipulate 1m³. This ability gains Strike (health).\nLevel 4: You can manipulate 2m³.\nLevel 5: You can manipulate 3m³.\nLevel 6: You can manipulate 5m³. This ability gains Empower.\nLevel 7: You can manipulate 7m³.\nLevel 8: You can manipulate 10m³.",
+          "description": "Through will, guile, or sheer discipline, you learned to bend the elements to your will."
+        },
+        {
+          "key": "wonders-summoning",
+          "name": "Summoning",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "Spend any number of dice to create a new being (hereby called \"summon\"). When you get this ability, decide on what kind of summon it is (undead, elementals, animate objects...). The summon always has the following characteristics:\n- All stats start at 0.\n- They have a Health pool of 1 + their Body stat, and a Resolve pool of 1 + their Mind OR Soul stat.\n- They have a size between your own and half of that.\n- They can do checks as normal as long as they have at least 1 level in the corresponding stat.\n- They have Strike (health) using Body and Strike (resolve) using Mind or Soul, treating their stats as abilities for this purpose.\n- You only recover the dice spent to create them when they die or you dismiss them.\n- They cannot trigger close calls.\n\nWhen you get this ability, choose two of the following customisations. From then on, for each die you Spend while summoning, choose one of the chosen customisations, and the summon will receive the benefit.\n- +1 Body\n- +1 Soul\n- +1 Mind\n- More size\n- Less size\n- More speed\n- Can fly\n- Can easily climb any surface\n- Can easily burrow through loose terrain\n- Soak +1 (health)\n- Soak +1 (resolve)\nYou may choose another customisation option at ability level 3 and every 2 levels after that.",
+          "description": "Create new temporary beings, living or not."
+        },
+        {
+          "key": "wonders-pocketful-of-knives",
+          "name": "Pocketful of knives",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Body",
+          "effect": "You can produce knives out of thin air, but only an amount equal to ability + stat levels can exist at any give time, the last ones disappearing as the new ones appear. You can also attack with them. To do so, choose an amount of targets equal to ability + stat levels and roll a die for each. You deal 1 health damage to the target on a success without triggering close calls.",
+          "description": "The amount of knives you can produce seem to never end."
+        },
+        {
+          "key": "wonders-empath",
+          "name": "Empath",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "fixed",
+          "stat": "Soul",
+          "effect": "You have Expertise when attempting to understand someone else's emotional state, feelings, desires, and the like.\nLevel 3: You also have Expertise when confronting someone about their feelings and emotions, be it in a positive or negative way.\nLevel 5: The magic of an empath awakens within you. Whenever you touch someone, you immediately know their current emotional state without the need of a roll.\nLevel 7: You are capable of directly affecting someone's emotional state through your magic. Whenever you touch someone, you can attempt to weaken or heighten any emotions within them. The GM may ask you to roll ability + stat for difficult attempts.",
+          "description": "You have a knack for understanding how other feel, sometimes even sharing those feelings."
+        }
+      ]
+    }
+  ]
+}
