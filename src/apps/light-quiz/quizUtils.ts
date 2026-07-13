@@ -1,5 +1,6 @@
 import finnishData from "./wordSets/finnish-1000.json";
 import catalanData from "./wordSets/catalan-1000.json";
+import englishQNData from "./wordSets/english-questions-and-negatives.json";
 import type { Question } from "./types";
 
 export interface WordSet {
@@ -11,6 +12,11 @@ export interface WordSet {
 export const wordSets: WordSet[] = [
   { id: "finnish-1000", label: "Finnish vocabulary", data: finnishData },
   { id: "catalan-1000", label: "Vocabulari Anglès", data: catalanData },
+  {
+    id: "english-questions-and-negatives",
+    label: "Do, does, did...",
+    data: englishQNData,
+  },
 ];
 
 const ACTIVE_SET_KEY = "quizActiveWordSet";

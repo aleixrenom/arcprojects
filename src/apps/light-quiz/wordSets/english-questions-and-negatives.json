@@ -1,0 +1,1502 @@
+[
+  {
+    "word": "They ___ usually make dinner.",
+    "correct": "don't",
+    "options": ["doesn't", "isn't", "aren't", "don't"]
+  },
+  {
+    "word": "I ___ sad right now.",
+    "correct": "am not",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "The children didn't ___ the guitar last Saturday.",
+    "correct": "play",
+    "options": ["plays", "played", "play", "playing"]
+  },
+  {
+    "word": "She didn't ___ the book last night.",
+    "correct": "open",
+    "options": ["open", "opens", "opened", "opening"]
+  },
+  {
+    "word": "They ___ tired right now.",
+    "correct": "aren't",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "She ___ want a car last year.",
+    "correct": "didn't",
+    "options": ["didn't", "wasn't", "doesn't", "don't"]
+  },
+  {
+    "word": "My friend ___ walk to school last week.",
+    "correct": "didn't",
+    "options": ["didn't", "don't", "doesn't", "wasn't"]
+  },
+  {
+    "word": "They ___ usually live in London.",
+    "correct": "don't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "When ___ you have a car last year?",
+    "correct": "did",
+    "options": ["were", "does", "do", "did"]
+  },
+  {
+    "word": "___ Tom usually sleep well?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Is", "Does"]
+  },
+  {
+    "word": "___ Maria usually open the door?",
+    "correct": "Does",
+    "options": ["Does", "Do", "Are", "Is"]
+  },
+  {
+    "word": "Tom didn't ___ a cat last week.",
+    "correct": "buy",
+    "options": ["buy", "bought", "buys", "buying"]
+  },
+  {
+    "word": "Did the children ___ milk yesterday?",
+    "correct": "drink",
+    "options": ["drinking", "drinks", "drank", "drink"]
+  },
+  {
+    "word": "How ___ my friend usually speak to Maria?",
+    "correct": "does",
+    "options": ["does", "are", "do", "is"]
+  },
+  {
+    "word": "They didn't ___ the game yesterday.",
+    "correct": "watch",
+    "options": ["watches", "watched", "watch", "watching"]
+  },
+  {
+    "word": "___ her brother usually eat fish?",
+    "correct": "Does",
+    "options": ["Does", "Do", "Is", "(nothing)"]
+  },
+  {
+    "word": "Why ___ Tom usually walk the dog?",
+    "correct": "does",
+    "options": ["do", "are", "is", "does"]
+  },
+  {
+    "word": "Her brother didn't ___ breakfast yesterday.",
+    "correct": "eat",
+    "options": ["eat", "eating", "ate", "eats"]
+  },
+  {
+    "word": "The children didn't ___ this book on Saturday.",
+    "correct": "like",
+    "options": ["liking", "likes", "like", "liked"]
+  },
+  {
+    "word": "___ Tom hungry yesterday?",
+    "correct": "Was",
+    "options": ["Were", "Did", "Was", "Is"]
+  },
+  {
+    "word": "___ Maria watch TV last week?",
+    "correct": "Did",
+    "options": ["Does", "Do", "Did", "Was"]
+  },
+  {
+    "word": "___ John usually see the Maria?",
+    "correct": "Does",
+    "options": ["Is", "Does", "Are", "Do"]
+  },
+  {
+    "word": "Did John ___ the door last night?",
+    "correct": "close",
+    "options": ["closed", "close", "closes", "closing"]
+  },
+  {
+    "word": "Did you ___ breakfast yesterday?",
+    "correct": "eat",
+    "options": ["ate", "eating", "eats", "eat"]
+  },
+  {
+    "word": "Did Tom ___ the film yesterday?",
+    "correct": "see",
+    "options": ["saw", "see", "seeing", "sees"]
+  },
+  {
+    "word": "Did you ___ alone last year?",
+    "correct": "live",
+    "options": ["living", "lives", "lived", "live"]
+  },
+  {
+    "word": "___ the children cook breakfast yesterday?",
+    "correct": "Did",
+    "options": ["Does", "Were", "Do", "Did"]
+  },
+  {
+    "word": "She ___ usually eat cake.",
+    "correct": "doesn't",
+    "options": ["aren't", "don't", "doesn't", "isn't"]
+  },
+  {
+    "word": "Tom didn't ___ breakfast on Saturday.",
+    "correct": "want",
+    "options": ["want", "wanting", "wanted", "wants"]
+  },
+  {
+    "word": "Her brother ___ at the house on Saturday.",
+    "correct": "was",
+    "options": ["did", "were", "was", "is"]
+  },
+  {
+    "word": "I ___ hungry right now.",
+    "correct": "am not",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "I ___ thirsty right now.",
+    "correct": "am not",
+    "options": ["isn't", "aren't", "don't", "am not"]
+  },
+  {
+    "word": "Her brother ___ cold right now.",
+    "correct": "isn't",
+    "options": ["doesn't", "isn't", "am not", "aren't"]
+  },
+  {
+    "word": "Why ___ she usually work at the school?",
+    "correct": "does",
+    "options": ["do", "does", "is", "are"]
+  },
+  {
+    "word": "I ___ at home yesterday.",
+    "correct": "was",
+    "options": ["was", "did", "were", "am"]
+  },
+  {
+    "word": "___ she usually live near the school?",
+    "correct": "Does",
+    "options": ["Is", "Do", "Does", "Are"]
+  },
+  {
+    "word": "___ we near the shop last week?",
+    "correct": "Were",
+    "options": ["Did", "Were", "Was", "Are"]
+  },
+  {
+    "word": "He ___ speak to Tom yesterday.",
+    "correct": "didn't",
+    "options": ["didn't", "doesn't", "don't", "wasn't"]
+  },
+  {
+    "word": "We ___ busy right now.",
+    "correct": "aren't",
+    "options": ["am not", "isn't", "aren't", "don't"]
+  },
+  {
+    "word": "What ___ we make?",
+    "correct": "do",
+    "options": ["do", "are", "does", "(nothing)"]
+  },
+  {
+    "word": "I ___ late last night.",
+    "correct": "was",
+    "options": ["were", "did", "am", "was"]
+  },
+  {
+    "word": "___ the children near the shop yesterday?",
+    "correct": "Were",
+    "options": ["Was", "Did", "Are", "Were"]
+  },
+  {
+    "word": "I ___ in the garden on Saturday.",
+    "correct": "was",
+    "options": ["am", "was", "were", "did"]
+  },
+  {
+    "word": "___ I usually speak English?",
+    "correct": "Do",
+    "options": ["Am", "Is", "Does", "Do"]
+  },
+  {
+    "word": "They didn't ___ cats last year.",
+    "correct": "like",
+    "options": ["likes", "liked", "like", "liking"]
+  },
+  {
+    "word": "___ the children want breakfast on Saturday?",
+    "correct": "Did",
+    "options": ["Does", "Do", "Were", "Did"]
+  },
+  {
+    "word": "The children didn't ___ in the house last year.",
+    "correct": "work",
+    "options": ["works", "working", "work", "worked"]
+  },
+  {
+    "word": "Did Maria ___ dinner last night?",
+    "correct": "eat",
+    "options": ["eating", "eat", "eats", "ate"]
+  },
+  {
+    "word": "___ Maria usually like cats?",
+    "correct": "Does",
+    "options": ["Is", "Does", "Are", "Do"]
+  },
+  {
+    "word": "___ you sad last Saturday?",
+    "correct": "Were",
+    "options": ["Are", "Were", "Was", "Did"]
+  },
+  {
+    "word": "My friend ___ late last week.",
+    "correct": "wasn't",
+    "options": ["wasn't", "isn't", "weren't", "didn't"]
+  },
+  {
+    "word": "___ the children usually sleep at home?",
+    "correct": "Do",
+    "options": ["Does", "Is", "Are", "Do"]
+  },
+  {
+    "word": "___ Maria usually live here?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Is", "Does"]
+  },
+  {
+    "word": "The children ___ at home last week.",
+    "correct": "were",
+    "options": ["was", "are", "did", "were"]
+  },
+  {
+    "word": "___ I usually have a dog?",
+    "correct": "Do",
+    "options": ["Does", "Do", "Am", "Is"]
+  },
+  {
+    "word": "John ___ worried on Saturday.",
+    "correct": "wasn't",
+    "options": ["wasn't", "weren't", "isn't", "didn't"]
+  },
+  {
+    "word": "___ my friend at school last night?",
+    "correct": "Was",
+    "options": ["Is", "Did", "Was", "Were"]
+  },
+  {
+    "word": "I ___ happy last week.",
+    "correct": "was",
+    "options": ["was", "am", "were", "did"]
+  },
+  {
+    "word": "___ the children open the book last night?",
+    "correct": "Did",
+    "options": ["Does", "Were", "Do", "Did"]
+  },
+  {
+    "word": "They ___ usually see her friend.",
+    "correct": "don't",
+    "options": ["isn't", "doesn't", "aren't", "don't"]
+  },
+  {
+    "word": "Why ___ Maria live near the school last year?",
+    "correct": "did",
+    "options": ["was", "does", "did", "do"]
+  },
+  {
+    "word": "___ we buy a book yesterday?",
+    "correct": "Did",
+    "options": ["Do", "Did", "Does", "Were"]
+  },
+  {
+    "word": "I ___ nervous right now.",
+    "correct": "am not",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "___ he like music last week?",
+    "correct": "Did",
+    "options": ["Did", "Do", "Was", "Does"]
+  },
+  {
+    "word": "Tom ___ work in the house last year.",
+    "correct": "didn't",
+    "options": ["didn't", "doesn't", "don't", "wasn't"]
+  },
+  {
+    "word": "She ___ usually like music.",
+    "correct": "doesn't",
+    "options": ["aren't", "don't", "doesn't", "isn't"]
+  },
+  {
+    "word": "___ he usually cook dinner?",
+    "correct": "Does",
+    "options": ["Does", "Are", "Is", "Do"]
+  },
+  {
+    "word": "You ___ at school on Monday.",
+    "correct": "were",
+    "options": ["was", "did", "are", "were"]
+  },
+  {
+    "word": "Why ___ he see John last week?",
+    "correct": "did",
+    "options": ["did", "was", "do", "does"]
+  },
+  {
+    "word": "Did the children ___ the dog last night?",
+    "correct": "walk",
+    "options": ["walks", "walking", "walked", "walk"]
+  },
+  {
+    "word": "They ___ usually open the window.",
+    "correct": "don't",
+    "options": ["aren't", "doesn't", "isn't", "don't"]
+  },
+  {
+    "word": "Maria ___ hungry right now.",
+    "correct": "isn't",
+    "options": ["doesn't", "isn't", "am not", "aren't"]
+  },
+  {
+    "word": "My friend ___ like the music last Saturday.",
+    "correct": "didn't",
+    "options": ["didn't", "doesn't", "don't", "wasn't"]
+  },
+  {
+    "word": "___ he nervous on Saturday?",
+    "correct": "Was",
+    "options": ["Is", "Did", "Was", "Were"]
+  },
+  {
+    "word": "Why ___ her brother usually open the letter?",
+    "correct": "does",
+    "options": ["is", "are", "do", "does"]
+  },
+  {
+    "word": "I ___ sad last week.",
+    "correct": "was",
+    "options": ["did", "was", "were", "am"]
+  },
+  {
+    "word": "___ you usually go to school?",
+    "correct": "Do",
+    "options": ["Do", "Are", "Does", "Is"]
+  },
+  {
+    "word": "We ___ worried last year.",
+    "correct": "were",
+    "options": ["did", "were", "are", "was"]
+  },
+  {
+    "word": "He ___ thirsty yesterday.",
+    "correct": "was",
+    "options": ["was", "is", "were", "did"]
+  },
+  {
+    "word": "Why ___ my friend leave the house last night?",
+    "correct": "did",
+    "options": ["did", "was", "does", "do"]
+  },
+  {
+    "word": "We ___ thirsty right now.",
+    "correct": "aren't",
+    "options": ["am not", "don't", "aren't", "isn't"]
+  },
+  {
+    "word": "Her brother ___ bored right now.",
+    "correct": "isn't",
+    "options": ["doesn't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "___ Tom want a book last night?",
+    "correct": "Did",
+    "options": ["Did", "Does", "Do", "Was"]
+  },
+  {
+    "word": "Why ___ we close the window?",
+    "correct": "do",
+    "options": ["are", "do", "(nothing)", "does"]
+  },
+  {
+    "word": "Did the children ___ their Father last week?",
+    "correct": "see",
+    "options": ["sees", "saw", "seeing", "see"]
+  },
+  {
+    "word": "Why ___ you speak English last night?",
+    "correct": "did",
+    "options": ["does", "did", "do", "were"]
+  },
+  {
+    "word": "The dog ___ ready on Saturday.",
+    "correct": "was",
+    "options": ["was", "is", "did", "were"]
+  },
+  {
+    "word": "___ she usually go to the garden?",
+    "correct": "Does",
+    "options": ["Is", "Do", "Are", "Does"]
+  },
+  {
+    "word": "___ they cold last week?",
+    "correct": "Were",
+    "options": ["Was", "Were", "Are", "Did"]
+  },
+  {
+    "word": "___ she sleep late last night?",
+    "correct": "Did",
+    "options": ["Do", "Does", "Did", "Was"]
+  },
+  {
+    "word": "Did she ___ to the shop yesterday?",
+    "correct": "walk",
+    "options": ["walks", "walk", "walked", "walking"]
+  },
+  {
+    "word": "___ she usually cook fish?",
+    "correct": "Does",
+    "options": ["Is", "Does", "Do", "Are"]
+  },
+  {
+    "word": "Did the children ___ the letter yesterday?",
+    "correct": "open",
+    "options": ["opened", "opening", "opens", "open"]
+  },
+  {
+    "word": "Did you ___ to school last week?",
+    "correct": "walk",
+    "options": ["walked", "walking", "walks", "walk"]
+  },
+  {
+    "word": "The dog didn't ___ yesterday.",
+    "correct": "bark",
+    "options": ["bark", "barking", "barked", "barks"]
+  },
+  {
+    "word": "You ___ nervous yesterday.",
+    "correct": "weren't",
+    "options": ["didn't", "weren't", "wasn't", "aren't"]
+  },
+  {
+    "word": "We ___ late right now.",
+    "correct": "aren't",
+    "options": ["isn't", "don't", "aren't", "am not"]
+  },
+  {
+    "word": "The children didn't ___ TV last night.",
+    "correct": "watch",
+    "options": ["watched", "watches", "watch", "watching"]
+  },
+  {
+    "word": "___ Maria work in the house last year?",
+    "correct": "Did",
+    "options": ["Do", "Does", "Did", "Was"]
+  },
+  {
+    "word": "What ___ we buy?",
+    "correct": "do",
+    "options": ["(nothing)", "does", "do", "are"]
+  },
+  {
+    "word": "___ they usually cook a cake?",
+    "correct": "Do",
+    "options": ["Is", "Does", "Do", "Are"]
+  },
+  {
+    "word": "You ___ cold last night.",
+    "correct": "weren't",
+    "options": ["wasn't", "weren't", "aren't", "didn't"]
+  },
+  {
+    "word": "We ___ ill right now.",
+    "correct": "aren't",
+    "options": ["isn't", "don't", "aren't", "am not"]
+  },
+  {
+    "word": "Maria didn't ___ with her friend last night.",
+    "correct": "speak",
+    "options": ["speak", "speaks", "speaking", "spoke"]
+  },
+  {
+    "word": "Why ___ John usually have breakfast?",
+    "correct": "does",
+    "options": ["do", "does", "are", "is"]
+  },
+  {
+    "word": "___ you usually make cake?",
+    "correct": "Do",
+    "options": ["Do", "Are", "Does", "Is"]
+  },
+  {
+    "word": "___ John usually make coffee?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Does", "Is"]
+  },
+  {
+    "word": "Did my friend ___ coffee yesterday?",
+    "correct": "want",
+    "options": ["wants", "want", "wanting", "wanted"]
+  },
+  {
+    "word": "The children ___ happy on Saturday.",
+    "correct": "were",
+    "options": ["are", "did", "was", "were"]
+  },
+  {
+    "word": "Maria ___ usually have breakfast.",
+    "correct": "doesn't",
+    "options": ["don't", "aren't", "doesn't", "isn't"]
+  },
+  {
+    "word": "She ___ ready last week.",
+    "correct": "was",
+    "options": ["were", "is", "was", "did"]
+  },
+  {
+    "word": "Did you ___ here yesterday?",
+    "correct": "work",
+    "options": ["worked", "works", "working", "work"]
+  },
+  {
+    "word": "___ the children work here yesterday?",
+    "correct": "Did",
+    "options": ["Does", "Do", "Were", "Did"]
+  },
+  {
+    "word": "Tom ___ thirsty yesterday.",
+    "correct": "was",
+    "options": ["is", "were", "was", "did"]
+  },
+  {
+    "word": "The children didn't ___ a car last year.",
+    "correct": "want",
+    "options": ["wants", "wanted", "want", "wanting"]
+  },
+  {
+    "word": "___ we usually drink water?",
+    "correct": "Do",
+    "options": ["Does", "Do", "Are", "Is"]
+  },
+  {
+    "word": "They ___ usually cook fish.",
+    "correct": "don't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "The children didn't ___ to Tom yesterday.",
+    "correct": "speak",
+    "options": ["spoke", "speaking", "speak", "speaks"]
+  },
+  {
+    "word": "Did her brother ___ water on Saturday?",
+    "correct": "drink",
+    "options": ["drinking", "drink", "drinks", "drank"]
+  },
+  {
+    "word": "You ___ sad last year.",
+    "correct": "weren't",
+    "options": ["didn't", "weren't", "wasn't", "aren't"]
+  },
+  {
+    "word": "___ you usually speak to her friend?",
+    "correct": "Do",
+    "options": ["Do", "Does", "Are", "Is"]
+  },
+  {
+    "word": "___ they usually work late?",
+    "correct": "Do",
+    "options": ["Are", "Is", "Do", "Does"]
+  },
+  {
+    "word": "___ he usually walk to the shop?",
+    "correct": "Does",
+    "options": ["Are", "Does", "Is", "Do"]
+  },
+  {
+    "word": "Did Maria ___ the window last week?",
+    "correct": "close",
+    "options": ["closed", "close", "closing", "closes"]
+  },
+  {
+    "word": "When ___ we cook dinner?",
+    "correct": "do",
+    "options": ["does", "(nothing)", "are", "do"]
+  },
+  {
+    "word": "Did he ___ in London last year?",
+    "correct": "live",
+    "options": ["living", "live", "lives", "lived"]
+  },
+  {
+    "word": "Tom ___ usually speak to her friend.",
+    "correct": "doesn't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "My friend ___ usually buy breakfast.",
+    "correct": "doesn't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "What ___ Tom like last year?",
+    "correct": "did",
+    "options": ["did", "do", "was", "does"]
+  },
+  {
+    "word": "We ___ worried right now.",
+    "correct": "aren't",
+    "options": ["isn't", "don't", "aren't", "am not"]
+  },
+  {
+    "word": "They ___ hungry yesterday.",
+    "correct": "were",
+    "options": ["did", "were", "was", "are"]
+  },
+  {
+    "word": "___ the children usually play football?",
+    "correct": "Do",
+    "options": ["Is", "Does", "Are", "Do"]
+  },
+  {
+    "word": "You ___ ready last week.",
+    "correct": "weren't",
+    "options": ["wasn't", "weren't", "aren't", "didn't"]
+  },
+  {
+    "word": "They ___ usually close the book.",
+    "correct": "don't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "The children didn't ___ a cat last week.",
+    "correct": "have",
+    "options": ["had", "having", "have", "has"]
+  },
+  {
+    "word": "We ___ at home yesterday.",
+    "correct": "were",
+    "options": ["did", "were", "are", "was"]
+  },
+  {
+    "word": "We ___ happy right now.",
+    "correct": "aren't",
+    "options": ["am not", "don't", "aren't", "isn't"]
+  },
+  {
+    "word": "They didn't ___ at the school last week.",
+    "correct": "work",
+    "options": ["working", "works", "work", "worked"]
+  },
+  {
+    "word": "You ___ tired last night.",
+    "correct": "weren't",
+    "options": ["wasn't", "weren't", "didn't", "aren't"]
+  },
+  {
+    "word": "Tom ___ usually open the door.",
+    "correct": "doesn't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "Maria didn't ___ to the garden on Saturday.",
+    "correct": "go",
+    "options": ["go", "goes", "went", "going"]
+  },
+  {
+    "word": "Maria ___ hungry last week.",
+    "correct": "wasn't",
+    "options": ["wasn't", "didn't", "weren't", "isn't"]
+  },
+  {
+    "word": "Maria ___ usually make a cake.",
+    "correct": "doesn't",
+    "options": ["aren't", "don't", "doesn't", "isn't"]
+  },
+  {
+    "word": "Did he ___ a house on Saturday?",
+    "correct": "buy",
+    "options": ["buys", "buy", "bought", "buying"]
+  },
+  {
+    "word": "What ___ you want on Saturday?",
+    "correct": "did",
+    "options": ["do", "were", "does", "did"]
+  },
+  {
+    "word": "The dog ___ usually go to school.",
+    "correct": "doesn't",
+    "options": ["don't", "isn't", "doesn't", "aren't"]
+  },
+  {
+    "word": "Why ___ we sleep at home?",
+    "correct": "do",
+    "options": ["are", "(nothing)", "does", "do"]
+  },
+  {
+    "word": "I ___ thirsty last night.",
+    "correct": "was",
+    "options": ["did", "were", "am", "was"]
+  },
+  {
+    "word": "___ the children walk to school last week?",
+    "correct": "Did",
+    "options": ["Does", "Do", "Were", "Did"]
+  },
+  {
+    "word": "She ___ sad on Saturday.",
+    "correct": "wasn't",
+    "options": ["wasn't", "weren't", "didn't", "isn't"]
+  },
+  {
+    "word": "What ___ we play?",
+    "correct": "do",
+    "options": ["are", "do", "does", "(nothing)"]
+  },
+  {
+    "word": "John didn't ___ alone last year.",
+    "correct": "live",
+    "options": ["live", "lived", "lives", "living"]
+  },
+  {
+    "word": "___ Tom usually watch TV?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Does", "Is"]
+  },
+  {
+    "word": "___ the children usually live alone?",
+    "correct": "Do",
+    "options": ["Is", "Does", "Are", "Do"]
+  },
+  {
+    "word": "Did the children ___ coffee last week?",
+    "correct": "make",
+    "options": ["making", "makes", "made", "make"]
+  },
+  {
+    "word": "___ the children usually see her brother?",
+    "correct": "Do",
+    "options": ["Are", "Does", "Is", "Do"]
+  },
+  {
+    "word": "___ John buy breakfast yesterday?",
+    "correct": "Did",
+    "options": ["Did", "Does", "Was", "Do"]
+  },
+  {
+    "word": "Did the children ___ an apple on Saturday?",
+    "correct": "eat",
+    "options": ["eats", "ate", "eating", "eat"]
+  },
+  {
+    "word": "I ___ cold last night.",
+    "correct": "was",
+    "options": ["am", "were", "was", "did"]
+  },
+  {
+    "word": "___ the children usually buy a cat?",
+    "correct": "Do",
+    "options": ["Is", "Are", "Does", "Do"]
+  },
+  {
+    "word": "When ___ my friend make coffee last week?",
+    "correct": "did",
+    "options": ["was", "do", "did", "does"]
+  },
+  {
+    "word": "___ the children leave the house on Saturday?",
+    "correct": "Did",
+    "options": ["Does", "Do", "Were", "Did"]
+  },
+  {
+    "word": "Tom ___ excited right now.",
+    "correct": "isn't",
+    "options": ["am not", "isn't", "aren't", "doesn't"]
+  },
+  {
+    "word": "___ they usually open the letter?",
+    "correct": "Do",
+    "options": ["Does", "Are", "Do", "Is"]
+  },
+  {
+    "word": "I ___ excited right now.",
+    "correct": "am not",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "___ we make dinner last night?",
+    "correct": "Did",
+    "options": ["Do", "Did", "Were", "Does"]
+  },
+  {
+    "word": "___ you usually watch football?",
+    "correct": "Do",
+    "options": ["Do", "Is", "Are", "Does"]
+  },
+  {
+    "word": "___ I usually eat cake?",
+    "correct": "Do",
+    "options": ["Do", "Does", "(nothing)", "Is"]
+  },
+  {
+    "word": "We ___ happy last night.",
+    "correct": "were",
+    "options": ["are", "were", "was", "did"]
+  },
+  {
+    "word": "Why ___ you play football yesterday?",
+    "correct": "did",
+    "options": ["do", "does", "were", "did"]
+  },
+  {
+    "word": "You ___ hungry last night.",
+    "correct": "weren't",
+    "options": ["didn't", "weren't", "aren't", "wasn't"]
+  },
+  {
+    "word": "___ she usually have breakfast?",
+    "correct": "Does",
+    "options": ["Does", "Do", "Is", "Are"]
+  },
+  {
+    "word": "___ John usually sleep at home?",
+    "correct": "Does",
+    "options": ["Does", "Do", "Are", "Is"]
+  },
+  {
+    "word": "___ you usually sleep at home?",
+    "correct": "Do",
+    "options": ["Do", "Does", "Are", "Is"]
+  },
+  {
+    "word": "___ Tom eat an apple on Saturday?",
+    "correct": "Did",
+    "options": ["Do", "(nothing)", "Did", "Does"]
+  },
+  {
+    "word": "___ we usually cook fish?",
+    "correct": "Do",
+    "options": ["Does", "Do", "Are", "Is"]
+  },
+  {
+    "word": "What ___ the dog usually eat?",
+    "correct": "does",
+    "options": ["are", "is", "does", "do"]
+  },
+  {
+    "word": "___ we usually eat dinner?",
+    "correct": "Do",
+    "options": ["(nothing)", "Do", "Does", "Is"]
+  },
+  {
+    "word": "___ the children late yesterday?",
+    "correct": "Were",
+    "options": ["Was", "Did", "Are", "Were"]
+  },
+  {
+    "word": "We ___ bored right now.",
+    "correct": "aren't",
+    "options": ["am not", "isn't", "aren't", "don't"]
+  },
+  {
+    "word": "Did you ___ to the garden on Saturday?",
+    "correct": "go",
+    "options": ["went", "goes", "going", "go"]
+  },
+  {
+    "word": "___ John close the letter yesterday?",
+    "correct": "Did",
+    "options": ["Do", "Was", "Did", "Does"]
+  },
+  {
+    "word": "The children ___ worried last night.",
+    "correct": "were",
+    "options": ["was", "did", "are", "were"]
+  },
+  {
+    "word": "___ her brother usually buy a house?",
+    "correct": "Does",
+    "options": ["Is", "Does", "Do", "Are"]
+  },
+  {
+    "word": "He didn't ___ the door last night.",
+    "correct": "close",
+    "options": ["close", "closes", "closed", "closing"]
+  },
+  {
+    "word": "My friend ___ close the letter yesterday.",
+    "correct": "didn't",
+    "options": ["didn't", "wasn't", "don't", "doesn't"]
+  },
+  {
+    "word": "Maria ___ sleep late last night.",
+    "correct": "didn't",
+    "options": ["didn't", "don't", "doesn't", "wasn't"]
+  },
+  {
+    "word": "___ my friend have a cat last week?",
+    "correct": "Did",
+    "options": ["Does", "Was", "Did", "Do"]
+  },
+  {
+    "word": "I ___ ready right now.",
+    "correct": "am not",
+    "options": ["don't", "aren't", "isn't", "am not"]
+  },
+  {
+    "word": "___ the children sad last night?",
+    "correct": "Were",
+    "options": ["Did", "Are", "Was", "Were"]
+  },
+  {
+    "word": "John ___ ready right now.",
+    "correct": "isn't",
+    "options": ["doesn't", "isn't", "am not", "aren't"]
+  },
+  {
+    "word": "Why ___ we want coffee?",
+    "correct": "do",
+    "options": ["does", "do", "(nothing)", "are"]
+  },
+  {
+    "word": "___ we usually work at the school?",
+    "correct": "Do",
+    "options": ["Are", "Do", "Does", "Is"]
+  },
+  {
+    "word": "___ we usually sleep in the house?",
+    "correct": "Do",
+    "options": ["Is", "Do", "Are", "Does"]
+  },
+  {
+    "word": "___ you usually close the window?",
+    "correct": "Do",
+    "options": ["Do", "Are", "Is", "Does"]
+  },
+  {
+    "word": "Did my friend ___ the cat last night?",
+    "correct": "see",
+    "options": ["seeing", "see", "sees", "saw"]
+  },
+  {
+    "word": "___ John usually watch the game?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Is", "Does"]
+  },
+  {
+    "word": "What ___ she usually drink?",
+    "correct": "does",
+    "options": ["are", "is", "does", "do"]
+  },
+  {
+    "word": "I ___ at school on Saturday.",
+    "correct": "was",
+    "options": ["were", "am", "was", "did"]
+  },
+  {
+    "word": "Where ___ you sleep last week?",
+    "correct": "did",
+    "options": ["does", "did", "were", "do"]
+  },
+  {
+    "word": "___ Maria hungry last week?",
+    "correct": "Was",
+    "options": ["Is", "Did", "Was", "Were"]
+  },
+  {
+    "word": "___ he usually buy a car?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Does", "Is"]
+  },
+  {
+    "word": "When ___ we open the door?",
+    "correct": "do",
+    "options": ["(nothing)", "are", "do", "does"]
+  },
+  {
+    "word": "Did he ___ music last night?",
+    "correct": "play",
+    "options": ["playing", "play", "played", "plays"]
+  },
+  {
+    "word": "___ we live in London last week?",
+    "correct": "Did",
+    "options": ["Were", "Did", "Do", "Does"]
+  },
+  {
+    "word": "___ we usually go to the shop?",
+    "correct": "Do",
+    "options": ["Are", "Do", "Is", "Does"]
+  },
+  {
+    "word": "___ her brother play music last night?",
+    "correct": "Did",
+    "options": ["Did", "Do", "Does", "Was"]
+  },
+  {
+    "word": "Did John ___ tea yesterday?",
+    "correct": "drink",
+    "options": ["drinking", "drink", "drank", "drinks"]
+  },
+  {
+    "word": "I ___ bored yesterday.",
+    "correct": "was",
+    "options": ["did", "am", "were", "was"]
+  },
+  {
+    "word": "They ___ usually play a game.",
+    "correct": "don't",
+    "options": ["doesn't", "isn't", "aren't", "don't"]
+  },
+  {
+    "word": "She ___ sad right now.",
+    "correct": "isn't",
+    "options": ["doesn't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "___ her brother usually close the door?",
+    "correct": "Does",
+    "options": ["Do", "Are", "Is", "Does"]
+  },
+  {
+    "word": "We ___ busy last year.",
+    "correct": "weren't",
+    "options": ["didn't", "weren't", "aren't", "wasn't"]
+  },
+  {
+    "word": "Did she ___ dinner on Saturday?",
+    "correct": "cook",
+    "options": ["cooks", "cook", "cooked", "cooking"]
+  },
+  {
+    "word": "She ___ happy yesterday.",
+    "correct": "wasn't",
+    "options": ["wasn't", "didn't", "isn't", "weren't"]
+  },
+  {
+    "word": "We ___ ill yesterday.",
+    "correct": "weren't",
+    "options": ["didn't", "weren't", "aren't", "wasn't"]
+  },
+  {
+    "word": "___ we go home last night?",
+    "correct": "Did",
+    "options": ["Were", "Did", "Does", "Do"]
+  },
+  {
+    "word": "I ___ cold right now.",
+    "correct": "am not",
+    "options": ["isn't", "aren't", "don't", "am not"]
+  },
+  {
+    "word": "___ I usually live in the house?",
+    "correct": "Do",
+    "options": ["Do", "Does", "Am", "Is"]
+  },
+  {
+    "word": "John ___ cook dinner last week.",
+    "correct": "didn't",
+    "options": ["didn't", "don't", "doesn't", "wasn't"]
+  },
+  {
+    "word": "___ I usually walk the dog?",
+    "correct": "Do",
+    "options": ["Does", "Am", "Do", "Is"]
+  },
+  {
+    "word": "Did you ___ a cat last week?",
+    "correct": "buy",
+    "options": ["bought", "buys", "buying", "buy"]
+  },
+  {
+    "word": "My friend didn't ___ football yesterday.",
+    "correct": "play",
+    "options": ["play", "playing", "played", "plays"]
+  },
+  {
+    "word": "Maria ___ at the house last night.",
+    "correct": "was",
+    "options": ["was", "did", "were", "is"]
+  },
+  {
+    "word": "Why ___ we eat cake?",
+    "correct": "do",
+    "options": ["(nothing)", "does", "do", "are"]
+  },
+  {
+    "word": "___ I usually like her friend?",
+    "correct": "Do",
+    "options": ["Is", "Does", "Am", "Do"]
+  },
+  {
+    "word": "Did you ___ breakfast yesterday?",
+    "correct": "make",
+    "options": ["made", "makes", "making", "make"]
+  },
+  {
+    "word": "___ we speak to Maria on Saturday?",
+    "correct": "Did",
+    "options": ["Does", "Did", "Were", "Do"]
+  },
+  {
+    "word": "I ___ tired right now.",
+    "correct": "am not",
+    "options": ["isn't", "don't", "aren't", "am not"]
+  },
+  {
+    "word": "___ Maria at school on Saturday?",
+    "correct": "Was",
+    "options": ["Was", "Were", "Did", "Is"]
+  },
+  {
+    "word": "___ they usually like this book?",
+    "correct": "Do",
+    "options": ["Is", "Are", "Do", "Does"]
+  },
+  {
+    "word": "___ John nervous last week?",
+    "correct": "Was",
+    "options": ["Was", "Did", "Is", "Were"]
+  },
+  {
+    "word": "___ they usually want a car?",
+    "correct": "Do",
+    "options": ["Are", "Does", "Do", "Is"]
+  },
+  {
+    "word": "___ we late yesterday?",
+    "correct": "Were",
+    "options": ["Was", "Were", "Did", "Are"]
+  },
+  {
+    "word": "___ the children usually make breakfast?",
+    "correct": "Do",
+    "options": ["Are", "Does", "Is", "Do"]
+  },
+  {
+    "word": "___ her brother hungry yesterday?",
+    "correct": "Was",
+    "options": ["Was", "Were", "Did", "Is"]
+  },
+  {
+    "word": "I ___ at the house on Saturday.",
+    "correct": "was",
+    "options": ["am", "was", "did", "were"]
+  },
+  {
+    "word": "___ my friend usually want a dog?",
+    "correct": "Does",
+    "options": ["Is", "Does", "Are", "Do"]
+  },
+  {
+    "word": "You ___ excited on Saturday.",
+    "correct": "weren't",
+    "options": ["wasn't", "weren't", "aren't", "didn't"]
+  },
+  {
+    "word": "He didn't ___ breakfast yesterday.",
+    "correct": "make",
+    "options": ["make", "made", "making", "makes"]
+  },
+  {
+    "word": "Why ___ we go to school?",
+    "correct": "do",
+    "options": ["do", "does", "(nothing)", "are"]
+  },
+  {
+    "word": "Maria ___ ill last year.",
+    "correct": "wasn't",
+    "options": ["wasn't", "weren't", "isn't", "didn't"]
+  },
+  {
+    "word": "They didn't ___ a house last Saturday.",
+    "correct": "buy",
+    "options": ["bought", "buys", "buy", "buying"]
+  },
+  {
+    "word": "Where ___ her brother usually go?",
+    "correct": "does",
+    "options": ["do", "is", "are", "does"]
+  },
+  {
+    "word": "Her brother ___ have a cat last week.",
+    "correct": "didn't",
+    "options": ["didn't", "doesn't", "wasn't", "don't"]
+  },
+  {
+    "word": "___ we watch the game yesterday?",
+    "correct": "Did",
+    "options": ["Do", "Did", "Does", "Were"]
+  },
+  {
+    "word": "___ you play a game last night?",
+    "correct": "Did",
+    "options": ["Does", "Did", "Were", "Do"]
+  },
+  {
+    "word": "He ___ usually watch football.",
+    "correct": "doesn't",
+    "options": ["isn't", "don't", "doesn't", "aren't"]
+  },
+  {
+    "word": "___ they usually see the dog?",
+    "correct": "Do",
+    "options": ["Does", "Are", "Do", "Is"]
+  },
+  {
+    "word": "___ he usually have a car?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Is", "Does"]
+  },
+  {
+    "word": "I ___ happy right now.",
+    "correct": "am not",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "___ he drink milk yesterday?",
+    "correct": "Did",
+    "options": ["Do", "Was", "Did", "Does"]
+  },
+  {
+    "word": "I ___ worried last night.",
+    "correct": "was",
+    "options": ["were", "did", "was", "am"]
+  },
+  {
+    "word": "She didn't ___ a car last year.",
+    "correct": "have",
+    "options": ["have", "having", "has", "had"]
+  },
+  {
+    "word": "___ she make a cake on Saturday?",
+    "correct": "Did",
+    "options": ["Did", "Was", "Does", "Do"]
+  },
+  {
+    "word": "___ my friend usually eat breakfast?",
+    "correct": "Does",
+    "options": ["Do", "(nothing)", "Is", "Does"]
+  },
+  {
+    "word": "I ___ ready last week.",
+    "correct": "was",
+    "options": ["were", "was", "am", "did"]
+  },
+  {
+    "word": "Her brother didn't ___ at home last night.",
+    "correct": "sleep",
+    "options": ["sleep", "sleeps", "slept", "sleeping"]
+  },
+  {
+    "word": "___ my friend walk home on Saturday?",
+    "correct": "Did",
+    "options": ["Did", "Does", "Was", "Do"]
+  },
+  {
+    "word": "___ Tom usually open the window?",
+    "correct": "Does",
+    "options": ["Is", "Does", "Are", "Do"]
+  },
+  {
+    "word": "I ___ excited last week.",
+    "correct": "was",
+    "options": ["was", "am", "were", "did"]
+  },
+  {
+    "word": "The children didn't ___ late last night.",
+    "correct": "sleep",
+    "options": ["sleeping", "slept", "sleep", "sleeps"]
+  },
+  {
+    "word": "___ Maria usually play the guitar?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Does", "Is"]
+  },
+  {
+    "word": "They didn't ___ to Maria on Saturday.",
+    "correct": "speak",
+    "options": ["speaking", "spoke", "speak", "speaks"]
+  },
+  {
+    "word": "___ her brother go to the house yesterday?",
+    "correct": "Did",
+    "options": ["Was", "Do", "Did", "Does"]
+  },
+  {
+    "word": "They didn't ___ a dog last night.",
+    "correct": "have",
+    "options": ["has", "had", "have", "having"]
+  },
+  {
+    "word": "Did Tom ___ fish yesterday?",
+    "correct": "cook",
+    "options": ["cooks", "cook", "cooking", "cooked"]
+  },
+  {
+    "word": "___ John usually want coffee?",
+    "correct": "Does",
+    "options": ["Does", "Is", "Are", "Do"]
+  },
+  {
+    "word": "They ___ usually walk to the shop.",
+    "correct": "don't",
+    "options": ["doesn't", "aren't", "isn't", "don't"]
+  },
+  {
+    "word": "___ the children drink coffee last week?",
+    "correct": "Did",
+    "options": ["Does", "Do", "Were", "Did"]
+  },
+  {
+    "word": "They ___ usually drink water.",
+    "correct": "don't",
+    "options": ["aren't", "doesn't", "isn't", "don't"]
+  },
+  {
+    "word": "I ___ tired last night.",
+    "correct": "was",
+    "options": ["were", "did", "was", "am"]
+  },
+  {
+    "word": "Her brother ___ bored yesterday.",
+    "correct": "wasn't",
+    "options": ["wasn't", "isn't", "weren't", "didn't"]
+  },
+  {
+    "word": "Tom ___ play the guitar on Saturday.",
+    "correct": "didn't",
+    "options": ["didn't", "doesn't", "wasn't", "don't"]
+  },
+  {
+    "word": "___ her brother usually speak to Tom?",
+    "correct": "Does",
+    "options": ["Are", "Is", "Does", "Do"]
+  },
+  {
+    "word": "My friend ___ nervous right now.",
+    "correct": "isn't",
+    "options": ["aren't", "isn't", "doesn't", "am not"]
+  },
+  {
+    "word": "___ we close the book last night?",
+    "correct": "Did",
+    "options": ["Were", "Did", "Does", "Do"]
+  },
+  {
+    "word": "Did the children ___ near the school last year?",
+    "correct": "live",
+    "options": ["lives", "lived", "living", "live"]
+  },
+  {
+    "word": "I ___ busy last year.",
+    "correct": "was",
+    "options": ["did", "am", "were", "was"]
+  },
+  {
+    "word": "Her brother ___ usually work at home.",
+    "correct": "doesn't",
+    "options": ["aren't", "isn't", "doesn't", "don't"]
+  },
+  {
+    "word": "The dog didn't ___ well last week.",
+    "correct": "sleep",
+    "options": ["sleep", "sleeps", "sleeping", "slept"]
+  },
+  {
+    "word": "___ my friend usually work at home?",
+    "correct": "Does",
+    "options": ["Does", "Do", "Are", "Is"]
+  },
+  {
+    "word": "What ___ Maria usually watch?",
+    "correct": "does",
+    "options": ["does", "is", "do", "are"]
+  },
+  {
+    "word": "___ Maria see the film yesterday?",
+    "correct": "Did",
+    "options": ["Did", "Do", "Does", "Was"]
+  },
+  {
+    "word": "___ Tom usually drink tea?",
+    "correct": "Does",
+    "options": ["Does", "Do", "Are", "Is"]
+  },
+  {
+    "word": "They ___ cold right now.",
+    "correct": "aren't",
+    "options": ["don't", "isn't", "aren't", "am not"]
+  },
+  {
+    "word": "Her brother didn't ___ breakfast yesterday.",
+    "correct": "cook",
+    "options": ["cook", "cooked", "cooks", "cooking"]
+  },
+  {
+    "word": "They didn't ___ home last night.",
+    "correct": "go",
+    "options": ["goes", "going", "go", "went"]
+  },
+  {
+    "word": "Did you ___ the book last night?",
+    "correct": "open",
+    "options": ["opened", "opens", "opening", "open"]
+  },
+  {
+    "word": "My friend ___ late right now.",
+    "correct": "isn't",
+    "options": ["am not", "isn't", "aren't", "doesn't"]
+  },
+  {
+    "word": "He ___ tired right now.",
+    "correct": "isn't",
+    "options": ["aren't", "isn't", "am not", "doesn't"]
+  },
+  {
+    "word": "My friend ___ ready yesterday.",
+    "correct": "was",
+    "options": ["was", "is", "were", "did"]
+  },
+  {
+    "word": "They ___ usually eat dinner.",
+    "correct": "don't",
+    "options": ["doesn't", "isn't", "aren't", "don't"]
+  },
+  {
+    "word": "He ___ thirsty last week.",
+    "correct": "wasn't",
+    "options": ["wasn't", "weren't", "didn't", "isn't"]
+  },
+  {
+    "word": "What ___ her brother usually want?",
+    "correct": "does",
+    "options": ["do", "is", "does", "are"]
+  },
+  {
+    "word": "Tom ___ busy last night.",
+    "correct": "wasn't",
+    "options": ["wasn't", "didn't", "isn't", "weren't"]
+  },
+  {
+    "word": "___ my friend usually see her brother?",
+    "correct": "Does",
+    "options": ["Are", "Do", "Does", "Is"]
+  },
+  {
+    "word": "Did Maria ___ a game last week?",
+    "correct": "play",
+    "options": ["playing", "play", "played", "plays"]
+  },
+  {
+    "word": "___ she at school last year?",
+    "correct": "Was",
+    "options": ["Was", "Is", "Were", "Did"]
+  },
+  {
+    "word": "___ she usually play a game?",
+    "correct": "Does",
+    "options": ["Do", "Does", "Is", "Are"]
+  }
+]
