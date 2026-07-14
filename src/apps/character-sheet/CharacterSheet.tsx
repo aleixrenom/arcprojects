@@ -18,6 +18,7 @@ import {
 } from "./sheetUtils";
 import Stepper from "./Stepper";
 import AbilitiesCard from "./AbilitiesCard";
+import ExpertiseCard from "./ExpertiseCard";
 import AddAbilityModal, { CustomDraft } from "./AddAbilityModal";
 import "./sheet.css";
 
@@ -350,6 +351,11 @@ const CharacterSheet: React.FC = () => {
               onOpenAdd={() => setModalOpen(true)}
               onChangeLevel={changeAbilityLevel}
               onDelete={deleteAbility}
+            />
+
+            <ExpertiseCard
+              expertise={active.expertise}
+              onChange={(expertise) => updateActive(() => ({ expertise }))}
             />
 
             <div className="cs-card">

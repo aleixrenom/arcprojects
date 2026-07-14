@@ -28,6 +28,7 @@ export interface Character {
   insightTokens: number;
   totalPoints: number;
   abilities: Ability[];
+  expertise: string[];
   notes: string;
 }
 

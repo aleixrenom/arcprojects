@@ -33,6 +33,7 @@ export function defaultCharacter(): Character {
     insightTokens: 0,
     totalPoints: 16,
     abilities: [],
+    expertise: [],
     notes: "",
   };
 }
@@ -47,7 +48,14 @@ export function loadSheetState(): SheetState {
         Array.isArray(parsed.characters) &&
         parsed.characters.length
       ) {
-        const characters: Character[] = parsed.characters;
+        /* Saves from before the Expertise card lack the field; backfill it so
+           the rest of the app can rely on it being an array. */
+        const characters: Character[] = parsed.characters.map(
+          (c: Character) => ({
+            ...c,
+            expertise: Array.isArray(c.expertise) ? c.expertise : [],
+          })
+        );
         const activeId = characters.some((c) => c.id === parsed.activeId)
           ? (parsed.activeId as string)
           : characters[0].id;
@@ -142,6 +150,11 @@ function sanitizeCharacter(raw: unknown): Character {
       ? c.abilities
           .map(sanitizeAbility)
           .filter((a): a is Ability => a !== null)
+      : [],
+    expertise: Array.isArray(c.expertise)
+      ? c.expertise.filter(
+          (t): t is string => typeof t === "string" && t.trim() !== ""
+        )
       : [],
     notes: typeof c.notes === "string" ? c.notes : "",
   };

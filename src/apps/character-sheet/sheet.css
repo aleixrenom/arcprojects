@@ -630,6 +630,53 @@ html.dark .cs-root {
   font-size: 12.5px;
 }
 
+/* ---- expertise card ---- */
+
+.cs-expertise-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.cs-expertise-chip {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--cs-border);
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: text;
+}
+
+.cs-expertise-input {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--cs-accent);
+  background: var(--cs-surface);
+  color: var(--cs-text);
+  font-size: 13px;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.cs-expertise-add {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1.5px dashed var(--cs-border);
+  background: transparent;
+  color: var(--cs-muted);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
 /* ---- notes card ---- */
 
 .cs-notes-textarea {
