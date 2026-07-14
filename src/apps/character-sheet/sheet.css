@@ -593,6 +593,37 @@ html.dark .cs-root {
   padding: 0;
 }
 
+/* Inline low-stakes confirm. Pill buttons rather than text links so they're
+   comfortable tap targets on mobile, but still small and row-scoped. */
+.cs-ability-confirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--cs-muted);
+}
+
+.cs-ability-confirm-yes,
+.cs-ability-confirm-no {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cs-ability-confirm-yes {
+  border: 1px solid var(--cs-danger);
+  background: transparent;
+  color: var(--cs-danger);
+}
+
+.cs-ability-confirm-no {
+  border: 1px solid var(--cs-border);
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+}
+
 .cs-empty {
   padding: 10px 0 16px;
   color: var(--cs-muted);
@@ -622,6 +653,30 @@ html.dark .cs-root {
   color: var(--cs-muted);
   margin-top: 32px;
   padding-bottom: 8px;
+}
+
+.cs-footer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.cs-footer-btn {
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--cs-border);
+  background: var(--cs-surface);
+  color: var(--cs-muted);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cs-import-error {
+  color: var(--cs-danger);
+  margin-bottom: 8px;
 }
 
 /* ---- add-ability modal ---- */
@@ -771,6 +826,57 @@ html.dark .cs-root {
   margin-top: 4px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* ---- delete-character confirm ---- */
+
+.cs-confirm-panel {
+  max-width: 380px;
+  padding: 20px;
+}
+
+.cs-confirm-title {
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--cs-text);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  overflow-wrap: break-word;
+}
+
+.cs-confirm-text {
+  font-size: 13px;
+  color: var(--cs-muted);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.cs-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cs-confirm-cancel {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--cs-border);
+  background: var(--cs-surface-alt);
+  color: var(--cs-text);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cs-confirm-delete {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: var(--cs-danger);
+  color: var(--cs-on-accent);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* ---- pick-stat mode ---- */

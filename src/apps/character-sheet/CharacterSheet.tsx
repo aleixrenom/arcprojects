@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Ability,
   CatalogEntry,
@@ -9,7 +9,9 @@ import {
 import {
   clamp,
   defaultCharacter,
+  downloadCharactersFile,
   loadSheetState,
+  parseImportedCharacters,
   persistSheetState,
   tri,
   uid,
@@ -67,6 +69,9 @@ const CharacterSheet: React.FC = () => {
   const [sheet, setSheet] = useState<SheetState>(loadSheetState);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPack, setSelectedPack] = useState("Basic");
+  const [importError, setImportError] = useState<string | null>(null);
+  const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     persistSheetState(sheet);
@@ -173,6 +178,19 @@ const CharacterSheet: React.FC = () => {
       abilities: c.abilities.filter((a) => a.id !== id),
     }));
 
+  const importFile = async (file: File) => {
+    try {
+      const imported = parseImportedCharacters(await file.text());
+      setSheet((s) => ({
+        characters: [...s.characters, ...imported],
+        activeId: imported[0].id,
+      }));
+      setImportError(null);
+    } catch {
+      setImportError("Couldn't read that file — is it a character export?");
+    }
+  };
+
   return (
     <div className="cs-root">
       <div className="cs-container">
@@ -200,7 +218,7 @@ const CharacterSheet: React.FC = () => {
                   <button
                     type="button"
                     className="cs-tab-delete"
-                    onClick={() => deleteCharacter(c.id)}
+                    onClick={() => setPendingDeleteId(c.id)}
                     aria-label="Delete character"
                   >
                     ×
@@ -349,10 +367,93 @@ const CharacterSheet: React.FC = () => {
         </div>
 
         <div className="cs-footer">
+          <div className="cs-footer-actions">
+            <button
+              type="button"
+              className="cs-footer-btn"
+              onClick={() => downloadCharactersFile([active], active.name)}
+            >
+              Export character
+            </button>
+            <button
+              type="button"
+              className="cs-footer-btn"
+              onClick={() =>
+                downloadCharactersFile(sheet.characters, "all-characters")
+              }
+            >
+              Export all
+            </button>
+            <button
+              type="button"
+              className="cs-footer-btn"
+              onClick={() => fileInputRef.current?.click()}
+            >
+              Import
+            </button>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json,application/json"
+              style={{ display: "none" }}
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) importFile(file);
+                e.target.value = "";
+              }}
+            />
+          </div>
+          {importError && <div className="cs-import-error">{importError}</div>}
           Autosaves in this browser · {sheet.characters.length} character
           {sheet.characters.length === 1 ? "" : "s"} saved
         </div>
       </div>
+
+      {pendingDeleteId &&
+        (() => {
+          const target = sheet.characters.find(
+            (c) => c.id === pendingDeleteId
+          );
+          if (!target) return null;
+          return (
+            <div
+              className="cs-modal-backdrop"
+              onClick={() => setPendingDeleteId(null)}
+            >
+              <div
+                className="cs-modal-panel cs-confirm-panel"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="cs-confirm-title">
+                  Delete {target.name.trim() || "Unnamed"}?
+                </div>
+                <div className="cs-confirm-text">
+                  This removes the character and its abilities permanently.
+                  Export it first if you want a backup.
+                </div>
+                <div className="cs-confirm-actions">
+                  <button
+                    type="button"
+                    className="cs-confirm-cancel"
+                    onClick={() => setPendingDeleteId(null)}
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    className="cs-confirm-delete"
+                    onClick={() => {
+                      deleteCharacter(target.id);
+                      setPendingDeleteId(null);
+                    }}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
 
       {modalOpen && (
         <AddAbilityModal

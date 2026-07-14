@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Ability } from "./types";
 import Stepper from "./Stepper";
 
@@ -13,39 +13,67 @@ const AbilityRow: React.FC<{
   ability: Ability;
   onChangeLevel: (id: string, delta: number) => void;
   onDelete: (id: string) => void;
-}> = ({ ability, onChangeLevel, onDelete }) => (
-  <div className="cs-ability-row">
-    <div className="cs-ability-left">
-      <div className="cs-ability-nameline">
-        <div className="cs-ability-name">
-          {ability.name || "Unnamed ability"}
+}> = ({ ability, onChangeLevel, onDelete }) => {
+  /* Deleting an ability is low-stakes (it's one tap to re-add from the
+     catalog), so the confirm is inline in the row rather than a modal. */
+  const [confirming, setConfirming] = useState(false);
+
+  return (
+    <div className="cs-ability-row">
+      <div className="cs-ability-left">
+        <div className="cs-ability-nameline">
+          <div className="cs-ability-name">
+            {ability.name || "Unnamed ability"}
+          </div>
+          <div className="cs-ability-tag">{ability.stat}</div>
         </div>
-        <div className="cs-ability-tag">{ability.stat}</div>
+        <div className="cs-ability-effect">{ability.effect}</div>
+        {ability.topics.trim() ? (
+          <div className="cs-ability-topics">Topics: {ability.topics}</div>
+        ) : null}
       </div>
-      <div className="cs-ability-effect">{ability.effect}</div>
-      {ability.topics.trim() ? (
-        <div className="cs-ability-topics">Topics: {ability.topics}</div>
-      ) : null}
+      <div className="cs-ability-right">
+        {confirming ? (
+          <div className="cs-ability-confirm">
+            <span>Delete?</span>
+            <button
+              type="button"
+              className="cs-ability-confirm-yes"
+              onClick={() => onDelete(ability.id)}
+            >
+              yes
+            </button>
+            <button
+              type="button"
+              className="cs-ability-confirm-no"
+              onClick={() => setConfirming(false)}
+            >
+              no
+            </button>
+          </div>
+        ) : (
+          <>
+            <Stepper
+              small
+              value={ability.level}
+              onDec={() => onChangeLevel(ability.id, -1)}
+              onInc={() => onChangeLevel(ability.id, 1)}
+            />
+            <div className="cs-ability-pool">{ability.level}d6</div>
+            <button
+              type="button"
+              className="cs-ability-delete"
+              onClick={() => setConfirming(true)}
+              aria-label="Delete ability"
+            >
+              ×
+            </button>
+          </>
+        )}
+      </div>
     </div>
-    <div className="cs-ability-right">
-      <Stepper
-        small
-        value={ability.level}
-        onDec={() => onChangeLevel(ability.id, -1)}
-        onInc={() => onChangeLevel(ability.id, 1)}
-      />
-      <div className="cs-ability-pool">{ability.level}d6</div>
-      <button
-        type="button"
-        className="cs-ability-delete"
-        onClick={() => onDelete(ability.id)}
-        aria-label="Delete ability"
-      >
-        ×
-      </button>
-    </div>
-  </div>
-);
+  );
+};
 
 const AbilitiesCard: React.FC<AbilitiesCardProps> = ({
   abilities,
