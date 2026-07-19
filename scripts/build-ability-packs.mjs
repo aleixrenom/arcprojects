@@ -12,8 +12,12 @@
 //   ## Actions - aggression      → group ("Actions — Aggression", kind Action)
 //   ## Reactions                 → group ("Reactions", kind Reaction)
 //   ### Ability name             → ability entry, followed by
-//   **Description:** / **Stat:** / **Effect:** (multi-line) / **Level N:** lines
-// The "# Keywords" section (and anything before the first pack header) is ignored.
+//   **Description:** / **Stat:** / **Effect:** (multi-line) / **Level N:** (multi-line)
+// Level milestones are emitted as structured `levels` entries, not folded into
+// the effect text, so the app can gate them by the ability's current level.
+// Ignored: the "# Keywords" section, anything before the first pack header,
+// `## ` sections that aren't Actions/Reactions (design notes like "Temp idea
+// place"), and abilities with no effect and no milestones yet (WIP entries).
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -34,6 +38,13 @@ const slug = (text) =>
 
 const titleCase = (text) => text.trim().replace(/^./, (ch) => ch.toUpperCase());
 
+const cleanBlock = (lines) =>
+  lines
+    .join("\n")
+    .replace(/[ \t]+$/gm, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
 function parsePackHeader(line) {
   const basic = line.match(/^# (Basic abilities)\s*$/);
   if (basic) return { id: "Basic", label: "Basic abilities" };
@@ -53,20 +64,23 @@ function parse(md) {
   const lines = md.split(/\r?\n/);
   const packs = [];
   let pack = null; // null while inside "# Keywords" / preamble
-  let group = null;
+  let group = null; // null between packs and inside design-note sections
   let ability = null;
   let field = null; // which multi-line field is being accumulated
 
   const flushAbility = () => {
     if (!ability) return;
-    const effectLines = ability.effectLines
-      .join("\n")
-      .replace(/[ \t]+$/gm, "")
-      .replace(/\n{3,}/g, "\n\n")
-      .trim()
-      .split("\n");
-    for (const lvl of ability.levelNotes) effectLines.push(lvl);
-    const effect = effectLines.join("\n").trim();
+    const effect = cleanBlock(ability.effectLines);
+    const levels = ability.levels
+      .map((l) => ({ level: l.level, text: cleanBlock(l.lines) }))
+      .filter((l) => l.text)
+      .sort((a, b) => a.level - b.level);
+    if (!effect && levels.length === 0) {
+      console.warn(`Skipping "${ability.name}" — no effect written yet`);
+      ability = null;
+      field = null;
+      return;
+    }
 
     const entry = {
       key:
@@ -79,6 +93,7 @@ function parse(md) {
       ...parseStat(ability.stat || "Body"),
       effect,
     };
+    if (levels.length) entry.levels = levels;
     if (/take this ability (more than once|multiple times)/i.test(effect)) {
       entry.repeatable = true;
     }
@@ -113,17 +128,20 @@ function parse(md) {
         .split(/\s*-\s*/)
         .map(titleCase)
         .join(" — ");
-      group = {
-        label,
-        kind: /^reaction/i.test(label) ? "Reaction" : "Action",
-      };
+      if (/^(actions|reactions)/i.test(label)) {
+        group = {
+          label,
+          kind: /^reaction/i.test(label) ? "Reaction" : "Action",
+        };
+      } else {
+        // Design-notes section inside a pack (e.g. "Temp idea place").
+        group = null;
+      }
       continue;
     }
     if (line.startsWith("### ")) {
       flushAbility();
-      if (!group) {
-        throw new Error(`Ability "${line.slice(4)}" appears outside a group`);
-      }
+      if (!group) continue; // heading inside a notes section, not an ability
       ability = {
         pack,
         group,
@@ -131,17 +149,17 @@ function parse(md) {
         description: "",
         stat: "",
         effectLines: [],
-        levelNotes: [],
+        levels: [],
       };
       continue;
     }
     if (!ability) continue;
 
     const fieldMatch = line.match(
-      /^\*\*(Description|Stat|Effect|Level \d+):\*\*\s*(.*)$/
+      /^\*\*(Description|Stat|Effect|Level (\d+)):\*\*\s*(.*)$/
     );
     if (fieldMatch) {
-      const [, name, value] = fieldMatch;
+      const [, name, levelNum, value] = fieldMatch;
       if (name === "Description") {
         ability.description = value.trim();
         field = null;
@@ -152,13 +170,14 @@ function parse(md) {
         ability.effectLines.push(value);
         field = "effect";
       } else {
-        // Level note; skip ones with no text (placeholders in the doc).
-        if (value.trim()) ability.levelNotes.push(`${name}: ${value.trim()}`);
-        field = null;
+        ability.levels.push({ level: Number(levelNum), lines: [value] });
+        field = "level";
       }
       continue;
     }
     if (field === "effect") ability.effectLines.push(line);
+    else if (field === "level")
+      ability.levels[ability.levels.length - 1].lines.push(line);
   }
   flushAbility();
   return packs;

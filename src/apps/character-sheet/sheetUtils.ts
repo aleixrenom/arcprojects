@@ -1,9 +1,38 @@
-import { Ability, AbilityPack, Character, SheetState } from "./types";
+import {
+  Ability,
+  AbilityLevelNote,
+  AbilityPack,
+  CatalogEntry,
+  Character,
+  SheetState,
+} from "./types";
 import packsJson from "./data/abilityPacks.json";
 
 /* Generated from "Ability packs - catalog.md" — run `npm run sync:abilities`
    after editing the markdown, never edit the JSON by hand. */
 export const abilityPacks = packsJson.packs as AbilityPack[];
+
+const catalogByKey = new Map<string, CatalogEntry>();
+for (const pack of abilityPacks) {
+  for (const entry of pack.abilities) catalogByKey.set(entry.key, entry);
+}
+
+/* The catalog is the source of truth for pack abilities: saved characters
+   (localStorage or imports) get their text refreshed on load so rule rewrites,
+   descriptions, and level milestones propagate. Abilities whose key no longer
+   exists (renamed/removed in the catalog) keep their saved text. */
+function refreshFromCatalog(ability: Ability): Ability {
+  const entry = ability.catalogKey
+    ? catalogByKey.get(ability.catalogKey)
+    : undefined;
+  if (!entry) return ability;
+  return {
+    ...ability,
+    effect: entry.effect,
+    description: entry.description,
+    levels: entry.levels,
+  };
+}
 
 const STORAGE_KEY = "ttrpg-character-sheet-v1";
 
@@ -54,6 +83,9 @@ export function loadSheetState(): SheetState {
           (c: Character) => ({
             ...c,
             expertise: Array.isArray(c.expertise) ? c.expertise : [],
+            abilities: (Array.isArray(c.abilities) ? c.abilities : []).map(
+              refreshFromCatalog
+            ),
           })
         );
         const activeId = characters.some((c) => c.id === parsed.activeId)
@@ -107,15 +139,13 @@ export function downloadCharactersFile(
 }
 
 function asNumber(value: unknown, fallback: number): number {
-  return typeof value === "number" && Number.isFinite(value)
-    ? value
-    : fallback;
+  return typeof value === "number" && Number.isFinite(value) ? value : fallback;
 }
 
 function sanitizeAbility(raw: unknown): Ability | null {
   const a = raw as Record<string, unknown>;
   if (!a || typeof a !== "object" || typeof a.name !== "string") return null;
-  return {
+  return refreshFromCatalog({
     id: uid(),
     name: a.name,
     kind: a.kind === "Reaction" ? "Reaction" : "Action",
@@ -123,8 +153,21 @@ function sanitizeAbility(raw: unknown): Ability | null {
     level: clamp(asNumber(a.level, 1), 0, 10),
     topics: typeof a.topics === "string" ? a.topics : "",
     effect: typeof a.effect === "string" ? a.effect : "",
+    ...(typeof a.description === "string"
+      ? { description: a.description }
+      : {}),
+    ...(Array.isArray(a.levels)
+      ? {
+          levels: a.levels.filter(
+            (l): l is AbilityLevelNote =>
+              !!l &&
+              typeof (l as AbilityLevelNote).level === "number" &&
+              typeof (l as AbilityLevelNote).text === "string"
+          ),
+        }
+      : {}),
     ...(typeof a.catalogKey === "string" ? { catalogKey: a.catalogKey } : {}),
-  };
+  });
 }
 
 function sanitizeCharacter(raw: unknown): Character {
@@ -140,16 +183,13 @@ function sanitizeCharacter(raw: unknown): Character {
     body: clamp(asNumber(c.body, base.body), 0, 10),
     mind: clamp(asNumber(c.mind, base.mind), 0, 10),
     soul: clamp(asNumber(c.soul, base.soul), 0, 10),
-    healthCurrent:
-      typeof c.healthCurrent === "number" ? c.healthCurrent : null,
+    healthCurrent: typeof c.healthCurrent === "number" ? c.healthCurrent : null,
     resolveCurrent:
       typeof c.resolveCurrent === "number" ? c.resolveCurrent : null,
     insightTokens: clamp(asNumber(c.insightTokens, 0), 0, 99),
     totalPoints: clamp(asNumber(c.totalPoints, base.totalPoints), 0, 999),
     abilities: Array.isArray(c.abilities)
-      ? c.abilities
-          .map(sanitizeAbility)
-          .filter((a): a is Ability => a !== null)
+      ? c.abilities.map(sanitizeAbility).filter((a): a is Ability => a !== null)
       : [],
     expertise: Array.isArray(c.expertise)
       ? c.expertise.filter(

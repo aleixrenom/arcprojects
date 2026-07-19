@@ -1,6 +1,13 @@
 export type StatName = "Body" | "Mind" | "Soul";
 export type AbilityKind = "Action" | "Reaction";
 
+/* A "Level N:" milestone from the catalog; shown on the sheet only once the
+   ability has reached that level. */
+export interface AbilityLevelNote {
+  level: number;
+  text: string;
+}
+
 export interface Ability {
   id: string;
   name: string;
@@ -11,6 +18,8 @@ export interface Ability {
      previously saved characters still show their Topics line. */
   topics: string;
   effect: string;
+  description?: string;
+  levels?: AbilityLevelNote[];
   /* Present only when the ability came from a pack entry; used to grey out
      non-repeatable catalog entries already on the sheet. */
   catalogKey?: string;
@@ -48,6 +57,7 @@ export type CatalogEntry = {
   kind: AbilityKind;
   group: string;
   effect: string;
+  levels?: AbilityLevelNote[];
   repeatable?: boolean;
   description?: string;
 } & StatMode;

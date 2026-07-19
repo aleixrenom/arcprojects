@@ -4,6 +4,7 @@ import { abilityPacks } from "./sheetUtils";
 
 export type CustomDraft = {
   name: string;
+  description: string;
   kind: AbilityKind;
   stat: StatName;
   effect: string;
@@ -48,6 +49,7 @@ const AddAbilityModal: React.FC<AddAbilityModalProps> = ({
   const [mode, setMode] = useState<Mode>({ view: "catalog" });
   const [draft, setDraft] = useState<CustomDraft>({
     name: "",
+    description: "",
     kind: "Action",
     stat: "Body",
     effect: "",
@@ -109,6 +111,7 @@ const AddAbilityModal: React.FC<AddAbilityModalProps> = ({
               onClick={() => {
                 setDraft({
                   name: "",
+                  description: "",
                   kind: "Action",
                   stat: "Body",
                   effect: "",
@@ -150,6 +153,12 @@ const AddAbilityModal: React.FC<AddAbilityModalProps> = ({
                           </div>
                         </div>
                         <div className="cs-catalog-effect">{entry.effect}</div>
+                        {entry.levels && entry.levels.length > 0 && (
+                          <div className="cs-catalog-levels">
+                            Milestones at level{" "}
+                            {entry.levels.map((l) => l.level).join(", ")}
+                          </div>
+                        )}
                         {added && <div className="cs-added-label">Added</div>}
                       </button>
                     );
@@ -202,6 +211,14 @@ const AddAbilityModal: React.FC<AddAbilityModalProps> = ({
                 value={draft.name}
                 onChange={(e) => setDraft({ ...draft, name: e.target.value })}
                 placeholder="Ability name"
+              />
+              <input
+                className="cs-custom-input"
+                value={draft.description}
+                onChange={(e) =>
+                  setDraft({ ...draft, description: e.target.value })
+                }
+                placeholder="Short description (shown on the ability card)"
               />
               <div className="cs-custom-row">
                 <select

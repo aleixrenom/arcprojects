@@ -9,6 +9,12 @@ type AbilitiesCardProps = {
   onDelete: (id: string) => void;
 };
 
+const Chevron: React.FC<{ open: boolean }> = ({ open }) => (
+  <span className={"cs-ability-chevron" + (open ? " open" : "")} aria-hidden>
+    ▸
+  </span>
+);
+
 const AbilityRow: React.FC<{
   ability: Ability;
   onChangeLevel: (id: string, delta: number) => void;
@@ -17,20 +23,88 @@ const AbilityRow: React.FC<{
   /* Deleting an ability is low-stakes (it's one tap to re-add from the
      catalog), so the confirm is inline in the row rather than a modal. */
   const [confirming, setConfirming] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [foldedLevels, setFoldedLevels] = useState<number[]>([]);
+
+  const description = ability.description?.trim() ?? "";
+  const levels = ability.levels ?? [];
+  const unlocked = levels.filter((l) => l.level <= ability.level);
+  const nextLocked = levels.find((l) => l.level > ability.level);
+  /* The card shows only the description (nothing if the catalog hasn't got one
+     yet); the effect always lives behind the chevron. */
+  const hasDetails = !!ability.effect || levels.length > 0;
+
+  const toggleLevel = (level: number) =>
+    setFoldedLevels((folded) =>
+      folded.includes(level)
+        ? folded.filter((l) => l !== level)
+        : [...folded, level]
+    );
+
+  const headerContent = (
+    <>
+      <div className="cs-ability-nameline">
+        {hasDetails && <Chevron open={open} />}
+        <div className="cs-ability-name">
+          {ability.name || "Unnamed ability"}
+        </div>
+        <div className="cs-ability-tag">{ability.stat}</div>
+      </div>
+      {description && <div className="cs-ability-desc">{description}</div>}
+    </>
+  );
 
   return (
     <div className="cs-ability-row">
       <div className="cs-ability-left">
-        <div className="cs-ability-nameline">
-          <div className="cs-ability-name">
-            {ability.name || "Unnamed ability"}
-          </div>
-          <div className="cs-ability-tag">{ability.stat}</div>
-        </div>
-        <div className="cs-ability-effect">{ability.effect}</div>
+        {hasDetails ? (
+          <button
+            type="button"
+            className="cs-ability-header"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+          >
+            {headerContent}
+          </button>
+        ) : (
+          headerContent
+        )}
         {ability.topics.trim() ? (
           <div className="cs-ability-topics">Topics: {ability.topics}</div>
         ) : null}
+        {open && hasDetails && (
+          <div className="cs-ability-details">
+            {ability.effect ? (
+              <div className="cs-ability-effect">{ability.effect}</div>
+            ) : null}
+            {unlocked.map((milestone) => {
+              const expanded = !foldedLevels.includes(milestone.level);
+              return (
+                <div key={milestone.level} className="cs-ability-level">
+                  <button
+                    type="button"
+                    className="cs-ability-level-head"
+                    onClick={() => toggleLevel(milestone.level)}
+                    aria-expanded={expanded}
+                  >
+                    <Chevron open={expanded} />
+                    Level {milestone.level}
+                  </button>
+                  {expanded && (
+                    <div className="cs-ability-level-text">
+                      {milestone.text}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+            {nextLocked && (
+              <div className="cs-ability-next">
+                Next milestone at ability level {nextLocked.level}
+              </div>
+            )}
+          </div>
+        )}
       </div>
       <div className="cs-ability-right">
         {confirming ? (

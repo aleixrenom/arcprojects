@@ -543,7 +543,7 @@ html.dark .cs-root {
 
 .cs-ability-nameline {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 6px;
   flex-wrap: wrap;
 }
@@ -559,12 +559,110 @@ html.dark .cs-root {
   color: var(--cs-muted);
 }
 
+/* The name + description block doubles as the accordion toggle when the
+   ability has details to reveal (full effect and/or level milestones). */
+.cs-ability-header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cs-ability-chevron {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--cs-muted);
+  transition: transform 0.15s ease;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.cs-ability-chevron.open {
+  transform: rotate(90deg);
+}
+
+/* The header chevron is the main way into an ability's rules text, so it gets
+   a prominent chip treatment; the small milestone chevrons keep the base look. */
+.cs-ability-nameline .cs-ability-chevron {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cs-surface-alt);
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--cs-accent);
+}
+
+/* Line the description up with the name, past the chevron chip. */
+.cs-ability-header .cs-ability-desc {
+  padding-left: 28px;
+}
+
+.cs-ability-desc {
+  font-size: 12px;
+  color: var(--cs-muted);
+  line-height: 1.4;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+.cs-ability-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 10px 12px;
+  background: var(--cs-surface-alt);
+  border-radius: 8px;
+}
+
 .cs-ability-effect {
   font-size: 12px;
   color: var(--cs-muted);
   line-height: 1.4;
   white-space: pre-line;
   overflow-wrap: break-word;
+}
+
+.cs-ability-level-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cs-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cs-ability-level-text {
+  font-size: 12px;
+  color: var(--cs-muted);
+  line-height: 1.4;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  margin-top: 3px;
+  padding-left: 15px;
+}
+
+.cs-ability-next {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--cs-muted);
 }
 
 .cs-ability-topics {
@@ -864,6 +962,13 @@ html.dark .cs-root {
   color: var(--cs-muted);
   line-height: 1.4;
   white-space: pre-line;
+}
+
+.cs-catalog-levels {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--cs-muted);
+  margin-top: 6px;
 }
 
 .cs-added-label {

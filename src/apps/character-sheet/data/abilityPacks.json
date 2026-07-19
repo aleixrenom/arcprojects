@@ -15,8 +15,8 @@
           "description": "You are proficient in direct combat."
         },
         {
-          "key": "demoralise",
-          "name": "Demoralise",
+          "key": "cutting-words",
+          "name": "Cutting words",
           "kind": "Action",
           "group": "Actions — Aggression",
           "statMode": "fixed",
@@ -195,7 +195,7 @@
           "group": "Actions — Aggression",
           "statMode": "fixed",
           "stat": "Mind",
-          "effect": "Strike (resolve). If used outside of a conflict, the target rolls a Mind check with difficulty equal to your failures rolled (all dice which are not successes). If they fail, you do not start a conflict due to this damage. If they succeed, conflict may start with this action being considered the first aggressive action."
+          "effect": "A target you're interacting with rolls a Mind check, with a difficulty equal to this ability's level minus the amount of times that they have previously been affected by this ability. On a failure, they take a Veiled damage. On a success, they take no damage and recognise the aggression against them."
         },
         {
           "key": "intrigue-spread-rumours",
@@ -204,7 +204,7 @@
           "group": "Actions — Aggression",
           "statMode": "fixed",
           "stat": "Mind",
-          "effect": "Spend any amount of dice to spread a nasty rumour against someone. That person will take damage to their Resolve equal to the dice spent after their next Rest."
+          "effect": "Spend any amount of dice to spread a nasty rumour against someone. That person will take Veiled damage an amount of times equal to the dice spent after their next Rest."
         },
         {
           "key": "intrigue-imposing-presence",
@@ -216,7 +216,13 @@
             "Body",
             "Soul"
           ],
-          "effect": "Anyone of your choice in the same Scene as you rolls one less die for any Strike aimed at you or your allies. You may Spend any amount of dice to make someone in your Scene roll that many less dice on a roll they're making. During a conflict, if you Spend dice to reduce a roll, the number will be reduced from the next roll they make. A single person can only be affected by one instance of this ability at a time.\nLevel 5: You passively reduce rolls by two instead of one.",
+          "effect": "Anyone of your choice in the same Scene as you rolls one less die for any Strike aimed at you or your allies. You may Spend any amount of dice to make someone in your Scene roll that many less dice on a roll they're making. During a conflict, if you Spend dice to reduce a roll, the number will be reduced from the next roll they make. A single person can only be affected by one instance of this ability at a time.",
+          "levels": [
+            {
+              "level": 5,
+              "text": "You passively reduce rolls by two instead of one."
+            }
+          ],
           "description": "The mere existence of you nearby provokes shivers and worry to your would-be enemies."
         },
         {
@@ -291,30 +297,124 @@
           "statMode": "fixed",
           "stat": "Mind",
           "effect": "You have Expertise when interacting with magical effects or objects. You can also create instantaneous, harmless sensory effects out of thin air, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.",
+          "levels": [
+            {
+              "level": 2,
+              "text": "- Magic Missile - Strike (health)\n- Minor Illusion - You can create sounds or images out of thin air, but not both at the same time. The sound can't be too loud, and the image is stationary, only visual, and has to fit within a 2m³ area."
+            },
+            {
+              "level": 3,
+              "text": "- Mage Armor - Spend 1 to gain Soak 1 (health) until the next Rest. This effect does not stack.\n- Shockwave - Spend 1 to Strike (health) three targets that are near one another."
+            },
+            {
+              "level": 4,
+              "text": "- Mind Spike - Spend 1 to Strike (resolve)\n- Fabricate - Using magic, you can slowly turn raw material into fabricated objects, or fabricated objects into raw materials. The rate is around 1 hour per cubic meter. You may Spend 1 to double the rate until the next Rest, and this doubling stacks multiplicatively."
+            },
+            {
+              "level": 5,
+              "text": "- Resourceful - Spend 1 from any of your dice pools to recover one spent die from any one of your other dice pools.\n- Actually - Spend 1 to gain Expertise in one Mind topic until the end of the scene."
+            }
+          ],
           "description": "You are adept in the ways of magic and can bend it to create many surprising effects."
         },
         {
-          "key": "wonders-theriomancy",
-          "name": "Theriomancy",
+          "key": "wonders-telekinesis",
+          "name": "Telekinesis",
+          "kind": "Action",
+          "group": "Actions — Versatile",
+          "statMode": "fixed",
+          "stat": "Mind",
+          "effect": "Treat ability + stat as your effective Body for moving weight with this ability (weight guidelines can be found in the Body section of the rules). You can move an amount of targets equal to this ability's level, that are within a distance in meters equal to twice this ability's level. You can only move inanimate objects. Combine all object's weights to see how much you can move.",
+          "levels": [
+            {
+              "level": 2,
+              "text": "- Force blast - Strike (health)"
+            },
+            {
+              "level": 3,
+              "text": "You can now move willing living beings, including yourself."
+            },
+            {
+              "level": 4,
+              "text": "- Kinetic grip - Spend 1 to try to move an unwilling living being outside of conflicts. Roll ability with Empower for contested checks when they try to resist."
+            },
+            {
+              "level": 5,
+              "text": "- Spend 1 to double the amount of weight, objects, and distance of this ability until the end of the Scene. This effect does not stack."
+            },
+            {
+              "level": 6,
+              "text": "Empower Strike (health)"
+            }
+          ],
+          "description": "You can move things with your mind."
+        },
+        {
+          "key": "wonders-theriomancer",
+          "name": "Theriomancer",
           "kind": "Action",
           "group": "Actions — Versatile",
           "statMode": "fixed",
           "stat": "Soul",
-          "effect": "You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health).\nLevel 3: The beast you transform into can be half or double your size.\nLevel 5: The beast can be a quarter or triple your size.\nLevel 7: The beast can be minuscule or four times your size.",
+          "effect": "You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health).",
+          "levels": [
+            {
+              "level": 3,
+              "text": "The beast you transform into can be half or double your size."
+            },
+            {
+              "level": 5,
+              "text": "The beast can be a quarter or triple your size."
+            },
+            {
+              "level": 7,
+              "text": "The beast can be minuscule or four times your size."
+            }
+          ],
           "description": "You can bond with beasts and transform into them."
         },
         {
-          "key": "wonders-elementalism",
-          "name": "Elementalism",
+          "key": "wonders-elementalist",
+          "name": "Elementalist",
           "kind": "Action",
           "group": "Actions — Versatile",
           "statMode": "any",
-          "effect": "You can manipulate earth, fire, water, and air at will. You can move and reshape the element with precision as long as it's near you, it exists, and is in its natural state (except for fire, which you can generate first before manipulating). At this level you can only manipulate 10cm³ of material, but this amount will increase with the ability's level as seen below, together with gaining new capabilities. You also gain Expertise in elemental magic.\nLevel 2: You can manipulate 30cm³.\nLevel 3: You can manipulate 1m³. This ability gains Strike (health).\nLevel 4: You can manipulate 2m³.\nLevel 5: You can manipulate 3m³.\nLevel 6: You can manipulate 5m³. This ability gains Empower.\nLevel 7: You can manipulate 7m³.\nLevel 8: You can manipulate 10m³.",
+          "effect": "You can manipulate earth, fire, water, and air at will. You can move and reshape the element with precision as long as it's near you, it exists, and is in its natural state (except for fire, which you can generate first before manipulating). At this level you can only manipulate 10cm³ of material, but this amount will increase with the ability's level as seen below, together with gaining new capabilities. You also gain Expertise in elemental magic.",
+          "levels": [
+            {
+              "level": 2,
+              "text": "You can manipulate 30cm³."
+            },
+            {
+              "level": 3,
+              "text": "You can manipulate 1m³. This ability gains Strike (health)."
+            },
+            {
+              "level": 4,
+              "text": "You can manipulate 2m³."
+            },
+            {
+              "level": 5,
+              "text": "You can manipulate 3m³."
+            },
+            {
+              "level": 6,
+              "text": "You can manipulate 5m³. This ability gains Empower."
+            },
+            {
+              "level": 7,
+              "text": "You can manipulate 7m³."
+            },
+            {
+              "level": 8,
+              "text": "You can manipulate 10m³."
+            }
+          ],
           "description": "Through will, guile, or sheer discipline, you learned to bend the elements to your will."
         },
         {
-          "key": "wonders-summoning",
-          "name": "Summoning",
+          "key": "wonders-summonner",
+          "name": "Summonner",
           "kind": "Action",
           "group": "Actions — Aggression",
           "statMode": "or",
@@ -322,12 +422,43 @@
             "Mind",
             "Soul"
           ],
-          "effect": "Spend any number of dice to create a new being (hereby called \"summon\"). When you get this ability, decide on what kind of summon it is (undead, elementals, animate objects...). The summon always has the following characteristics:\n- All stats start at 0.\n- They have a Health pool of 1 + their Body stat, and a Resolve pool of 1 + their Mind OR Soul stat.\n- They have a size between your own and half of that.\n- They can do checks as normal as long as they have at least 1 level in the corresponding stat.\n- They have Strike (health) using Body and Strike (resolve) using Mind or Soul, treating their stats as abilities for this purpose.\n- You only recover the dice spent to create them when they die or you dismiss them.\n- They cannot trigger close calls.\n\nWhen you get this ability, choose two of the following customisations. From then on, for each die you Spend while summoning, choose one of the chosen customisations, and the summon will receive the benefit.\n- +1 Body\n- +1 Soul\n- +1 Mind\n- More size\n- Less size\n- More speed\n- Can fly\n- Can easily climb any surface\n- Can easily burrow through loose terrain\n- Soak +1 (health)\n- Soak +1 (resolve)\nYou may choose another customisation option at ability level 3 and every 2 levels after that.",
+          "effect": "Spend any number of dice to create a new being (hereby called \"summon\"). When you get this ability, decide on what kind of summon it is (undead, elementals, animated objects...). The summon always has the following characteristics:\n- All stats start at 0.\n- They have a Health pool of 1 + their Body stat, and a Resolve pool of 1 + their Mind OR Soul stat.\n- They have a size between your own and half of that.\n- They can do checks as normal as long as they have at least 1 level in the corresponding stat.\n- They have Strike (health) using Body and Strike (resolve) using Mind or Soul, treating their stats as abilities for this purpose.\n- You only recover the dice spent to create them when they die or you dismiss them.\n- They cannot trigger close calls.\n\nWhen you get this ability, choose two of the following customisations. From then on, for each die you Spend while summoning, choose one of the chosen customisations, and the summon will receive the benefit.\n- +1 Body\n- +1 Soul\n- +1 Mind\n- More size\n- Less size\n- More speed\n- Can fly\n- Can easily climb any surface\n- Can easily burrow through loose terrain\n- Soak +1 (health)\n- Soak +1 (resolve)\nYou may choose another customisation option at ability level 3 and every 2 levels after that.",
           "description": "Create new temporary beings, living or not."
         },
         {
-          "key": "wonders-pocketful-of-knives",
-          "name": "Pocketful of knives",
+          "key": "wonders-superstrength",
+          "name": "Superstrength",
+          "kind": "Action",
+          "group": "Actions — Aggression",
+          "statMode": "fixed",
+          "stat": "Body",
+          "effect": "- Treat ability + stat as your effective Body for moving weight (weight guidelines can be found in the Body section of the rules).\n- Smash - Strike (health).",
+          "levels": [
+            {
+              "level": 2,
+              "text": "- Charged strike - Spend 1 to Empower Strike (health).\n- Once per Scene and as long as you have any dice remaining in the dice pool, you may roll ability to show off, lift, stretch, or otherwise pump yourself up. If you roll an amount of successes equal or higher than half the dice pool rounded up, you recover one spent dice."
+            },
+            {
+              "level": 3,
+              "text": "- You can easily climb any surface.\n- The distance you can jump is always 2 to the power of this ability's level in meters.\n- You do not take damage when falling from any height."
+            },
+            {
+              "level": 4,
+              "text": "- Flex - You may use this to roll ability and gain Soak equal to the successes rolled for the next instance of damage you receive. This stacks only with effects from Reactions. If unused, this Soak disappears the next time you use any Action."
+            },
+            {
+              "level": 5,
+              "text": "- Overexhert - Spend 1 to roll ability. Your effective Body level increases by the amount of successes rolled until the end of the Scene. This effect does not stack."
+            },
+            {
+              "level": 6,
+              "text": "- Obliterate - Empower Strike (health)"
+            }
+          ]
+        },
+        {
+          "key": "wonders-pocketful-of-knives-revamp-into-more-general-multihit",
+          "name": "Pocketful of knives (revamp into more general multihit)",
           "kind": "Action",
           "group": "Actions — Aggression",
           "statMode": "fixed",
@@ -342,8 +473,57 @@
           "group": "Actions — Utility",
           "statMode": "fixed",
           "stat": "Soul",
-          "effect": "You have Expertise when attempting to understand someone else's emotional state, feelings, desires, and the like.\nLevel 3: You also have Expertise when confronting someone about their feelings and emotions, be it in a positive or negative way.\nLevel 5: The magic of an empath awakens within you. Whenever you touch someone, you immediately know their current emotional state without the need of a roll.\nLevel 7: You are capable of directly affecting someone's emotional state through your magic. Whenever you touch someone, you can attempt to weaken or heighten any emotions within them. The GM may ask you to roll ability + stat for difficult attempts.",
+          "effect": "You have Expertise when attempting to understand someone else's emotional state, feelings, desires, and the like.",
+          "levels": [
+            {
+              "level": 3,
+              "text": "You also have Expertise when confronting someone about their feelings and emotions, be it in a positive or negative way."
+            },
+            {
+              "level": 5,
+              "text": "The magic of an empath awakens within you. Whenever you touch someone, you immediately know their current emotional state without the need of a roll."
+            },
+            {
+              "level": 7,
+              "text": "You are capable of directly affecting someone's emotional state through your magic. Whenever you touch someone, you can attempt to weaken or heighten any emotions within them. The GM may ask you to roll ability + stat for difficult attempts."
+            }
+          ],
           "description": "You have a knack for understanding how other feel, sometimes even sharing those feelings."
+        },
+        {
+          "key": "wonders-teleportation",
+          "name": "Teleportation",
+          "kind": "Action",
+          "group": "Actions — Utility",
+          "statMode": "or",
+          "statOptions": [
+            "Mind",
+            "Soul"
+          ],
+          "effect": "Roll ability and sum all the results. You can teleport to a point you can see within a number of meters equal to that sum.",
+          "levels": [
+            {
+              "level": 2,
+              "text": "Spend 1 to choose the result of all dice when teleporting."
+            },
+            {
+              "level": 3,
+              "text": "After you roll this ability, you may hold the results instead of teleporting. As long as you hold them, you can teleport as a reaction, possibly nullifying an incoming effect. You stop holding them whenever you use any Ability or make any roll."
+            },
+            {
+              "level": 4,
+              "text": "You can use a different Action immediately after teleporting."
+            },
+            {
+              "level": 5,
+              "text": "You no longer have to see the destination you teleport to. If you teleport into solid matter, you take Health damage equal to the amount of successes you rolled when teleporting and you are shunted to the nearest unoccupied space."
+            },
+            {
+              "level": 6,
+              "text": "Spend 1 to Empower this ability for this activation."
+            }
+          ],
+          "description": "You can disappear from where you are and appear in a nearby spot in the blink of an eye."
         }
       ]
     }

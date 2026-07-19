@@ -154,6 +154,8 @@ const CharacterSheet: React.FC = () => {
       level: 1,
       topics: "",
       effect: entry.effect,
+      description: entry.description,
+      levels: entry.levels,
       catalogKey: entry.key,
     });
 
@@ -165,6 +167,7 @@ const CharacterSheet: React.FC = () => {
       level: 1,
       topics: "",
       effect: draft.effect,
+      description: draft.description.trim() || undefined,
     });
 
   const changeAbilityLevel = (id: string, delta: number) =>
@@ -417,9 +420,7 @@ const CharacterSheet: React.FC = () => {
 
       {pendingDeleteId &&
         (() => {
-          const target = sheet.characters.find(
-            (c) => c.id === pendingDeleteId
-          );
+          const target = sheet.characters.find((c) => c.id === pendingDeleteId);
           if (!target) return null;
           return (
             <div
