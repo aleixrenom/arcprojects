@@ -296,7 +296,7 @@
           "group": "Actions — Versatile",
           "statMode": "fixed",
           "stat": "Mind",
-          "effect": "You have Expertise when interacting with magical effects or objects. You can also create instantaneous, harmless sensory effects out of thin air, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.",
+          "effect": "- You have Expertise when interacting with magical effects or objects.\n- Prestidigitation - You can create instantaneous, harmless sensory effects out of thin air, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.",
           "levels": [
             {
               "level": 2,
@@ -340,11 +340,11 @@
             },
             {
               "level": 5,
-              "text": "- Spend 1 to double the amount of weight, objects, and distance of this ability until the end of the Scene. This effect does not stack."
+              "text": "- Exaltation of force - Spend 1 to double the amount of weight, objects, and distance of this ability until the end of the Scene. This effect does not stack."
             },
             {
               "level": 6,
-              "text": "Empower Strike (health)"
+              "text": "- Crush - Empower Strike (health)"
             }
           ],
           "description": "You can move things with your mind."
@@ -356,7 +356,7 @@
           "group": "Actions — Versatile",
           "statMode": "fixed",
           "stat": "Soul",
-          "effect": "You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health).",
+          "effect": "- You may transform into a bestial shape whenever you want (no need to actively use this as an Action). At this level, when you transform, you adopt slight bestial features, like claws, fangs, horns, etc. This transformation will become more prominent through the levels.\n- You have Expertise when dealing with animals.\n\nYou may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health).",
           "levels": [
             {
               "level": 3,

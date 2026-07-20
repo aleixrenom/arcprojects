@@ -14,6 +14,8 @@
   --cs-mind: oklch(0.56 0.12 300);
   --cs-soul: oklch(0.56 0.12 195);
   --cs-danger: oklch(0.55 0.15 25);
+  --cs-effect-pill-text: oklch(0.46 0.11 150);
+  --cs-effect-pill-bg: oklch(0.56 0.12 150 / 0.14);
   --cs-on-accent: #fff;
   --cs-shadow: 0 1px 2px rgba(20, 20, 30, 0.05),
     0 1px 1px rgba(20, 20, 30, 0.04);
@@ -33,6 +35,8 @@ html.dark .cs-root {
   --cs-mind: oklch(0.68 0.11 300);
   --cs-soul: oklch(0.68 0.11 195);
   --cs-danger: oklch(0.66 0.14 25);
+  --cs-effect-pill-text: oklch(0.76 0.11 150);
+  --cs-effect-pill-bg: oklch(0.72 0.12 150 / 0.16);
   --cs-on-accent: oklch(0.18 0.01 250);
   --cs-shadow: none;
   --cs-modal-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
@@ -632,6 +636,38 @@ html.dark .cs-root {
   line-height: 1.4;
   white-space: pre-line;
   overflow-wrap: break-word;
+}
+
+/* Structured effect text (see EffectText.tsx): each list line of the catalog
+   markdown becomes its own block, with the optional "Name - " prefix pulled
+   out into a pill. */
+.cs-effect-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-effect-para {
+  white-space: pre-line;
+}
+
+.cs-effect-item:not(:first-child) {
+  border-top: 1px solid var(--cs-border);
+  padding-top: 6px;
+}
+
+.cs-effect-pill {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--cs-effect-pill-bg);
+  color: var(--cs-effect-pill-text);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  vertical-align: 1px;
 }
 
 .cs-ability-level-head {

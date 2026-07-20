@@ -179,7 +179,9 @@ Effects that break natural law, whatever their source. Magic, miracles, and stra
 ### Arcanist
 **Description:** You are adept in the ways of magic and can bend it to create many surprising effects.
 **Stat:** Mind
-**Effect:** You have Expertise when interacting with magical effects or objects. You can also create instantaneous, harmless sensory effects out of thin air, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.
+**Effect:** 
+- You have Expertise when interacting with magical effects or objects. 
+- Prestidigitation - You can create instantaneous, harmless sensory effects out of thin air, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.
 **Level 2:** 
 - Magic Missile - Strike (health)
 - Minor Illusion - You can create sounds or images out of thin air, but not both at the same time. The sound can't be too loud, and the image is stationary, only visual, and has to fit within a 2m³ area. 
@@ -203,13 +205,18 @@ Effects that break natural law, whatever their source. Magic, miracles, and stra
 **Level 4:** 
 - Kinetic grip - Spend 1 to try to move an unwilling living being outside of conflicts. Roll ability with Empower for contested checks when they try to resist.
 **Level 5:** 
-- Spend 1 to double the amount of weight, objects, and distance of this ability until the end of the Scene. This effect does not stack.
-**Level 6:** Empower Strike (health)
+- Exaltation of force - Spend 1 to double the amount of weight, objects, and distance of this ability until the end of the Scene. This effect does not stack.
+**Level 6:** 
+- Crush - Empower Strike (health)
 
 ### Theriomancer
 **Description:** You can bond with beasts and transform into them. 
 **Stat:** Soul
-**Effect:** You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health). 
+**Effect:** 
+- You may transform into a bestial shape whenever you want (no need to actively use this as an Action). At this level, when you transform, you adopt slight bestial features, like claws, fangs, horns, etc. This transformation will become more prominent through the levels.
+- You have Expertise when dealing with animals. 
+
+You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health). 
 **Level 3:** The beast you transform into can be half or double your size.
 **Level 5:** The beast can be a quarter or triple your size.
 **Level 7:** The beast can be minuscule or four times your size. 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Ability } from "./types";
 import Stepper from "./Stepper";
+import EffectText from "./EffectText";
 
 type AbilitiesCardProps = {
   abilities: Ability[];
@@ -75,7 +76,9 @@ const AbilityRow: React.FC<{
         {open && hasDetails && (
           <div className="cs-ability-details">
             {ability.effect ? (
-              <div className="cs-ability-effect">{ability.effect}</div>
+              <div className="cs-ability-effect">
+                <EffectText text={ability.effect} />
+              </div>
             ) : null}
             {unlocked.map((milestone) => {
               const expanded = !foldedLevels.includes(milestone.level);
@@ -92,7 +95,7 @@ const AbilityRow: React.FC<{
                   </button>
                   {expanded && (
                     <div className="cs-ability-level-text">
-                      {milestone.text}
+                      <EffectText text={milestone.text} />
                     </div>
                   )}
                 </div>

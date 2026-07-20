@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AbilityKind, CatalogEntry, StatName } from "./types";
 import { abilityPacks } from "./sheetUtils";
+import EffectText from "./EffectText";
 
 export type CustomDraft = {
   name: string;
@@ -152,7 +153,9 @@ const AddAbilityModal: React.FC<AddAbilityModalProps> = ({
                             {entry.kind} · {statLabel(entry)}
                           </div>
                         </div>
-                        <div className="cs-catalog-effect">{entry.effect}</div>
+                        <div className="cs-catalog-effect">
+                          <EffectText text={entry.effect} />
+                        </div>
                         {entry.levels && entry.levels.length > 0 && (
                           <div className="cs-catalog-levels">
                             Milestones at level{" "}
