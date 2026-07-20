@@ -357,11 +357,6 @@ html.dark .cs-root {
   font-weight: 700;
 }
 
-.cs-stat-sub {
-  font-size: 11.5px;
-  color: var(--cs-muted);
-}
-
 .cs-pool-pill {
   font-size: 11.5px;
   color: var(--cs-muted);

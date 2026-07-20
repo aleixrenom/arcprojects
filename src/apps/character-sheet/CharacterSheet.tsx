@@ -22,12 +22,11 @@ import ExpertiseCard from "./ExpertiseCard";
 import AddAbilityModal, { CustomDraft } from "./AddAbilityModal";
 import "./sheet.css";
 
-const STATS: { key: "body" | "mind" | "soul"; name: StatName; sub: string }[] =
-  [
-    { key: "body", name: "Body", sub: "Physical" },
-    { key: "mind", name: "Mind", sub: "Logic & learning" },
-    { key: "soul", name: "Soul", sub: "Intuition" },
-  ];
+const STATS: { key: "body" | "mind" | "soul"; name: StatName }[] = [
+  { key: "body", name: "Body" },
+  { key: "mind", name: "Mind" },
+  { key: "soul", name: "Soul" },
+];
 
 const PoolBlock: React.FC<{
   name: string;
@@ -255,14 +254,11 @@ const CharacterSheet: React.FC = () => {
           <div className="cs-col">
             <div className="cs-card">
               <div className="cs-card-title">Stats</div>
-              {STATS.map(({ key, name, sub }) => (
+              {STATS.map(({ key, name }) => (
                 <div key={key} className="cs-stat-row">
                   <div className="cs-stat-label">
                     <div className={`cs-dot ${key}`} />
-                    <div>
-                      <div className="cs-stat-name">{name}</div>
-                      <div className="cs-stat-sub">{sub}</div>
-                    </div>
+                    <div className="cs-stat-name">{name}</div>
                   </div>
                   <Stepper
                     value={active[key]}
