@@ -57,97 +57,99 @@ const AbilityRow: React.FC<{
 
   return (
     <div className="cs-ability-row">
-      <div className="cs-ability-left">
-        {hasDetails ? (
-          <button
-            type="button"
-            className="cs-ability-header"
-            onClick={() => setOpen((o) => !o)}
-            aria-expanded={open}
-          >
-            {headerContent}
-          </button>
-        ) : (
-          headerContent
-        )}
-        {ability.topics.trim() ? (
-          <div className="cs-ability-topics">Topics: {ability.topics}</div>
-        ) : null}
-        {open && hasDetails && (
-          <div className="cs-ability-details">
-            {ability.effect ? (
-              <div className="cs-ability-effect">
-                <EffectText text={ability.effect} />
-              </div>
-            ) : null}
-            {unlocked.map((milestone) => {
-              const expanded = !foldedLevels.includes(milestone.level);
-              return (
-                <div key={milestone.level} className="cs-ability-level">
-                  <button
-                    type="button"
-                    className="cs-ability-level-head"
-                    onClick={() => toggleLevel(milestone.level)}
-                    aria-expanded={expanded}
-                  >
-                    <Chevron open={expanded} />
-                    Level {milestone.level}
-                  </button>
-                  {expanded && (
-                    <div className="cs-ability-level-text">
-                      <EffectText text={milestone.text} />
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-            {nextLocked && (
-              <div className="cs-ability-next">
-                Next milestone at ability level {nextLocked.level}
-              </div>
-            )}
-          </div>
-        )}
+      <div className="cs-ability-top">
+        <div className="cs-ability-left">
+          {hasDetails ? (
+            <button
+              type="button"
+              className="cs-ability-header"
+              onClick={() => setOpen((o) => !o)}
+              aria-expanded={open}
+            >
+              {headerContent}
+            </button>
+          ) : (
+            headerContent
+          )}
+          {ability.topics.trim() ? (
+            <div className="cs-ability-topics">Topics: {ability.topics}</div>
+          ) : null}
+        </div>
+        <div className="cs-ability-right">
+          {confirming ? (
+            <div className="cs-ability-confirm">
+              <span>Delete?</span>
+              <button
+                type="button"
+                className="cs-ability-confirm-yes"
+                onClick={() => onDelete(ability.id)}
+              >
+                yes
+              </button>
+              <button
+                type="button"
+                className="cs-ability-confirm-no"
+                onClick={() => setConfirming(false)}
+              >
+                no
+              </button>
+            </div>
+          ) : (
+            <>
+              <Stepper
+                small
+                value={ability.level}
+                onDec={() => onChangeLevel(ability.id, -1)}
+                onInc={() => onChangeLevel(ability.id, 1)}
+              />
+              <div className="cs-ability-pool">{ability.level}d6</div>
+              <button
+                type="button"
+                className="cs-ability-delete"
+                onClick={() => setConfirming(true)}
+                aria-label="Delete ability"
+              >
+                ×
+              </button>
+            </>
+          )}
+        </div>
       </div>
-      <div className="cs-ability-right">
-        {confirming ? (
-          <div className="cs-ability-confirm">
-            <span>Delete?</span>
-            <button
-              type="button"
-              className="cs-ability-confirm-yes"
-              onClick={() => onDelete(ability.id)}
-            >
-              yes
-            </button>
-            <button
-              type="button"
-              className="cs-ability-confirm-no"
-              onClick={() => setConfirming(false)}
-            >
-              no
-            </button>
-          </div>
-        ) : (
-          <>
-            <Stepper
-              small
-              value={ability.level}
-              onDec={() => onChangeLevel(ability.id, -1)}
-              onInc={() => onChangeLevel(ability.id, 1)}
-            />
-            <div className="cs-ability-pool">{ability.level}d6</div>
-            <button
-              type="button"
-              className="cs-ability-delete"
-              onClick={() => setConfirming(true)}
-              aria-label="Delete ability"
-            >
-              ×
-            </button>
-          </>
-        )}
-      </div>
+      {open && hasDetails && (
+        <div className="cs-ability-details">
+          {ability.effect ? (
+            <div className="cs-ability-effect">
+              <EffectText text={ability.effect} />
+            </div>
+          ) : null}
+          {unlocked.map((milestone) => {
+            const expanded = !foldedLevels.includes(milestone.level);
+            return (
+              <div key={milestone.level} className="cs-ability-level">
+                <button
+                  type="button"
+                  className="cs-ability-level-head"
+                  onClick={() => toggleLevel(milestone.level)}
+                  aria-expanded={expanded}
+                >
+                  <Chevron open={expanded} />
+                  Level {milestone.level}
+                </button>
+                {expanded && (
+                  <div className="cs-ability-level-text">
+                    <EffectText text={milestone.text} />
+                  </div>
+                )}
+              </div>
+            );
+          })}
+          {nextLocked && (
+            <div className="cs-ability-next">
+              Next milestone at ability level {nextLocked.level}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };

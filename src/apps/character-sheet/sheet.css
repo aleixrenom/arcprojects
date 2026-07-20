@@ -521,12 +521,15 @@ html.dark .cs-root {
 }
 
 .cs-ability-row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.cs-ability-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--cs-border);
 }
 
 .cs-ability-left {
