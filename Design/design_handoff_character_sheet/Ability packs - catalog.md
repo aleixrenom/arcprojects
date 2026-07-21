@@ -214,12 +214,22 @@ Effects that break natural law, whatever their source. Magic, miracles, and stra
 **Stat:** Soul
 **Effect:** 
 - You may transform into a bestial shape whenever you want (no need to actively use this as an Action). At this level, when you transform, you adopt slight bestial features, like claws, fangs, horns, etc. This transformation will become more prominent through the levels.
-- You have Expertise when dealing with animals. 
-
-You may roll ability + stat instead of stat for checks directly involving animals. You can also transform into a beast at will, but the beast you transform into needs to be more or less your size. While transformed your Body and Soul stats swap, changing your Health and Resolve pools if necessary, and this ability's linked stat becomes Body instead of Soul. While transformed, this ability has Strike (health). 
-**Level 3:** The beast you transform into can be half or double your size.
-**Level 5:** The beast can be a quarter or triple your size.
-**Level 7:** The beast can be minuscule or four times your size. 
+- You have Expertise when dealing with animals.
+- Maul - If tansformed, Strike (health).
+**Level 2:**
+- Now you may take on further physical characteristics of the animal, like the fur/feathers, maw/beak, muscle mass... While transformed this way you are no longer recognisable as yourself, but you still have vaguely the same shape (for example anthropomorphic if you were originally so).
+- When transforming you may swap your Soul and Body stats until the transformation ends, updating your Health and Resolve pools if necessary, and making this ability's linked stat become Body instead of Soul.
+**Level 3:**
+- You may now fully transform into a beast (wolf, bird, fish, etc), gaining any characteristics that come with it. However, the beast still needs to be more or less your original size.
+- While transformed into a particular animal type, you can communicate with animals of the same type as if you shared a language.
+**Level 4:**
+- The beast you transform into may be half or double your size.
+- Intimidate - If transformed, Spend 1 to Strike (resolve)
+**Level 5:**
+- The beast you transform into may be a quarter or triple your size.
+**Level 6:**
+- The beast you transform into may be minuscule or four times your size.
+- Decimate - If transformed, Empower Strike (health)
 
 ### Elementalist
 **Description:** Through will, guile, or sheer discipline, you learned to bend the elements to your will.
@@ -281,10 +291,6 @@ You may choose another customisation option at ability level 3 and every 2 level
 **Level 6:** 
 - Obliterate - Empower Strike (health)
 
-
-
-
-
 ### Pocketful of knives (revamp into more general multihit)
 **Description:** The amount of knives you can produce seem to never end.
 **Stat:** Body
@@ -295,15 +301,18 @@ You may choose another customisation option at ability level 3 and every 2 level
 ### Empath
 **Description:** You have a knack for understanding how other feel, sometimes even sharing those feelings.
 **Stat:** Soul
-**Effect:** You have Expertise when attempting to understand someone else's emotional state, feelings, desires, and the like.
-**Level 3:** You also have Expertise when confronting someone about their feelings and emotions, be it in a positive or negative way.
-**Level 5:** The magic of an empath awakens within you. Whenever you touch someone, you immediately know their current emotional state without the need of a roll.
-**Level 7:** You are capable of directly affecting someone's emotional state through your magic. Whenever you touch someone, you can attempt to weaken or heighten any emotions within them. The GM may ask you to roll ability + stat for difficult attempts.
-
-### Shadowmancer
-**Description:** Become one with shadows.
-**Stat:** Soul
 **Effect:** 
+- Whenever you touch someone, you immediately know their current emotional state. 
+**Level 2:**
+- You have Expertise when confronting someone about their feelings and emotions, be it in a positive or negative way.
+**Level 3:** 
+- Catharsis - You are capable of directly affecting someone's emotional state through your magic. Whenever you touch someone, you can attempt to weaken or heighten any emotions within them. The GM may ask you to roll ability + stat for difficult attempts.
+**Level 4:**
+- You can use the Catharsis effect at a distance, as long as you're directly interacting with the target.
+**Level 5:**
+- The Catharsis effect may now affect everyone in an area around you, up to a distance in meters equal to this ability's level.
+- Presence - Spend 1 to double the area that you affect with Catharsis. This effect stacks multiplicatively.
+
 
 ### Teleportation
 **Description:** You can disappear from where you are and appear in a nearby spot in the blink of an eye.
