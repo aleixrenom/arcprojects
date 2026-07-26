@@ -64,67 +64,67 @@ Each conversation has limited capacity, so work in small batches and never leave
 Pedagogical order: introduction → how the app boots → shared skeleton → portfolio pages → quiz app → character sheet app → tooling.
 
 ### Foundation
-- [ ] `INTRODUCTION.md` (high-level tour; write this first)
-- [ ] `CONCEPTS.md` (central concept glossary; write the seeded initial version second, then grow it as needed)
-- [ ] `index.html.md`
-- [ ] `src/main.tsx.md`
-- [ ] `src/App.tsx.md`
-- [ ] `src/router.tsx.md`
-- [ ] `src/index.css.md`
-- [ ] `src/custom.d.ts.md`
+- [x] `INTRODUCTION.md` (high-level tour; write this first)
+- [x] `CONCEPTS.md` (central concept glossary; write the seeded initial version second, then grow it as needed)
+- [x] `index.html.md`
+- [x] `src/main.tsx.md`
+- [x] `src/App.tsx.md`
+- [x] `src/router.tsx.md`
+- [x] `src/index.css.md`
+- [x] `src/custom.d.ts.md`
 
 ### Shared components & state
-- [ ] `src/components/Card.tsx.md`
-- [ ] `src/components/Header/Header.tsx.md`
-- [ ] `src/components/Header/Header.module.css.md`
-- [ ] `src/components/Separator/Separator.tsx.md`
-- [ ] `src/components/Separator/Separator.module.css.md`
-- [ ] `src/store/ui.ts.md`
-- [ ] `src/lib/cardPattern.ts.md`
-- [ ] `src/data/cards.ts.md`
+- [x] `src/components/Card.tsx.md`
+- [x] `src/components/Header/Header.tsx.md`
+- [x] `src/components/Header/Header.module.css.md`
+- [x] `src/components/Separator/Separator.tsx.md`
+- [x] `src/components/Separator/Separator.module.css.md`
+- [x] `src/store/ui.ts.md`
+- [x] `src/lib/cardPattern.ts.md`
+- [x] `src/data/cards.ts.md`
 
 ### Pages
-- [ ] `src/pages/ProjectsPage.tsx.md`
-- [ ] `src/pages/AppsPage.tsx.md`
-- [ ] `src/pages/DetailPage.tsx.md`
+- [x] `src/pages/ProjectsPage.tsx.md`
+- [x] `src/pages/AppsPage.tsx.md`
+- [x] `src/pages/DetailPage.tsx.md`
 
 ### Light-quiz app
-- [ ] `src/apps/light-quiz/index.tsx.md`
-- [ ] `src/apps/light-quiz/VocabularyQuiz.tsx.md`
-- [ ] `src/apps/light-quiz/QuestionCard.tsx.md`
-- [ ] `src/apps/light-quiz/WordSetPicker.tsx.md`
-- [ ] `src/apps/light-quiz/ResultScreen.tsx.md`
-- [ ] `src/apps/light-quiz/ResetConfirmation.tsx.md`
-- [ ] `src/apps/light-quiz/quizUtils.ts.md`
-- [ ] `src/apps/light-quiz/types.ts.md`
-- [ ] `src/apps/light-quiz/quiz.css.md`
-- [ ] `src/apps/light-quiz/README.md.md`
-- [ ] `src/apps/light-quiz/wordSets/catalan-1000.json.md`
-- [ ] `src/apps/light-quiz/wordSets/finnish-1000.json.md`
-- [ ] `src/apps/light-quiz/wordSets/english-questions-and-negatives.json.md`
-- [ ] `src/apps/light-quiz/wordSets/courseVocabulary.json.md`
+- [x] `src/apps/light-quiz/index.tsx.md`
+- [x] `src/apps/light-quiz/VocabularyQuiz.tsx.md`
+- [x] `src/apps/light-quiz/QuestionCard.tsx.md`
+- [x] `src/apps/light-quiz/WordSetPicker.tsx.md`
+- [x] `src/apps/light-quiz/ResultScreen.tsx.md`
+- [x] `src/apps/light-quiz/ResetConfirmation.tsx.md`
+- [x] `src/apps/light-quiz/quizUtils.ts.md`
+- [x] `src/apps/light-quiz/types.ts.md`
+- [x] `src/apps/light-quiz/quiz.css.md`
+- [x] `src/apps/light-quiz/README.md.md`
+- [x] `src/apps/light-quiz/wordSets/catalan-1000.json.md`
+- [x] `src/apps/light-quiz/wordSets/finnish-1000.json.md`
+- [x] `src/apps/light-quiz/wordSets/english-questions-and-negatives.json.md`
+- [x] `src/apps/light-quiz/wordSets/courseVocabulary.json.md`
 
 ### Character-sheet app
-- [ ] `src/apps/character-sheet/index.tsx.md`
-- [ ] `src/apps/character-sheet/CharacterSheet.tsx.md`
-- [ ] `src/apps/character-sheet/AbilitiesCard.tsx.md`
-- [ ] `src/apps/character-sheet/AddAbilityModal.tsx.md`
-- [ ] `src/apps/character-sheet/ExpertiseCard.tsx.md`
-- [ ] `src/apps/character-sheet/EffectText.tsx.md`
-- [ ] `src/apps/character-sheet/Stepper.tsx.md`
-- [ ] `src/apps/character-sheet/sheetUtils.ts.md`
-- [ ] `src/apps/character-sheet/types.ts.md`
-- [ ] `src/apps/character-sheet/sheet.css.md`
-- [ ] `src/apps/character-sheet/data/abilityPacks.json.md`
+- [x] `src/apps/character-sheet/index.tsx.md`
+- [x] `src/apps/character-sheet/CharacterSheet.tsx.md`
+- [x] `src/apps/character-sheet/AbilitiesCard.tsx.md`
+- [x] `src/apps/character-sheet/AddAbilityModal.tsx.md`
+- [x] `src/apps/character-sheet/ExpertiseCard.tsx.md`
+- [x] `src/apps/character-sheet/EffectText.tsx.md`
+- [x] `src/apps/character-sheet/Stepper.tsx.md`
+- [x] `src/apps/character-sheet/sheetUtils.ts.md`
+- [x] `src/apps/character-sheet/types.ts.md`
+- [x] `src/apps/character-sheet/sheet.css.md`
+- [x] `src/apps/character-sheet/data/abilityPacks.json.md`
 
 ### Tooling & config
-- [ ] `scripts/build-ability-packs.mjs.md`
-- [ ] `scripts/validate-words.mjs.md`
-- [ ] `vite.config.ts.md`
-- [ ] `tsconfig.json.md`
-- [ ] `package.json.md`
-- [ ] `public.md`
+- [x] `scripts/build-ability-packs.mjs.md`
+- [x] `scripts/validate-words.mjs.md`
+- [x] `vite.config.ts.md`
+- [x] `tsconfig.json.md`
+- [x] `package.json.md`
+- [x] `public.md`
 
 ### Final pass (only after everything above is checked)
-- [ ] **Link audit** — mechanically verify every `[[ ]]` link in the vault: extract all wikilink targets (e.g. grep for `\[\[[^\]]+\]\]`), check that each target resolves to an existing note in `explanations/`, and that every `[[CONCEPTS#...]]` fragment matches a real `##` header in `CONCEPTS.md` exactly. Fix broken links and typos; add missing `CONCEPTS.md` entries if a link points at a concept that was never written.
-- [ ] **Intro/glossary refresh** — re-read `INTRODUCTION.md` and `CONCEPTS.md` (written first, when no other notes existed) and fill in any now-resolvable links or missing real-use examples.
+- [x] **Link audit** — mechanically verify every `[[ ]]` link in the vault: extract all wikilink targets (e.g. grep for `\[\[[^\]]+\]\]`), check that each target resolves to an existing note in `explanations/`, and that every `[[CONCEPTS#...]]` fragment matches a real `##` header in `CONCEPTS.md` exactly. Fix broken links and typos; add missing `CONCEPTS.md` entries if a link points at a concept that was never written.
+- [x] **Intro/glossary refresh** — re-read `INTRODUCTION.md` and `CONCEPTS.md` (written first, when no other notes existed) and fill in any now-resolvable links or missing real-use examples.
